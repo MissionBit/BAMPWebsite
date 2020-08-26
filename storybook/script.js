@@ -18,15 +18,13 @@ function addButtons(bar) {
 /**
  * Makes the fake titlebars.
  */
-function makeTitlebars() {
-  const pages = document.getElementsByClassName("sbPage")
-
-  for (const page of pages) {
-    const bar = document.createElement("div")
-    bar.className = ("sbPage--bar")
-    page.insertBefore(bar, page.firstChild)
-    addButtons(bar)
-  }
+function makeTitleBar(page) {
+  const bar = document.createElement("div")
+  bar.className = ("sbPage--titlebar")
+  addButtons(bar)
+  page.insertBefore(bar, page.firstChild)
 }
 
-makeTitlebars()
+const pages = document.getElementsByClassName("sbPage")
+for (const page of pages)
+  makeTitleBar(page)
