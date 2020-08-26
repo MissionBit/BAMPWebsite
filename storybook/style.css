@@ -18,24 +18,24 @@ section {
 
 section .sbHeading {
   margin-bottom: 8px;
-}  
+}
 
-/* .sbPage module */
+/* .sbDesktop module */
 
-.sbPage {
+.sbDesktop {
   border: 1px solid #aaa;
   border-radius: 6px;
 }
 
-.sbPage--titlebar {
+.sbDesktop--titlebar {
   background-color: #ddd;
   height: 24px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
-.sbPage--yellowBtn,
-.sbPage--greenBtn,
-.sbPage--redBtn {
+.sbDesktop--yellowBtn,
+.sbDesktop--greenBtn,
+.sbDesktop--redBtn {
   display: inline-block;
   width: 12px;
   height: 12px;
@@ -43,14 +43,14 @@ section .sbHeading {
   border-radius: 50%;
 }
 
-.sbPage--yellowBtn {
+.sbDesktop--yellowBtn {
   background-color: #ee2;
 }
 
-.sbPage--redBtn {
+.sbDesktop--redBtn {
   background-color: #f22;
 }
 
-.sbPage--greenBtn {
+.sbDesktop--greenBtn {
   background-color: #2e2;
 }
