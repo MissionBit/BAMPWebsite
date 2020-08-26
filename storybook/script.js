@@ -3,7 +3,7 @@
  */
 function newButton(color) {
   const div = document.createElement("div")
-  div.className = `storybookPage--${color}Btn`
+  div.className = `sbPage--${color}Btn`
   return div
 }
 
@@ -19,11 +19,11 @@ function addButtons(bar) {
  * Makes the fake titlebars.
  */
 function makeTitlebars() {
-  const pages = document.getElementsByClassName("storybookPage")
+  const pages = document.getElementsByClassName("sbPage")
 
   for (const page of pages) {
     const bar = document.createElement("div")
-    bar.className = ("storybookPage--bar")
+    bar.className = ("sbPage--bar")
     page.insertBefore(bar, page.firstChild)
     addButtons(bar)
   }
