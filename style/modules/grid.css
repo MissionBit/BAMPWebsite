@@ -1,0 +1,20 @@
+.gridContainer{ /* a container with grid */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    background: #F5F5F5;
+    padding: 10px;
+}
+
+.gridContainer * {  /* applies to all the items in the grid */
+    background: #508EFF;
+    border-radius: 15px;
+    margin: 10px;
+}
+/* column control */
+.gridCol-2 {grid-template-columns: repeat(2, 1fr);}
+.gridCol-3 {grid-template-columns: repeat(3, 1fr);}
+.gridCol-4 {grid-template-columns: repeat(4, 1fr);}
+.gridCol-5 {grid-template-columns: repeat(5, 1fr);}
+.gridCol-6 {grid-template-columns: repeat(6, 1fr);}
+
