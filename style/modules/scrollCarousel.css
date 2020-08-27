@@ -1,0 +1,13 @@
+.scrollCarousel {
+    max-height: 120px;
+    border: 3px solid #dddddd;
+    display: flex;
+    overflow-x: auto
+}
+
+.scrollCarousel .item{
+    min-width: 110px;
+    height: 110px;
+    line-height: 110px;
+    background-color: #dddddd;
+}
