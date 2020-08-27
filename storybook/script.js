@@ -2,15 +2,15 @@ const heading = text =>
   $('<h1>').addClass('sbHeading').text(text)
 
 const button = color =>
-  $('<div>').addClass(`sbDesktop--${color}Btn`)
+  $('<div>').addClass(`sbPage--${color}Btn`)
 
 const titlebar = () =>
   $('<div>')
-    .addClass('sbDesktop--titlebar')
+    .addClass('sbPage--titlebar')
     .append(['red', 'yellow', 'green'].map(c => button(c)))
 
-const desktop = contents =>
-  $('<div>').addClass('sbDesktop').append(titlebar(), contents)
+const page = contents =>
+  $('<div>').addClass('sbPage').append(titlebar(), contents)
 
 
 for (const section of $('.demo')) {
@@ -19,6 +19,6 @@ for (const section of $('.demo')) {
 
   $(section).empty().append([
     heading(h1text),
-    desktop(contents)
+    page(contents)
   ])
 }
