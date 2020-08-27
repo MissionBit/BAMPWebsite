@@ -2,6 +2,7 @@
 
 body {
   font-family: 'ibm plex sans';
+  min-width: 600;
 }
 
 section {
@@ -25,6 +26,7 @@ section .sbHeading {
 .sbPage {
   border: 1px solid #aaa;
   border-radius: 6px;
+  overflow-x: hidden;
 }
 
 .sbPage--titlebar {
@@ -53,4 +55,17 @@ section .sbHeading {
 
 .sbPage--greenBtn {
   background-color: #2e2;
+}
+
+@media (max-width: 620px) {
+  .sbPage {
+    border-radius: 16px;
+    border-width: 32px 6px 6px 6px;
+    border-color: #444;
+    border-style: solid;
+  }
+
+  .sbPage--titlebar {
+    display: none;
+  }
 }
