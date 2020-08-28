@@ -1,0 +1,71 @@
+/* base */
+
+body {
+  font-family: 'ibm plex sans';
+  min-width: 600;
+}
+
+section {
+  padding: 24px;
+}
+
+/* .sbHeading module */
+
+.sbHeading {
+  width: max-content;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+section .sbHeading {
+  margin-bottom: 8px;
+}
+
+/* .sbPage module */
+
+.sbPage {
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  overflow-x: hidden;
+}
+
+.sbPage--titlebar {
+  background-color: #ddd;
+  height: 24px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.sbPage--yellowBtn,
+.sbPage--greenBtn,
+.sbPage--redBtn {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 6px 2px;
+  border-radius: 50%;
+}
+
+.sbPage--yellowBtn {
+  background-color: #ee2;
+}
+
+.sbPage--redBtn {
+  background-color: #f22;
+}
+
+.sbPage--greenBtn {
+  background-color: #2e2;
+}
+
+@media (max-width: 620px) {
+  .sbPage {
+    border-radius: 16px;
+    border-width: 32px 6px 6px 6px;
+    border-color: #444;
+    border-style: solid;
+  }
+
+  .sbPage--titlebar {
+    display: none;
+  }
+}
