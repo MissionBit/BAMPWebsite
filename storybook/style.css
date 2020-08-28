@@ -29,6 +29,10 @@ section .sbHeading {
   overflow-x: hidden;
 }
 
+.sbPage--inner {
+  padding: 16px;
+}
+
 .sbPage--titlebar {
   background-color: #ddd;
   height: 24px;
