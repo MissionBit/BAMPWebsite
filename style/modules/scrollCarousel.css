@@ -1,32 +1,24 @@
 .scrollCarousel {
-    max-height: 120px;
-    margin: 0 auto;
-    overflow: auto;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.scrollCarousel--contents {
+    width: max-content;
     display: flex;
-    transform: translate3d(0, 0, 0);
-    border: 1px solid #dddddd;
+    animation-direction: alternate;
+    animation-name: moveSlideshow;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
 
-  }
-
-  .scrollCarousel > div {
-    min-width: 110px;
-    height: 110px;
-    line-height: 110px;
-    transform: translate3d(0, 0, 0);
-    background-color: #dddddd;
-    text-align: center;
-    margin-right: 2px;
-  }
-  .scrollCarousel .mover-1 {
-    animation: moveSlideshow 20s linear infinite;
-  }
-  .scrollCarousel ::-webkit-scrollbar{
-      width: 0;
-  }
-
-
-  @keyframes moveSlideshow {
-    100% {
-      transform: translateX(-500%);
+@keyframes moveSlideshow {
+    0% {
+        transform: translateX(0%);
     }
-  }
+
+    100% {
+        transform: translateX(-60%);
+    }
+}
