@@ -2,7 +2,6 @@
 
 body {
   font-family: 'ibm plex sans';
-  min-width: 600;
 }
 
 section {
@@ -27,6 +26,10 @@ section .sbHeading {
   border: 1px solid #aaa;
   border-radius: 6px;
   overflow-x: hidden;
+}
+
+.sbPage--inner {
+  padding: 16px;
 }
 
 .sbPage--titlebar {

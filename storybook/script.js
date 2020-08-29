@@ -9,8 +9,11 @@ const titlebar = () =>
     .addClass('sbPage--titlebar')
     .append(['red', 'yellow', 'green'].map(c => button(c)))
 
-const page = contents =>
-  $('<div>').addClass('sbPage').append(titlebar(), contents)
+const page = contents => {
+  const inner = $('<div>').addClass('sbPage--inner').append(contents)
+  const div = $('<div>').addClass('sbPage').append(titlebar(), inner)
+  return div
+}
 
 
 for (const section of $('.demo')) {
