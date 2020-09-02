@@ -10,6 +10,10 @@ section {
 
 /* .gridBox module */
 /* draft style for visualizing the grid */
+
+.gridBox {
+  background: #F5F5F5;
+}
 .gridBox > * {
   background: #508EFF;
   width: 200px;
