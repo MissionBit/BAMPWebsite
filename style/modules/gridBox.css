@@ -11,13 +11,13 @@
 /* columns */
 
 .gridBox-col1 > * {
-    flex: 1 0 100%;
+    flex-basis: 100%;
 }
 
 .gridBox-col2 > * {
-    flex: 1 0 45%;
+    flex-basis: 45%;
 }
 
 .gridBox-col3 > * {
-    flex: 1 0 30%;
+    flex-basis: 30%;
 }
