@@ -18,7 +18,7 @@ const page = contents => {
 
 for (const section of $('.demo')) {
   const contents = $(section).children()
-  const h1text = contents.attr('class')
+  const h1text = contents[0].classList[0]
 
   $(section).empty().append([
     heading(h1text),
