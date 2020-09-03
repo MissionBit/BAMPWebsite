@@ -1,11 +1,9 @@
 .gridBox { /* a container with grid */
     display: flex;
     flex-wrap: wrap;
-    font-size: 0 /* this was done to fight the space between blocks */
 }
 
 .gridBox > * {  /* applies to all the items in the grid */
-    display: inline-block;
     vertical-align: top;
     margin: 5px; /* the space between blocks. Doesn't affect on the components inside the blocks */
 }
@@ -13,13 +11,13 @@
 /* columns */
 
 .gridBox-col1 > * {
-    flex: 1 0 100%;
+    flex-basis: 100%;
 }
 
 .gridBox-col2 > * {
-    flex: 1 0 45%;
+    flex-basis: 45%;
 }
 
 .gridBox-col3 > * {
-    flex: 1 0 30%;
+    flex-basis: 30%;
 }
