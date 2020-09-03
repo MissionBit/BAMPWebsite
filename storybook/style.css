@@ -85,3 +85,9 @@ section .sbHeading {
     display: none;
   }
 }
+
+/* ---- extra styles for module demos ---- */
+
+.sbPage .box {
+  margin-bottom: 24px;
+}
