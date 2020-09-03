@@ -81,6 +81,6 @@ section .sbHeading {
 
 .sbPage .gridBox > * {
   background: #508EFF;
-  height: 200px;
-  border-radius: 15px;
+  height: 100px;
+  border-radius: 10px;
 }
