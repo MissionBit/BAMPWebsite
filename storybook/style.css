@@ -79,6 +79,10 @@ section .sbHeading {
   margin-bottom: 24px;
 }
 
+.sbPage .gridBox {
+  margin-bottom: 48px;
+}
+
 .sbPage .gridBox > * {
   background: #508EFF;
   height: 100px;
