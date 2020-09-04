@@ -8,10 +8,19 @@
     display: flex;
     animation-direction: alternate;
     animation-name: moveSlideshow;
-    animation-duration: 5s;
+    animation-duration: 25s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+
 }
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+
+
 
 @keyframes moveSlideshow {
     0% {
