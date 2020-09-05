@@ -8,19 +8,6 @@ section {
   padding: 24px;
 }
 
-/* .gridBox module */
-/* draft style for visualizing the grid */
-
-.gridBox {
-  background: #F5F5F5;
-}
-.gridBox > * {
-  background: #508EFF;
-  width: 200px;
-  height: 200px;
-  border-radius: 15px;
-}
-
 /* .sbHeading module */
 
 .sbHeading {
@@ -84,4 +71,20 @@ section .sbHeading {
   .sbPage--titlebar {
     display: none;
   }
+}
+
+/* ---- extra styles for module demos ---- */
+
+.sbPage .box {
+  margin-bottom: 24px;
+}
+
+.sbPage .gridBox {
+  margin-bottom: 48px;
+}
+
+.sbPage .gridBox > * {
+  background: #508EFF;
+  height: 100px;
+  border-radius: 10px;
 }
