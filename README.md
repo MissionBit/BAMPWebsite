@@ -1,4 +1,4 @@
- # BAMP Website Redesign
+# BAMP Website Redesign
 This is a repository for the upcoming BAMP Website redesign. 
 ### BAMP
 [Bay Area Mural Program](https://www.thebamp.org/) is a nonprofit organization of local artists dedicated to facilitating and creating public art. 
