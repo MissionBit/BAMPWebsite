@@ -1,0 +1,101 @@
+.faqContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq {
+    background-color: #FFFFFF;
+    border: 2px solid #113255;
+    border-color: #113255;
+    border-style: solid;
+    border-width: 2px 2px 0 2px; 
+    padding: 0.75em;
+}
+
+.faq:last-of-type {
+    border-bottom-width: 2px;
+}
+
+input {
+    display: none;
+    /* hides checkbox*/
+}
+
+label {
+    cursor: pointer;
+}
+
+label::before {
+    content: "+";
+    float: right;
+}
+
+label::after {
+    content: "-";
+    float: right;
+}
+
+input ~ label::before {
+    display: block;
+}
+
+input ~ label::after {
+    display: none;
+}
+
+input:checked ~ label::before {
+    display: none;
+}
+
+input:checked ~ label::after {
+    display: block;
+}
+
+span {
+    /* styling the answers to faq */
+    display: none;
+    border-top: 2px solid #113255;
+    padding-top: 0.75em;
+}
+
+input ~ span {
+    display: none;
+}
+
+input:checked ~ span {
+    display: block;
+}
+
+
+/* different format */
+.faq-question {
+   padding: 20px 0;
+  width: 100%;
+}
+
+.faq-answers {
+  font-size: 20px;
+  padding: 0px 14px;
+  position: relative;
+  opacity: 0;
+  transition: .4s ease;
+}
+
+.panel:checked ~ .faq-answers {
+  opacity: 1;
+  padding: 14px;
+}
+
+.plus {
+  float: right;
+  font-size: 20px;
+  transition: .2s ease;
+}
+
+.panel:checked ~ .plus {
+  transform: rotate(45deg);
+}
+
+.panel {
+  display: none;
+}
