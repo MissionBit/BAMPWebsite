@@ -1,0 +1,37 @@
+.missionStatement-box {
+    max-width: 60%;
+    margin: 100px auto;
+    background: none;
+    border: 2px solid #303030;
+    border-radius: 34px;
+    padding: 10px;
+    text-align: center;
+}
+
+.missionStatement-logo {
+    position: absolute;
+    padding: 20px;
+    width: 200px;
+    background-color: white;
+    translate: 0px -110px;
+    left: 50%;
+    margin-left: -120px;
+}
+
+.missionStatement-box p {
+    font-size: 30px;
+    font-style: italic;
+    color: #113255;
+    line-height: 150%;
+}
+
+@media only screen and (max-width: 600px) {
+    .missionStatement-box p {
+       font-size: 18px;
+    }
+
+    .missionStatement-logo {
+        width: 100px;
+        translate: 0px -60px;
+    }
+}
