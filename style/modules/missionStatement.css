@@ -1,4 +1,4 @@
-.missionStatement-box {
+.missionStatement--box {
     max-width: 60%;
     margin: 100px auto;
     background: none;
@@ -8,7 +8,7 @@
     text-align: center;
 }
 
-.missionStatement-logo {
+.missionStatement--logo {
     position: absolute;
     padding: 20px;
     width: 200px;
@@ -18,7 +18,7 @@
     margin-left: -120px;
 }
 
-.missionStatement-box p {
+.missionStatement--box p {
     font-size: 30px;
     font-style: italic;
     color: #113255;
@@ -26,11 +26,11 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .missionStatement-box p {
+    .missionStatement--box p {
        font-size: 18px;
     }
 
-    .missionStatement-logo {
+    .missionStatement--logo {
         width: 100px;
         translate: 0px -60px;
     }
