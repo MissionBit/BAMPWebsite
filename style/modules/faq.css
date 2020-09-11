@@ -17,34 +17,40 @@
 }
 
 .faq--question {
+    color: #113255;
     display: block; 
     width: 100%;
     cursor: pointer;
+    font-size: 20px
 }
 
 .faq--answers {
-    font-size: 20px;
+    font-size: 15px;
     display: block;
-    padding: 0px 14px;
     height: 0;
     opacity: 0;
     transition: .5s ease;
+    visibility: hidden;
+    overflow-y: hidden;
 }
 
 .faq--checkbox:checked ~ .faq--answers {
     height: auto;
     opacity: 1;
     padding: 14px;
+    visibility: visible; 
 }
 
 .faq--plus {
     float: right;
-    font-size: 20px;
+    font-size: 30px;
+    line-height: 15px;
     transition: .2s ease;
     user-select: none;
 }
 
 .faq--checkbox:checked ~ .faq--question .faq--plus {
+    max-height: 500px;
     transform: rotate(45deg);
 }
 
