@@ -4,7 +4,6 @@
 }
 
 .faq {
-    position: relative;
     background-color: #FFFFFF;
     border: 2px solid #113255;
     border-color: #113255;
@@ -18,7 +17,7 @@
 }
 
 .faq--question {
-    padding: 20px 0;
+    display: block; 
     width: 100%;
     cursor: pointer;
 }
@@ -32,25 +31,23 @@
     transition: .5s ease;
 }
 
-.panel:checked ~ .faq--answers {
+.faq--checkbox:checked ~ .faq--answers {
     height: auto;
     opacity: 1;
     padding: 14px;
 }
 
 .faq--plus {
-    position: absolute;
     float: right;
     font-size: 20px;
     transition: .2s ease;
     user-select: none;
-    z-index: -1;
 }
 
-.panel:checked ~ .faq--plus {
+.faq--checkbox:checked ~ .faq--question .faq--plus {
     transform: rotate(45deg);
 }
 
-.panel {
+.faq--checkbox {
     display: none;
 }
