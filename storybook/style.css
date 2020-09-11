@@ -5,25 +5,7 @@ body {
 }
 
 section {
-<<<<<<< HEAD
-  padding: 24px;
-}
-
-/* .gridBox module */
-/* draft style for visualizing the grid */
-
-.gridBox {
-  background: #F5F5F5;
-}
-
-.gridBox > * {
-  background: #508EFF;
-  width: 200px;
-  height: 200px;
-  border-radius: 15px;
-=======
     padding: 24px;
->>>>>>> master
 }
 
 /* .sbHeading module */
