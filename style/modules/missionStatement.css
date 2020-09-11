@@ -1,11 +1,15 @@
 .missionStatement--box {
     max-width: 60%;
-    margin: 100px auto;
-    background: none;
-    border: 2px solid #303030;
+    margin: 0 auto;
+    margin-top: 110px;
+    background: white;
+    border: 2px solid #113255;
     border-radius: 34px;
     padding: 10px;
-    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 40px;
+    text-align: justify;
 }
 
 .missionStatement--logo {
@@ -13,12 +17,13 @@
     padding: 20px;
     width: 200px;
     background-color: white;
-    translate: 0px -110px;
     left: 50%;
+    transform: translateY(-110px);
     margin-left: -120px;
 }
 
-.missionStatement--box p {
+.missionStatement--box > p {
+    margin-top: 90px;
     font-size: 30px;
     font-style: italic;
     color: #113255;
@@ -26,12 +31,24 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .missionStatement--box p {
+    .missionStatement--box {
+        margin-top: 60px;
+        max-width: 95%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: unset;
+        text-align: center;
+     }
+
+    .missionStatement--box > p {
        font-size: 18px;
+       margin-top: 60px;
     }
 
     .missionStatement--logo {
-        width: 100px;
-        translate: 0px -60px;
+        width: 130px;
+        transform: translateY(-85px);
+        left: 50%;
+        margin-left: -80px;
     }
 }
