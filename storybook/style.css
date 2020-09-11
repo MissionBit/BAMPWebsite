@@ -1,10 +1,11 @@
 /* base */
 
 body {
-  font-family: 'ibm plex sans';
+    font-family: 'ibm plex sans';
 }
 
 section {
+<<<<<<< HEAD
   padding: 24px;
 }
 
@@ -20,69 +21,88 @@ section {
   width: 200px;
   height: 200px;
   border-radius: 15px;
+=======
+    padding: 24px;
+>>>>>>> master
 }
 
 /* .sbHeading module */
 
 .sbHeading {
-  width: max-content;
-  font-size: 20px;
-  font-weight: bold;
+    width: max-content;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 section .sbHeading {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 /* .sbPage module */
 
 .sbPage {
-  border: 1px solid #aaa;
-  border-radius: 6px;
-  overflow-x: hidden;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    overflow-x: hidden;
 }
 
 .sbPage--inner {
-  padding: 16px;
+    padding: 16px;
 }
 
 .sbPage--titlebar {
-  background-color: #ddd;
-  height: 24px;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+    background-color: #ddd;
+    height: 24px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 .sbPage--yellowBtn,
 .sbPage--greenBtn,
 .sbPage--redBtn {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin: 6px 2px;
-  border-radius: 50%;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 6px 2px;
+    border-radius: 50%;
 }
 
 .sbPage--yellowBtn {
-  background-color: #ee2;
+    background-color: #ee2;
 }
 
 .sbPage--redBtn {
-  background-color: #f22;
+    background-color: #f22;
 }
 
 .sbPage--greenBtn {
-  background-color: #2e2;
+    background-color: #2e2;
 }
 
 @media (max-width: 620px) {
-  .sbPage {
-    border-radius: 16px;
-    border-width: 32px 6px 6px 6px;
-    border-color: #444;
-    border-style: solid;
-  }
+    .sbPage {
+        border-radius: 16px;
+        border-width: 32px 6px 6px 6px;
+        border-color: #444;
+        border-style: solid;
+    }
 
-  .sbPage--titlebar {
-    display: none;
-  }
+    .sbPage--titlebar {
+        display: none;
+    }
+}
+
+/* ---- extra styles for module demos ---- */
+
+.sbPage .box {
+    margin-bottom: 24px;
+}
+
+.sbPage .gridBox {
+    margin-bottom: 48px;
+}
+
+.sbPage .gridBox > * {
+    background: #508EFF;
+    height: 100px;
+    border-radius: 10px;
 }
