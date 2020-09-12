@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&display=swap');
 @import url('base.css');
 @import url('layout.css');
@@ -6,4 +6,5 @@
 @import url('modules/box.css');
 @import url('modules/gridBox.css');
 @import url('modules/scrollCarousel.css');
+@import url('modules/missionStatement.css');
 @import url('modules/faq.css');
