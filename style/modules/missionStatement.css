@@ -33,15 +33,15 @@
 @media only screen and (max-width: 600px) {
     .missionStatement--box {
         margin-top: 60px;
-        max-width: 95%;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: unset;
+        max-width: 80%;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
         text-align: center;
      }
 
     .missionStatement--box > p {
-       font-size: 18px;
+       font-size: 16px;
        margin-top: 60px;
     }
 
