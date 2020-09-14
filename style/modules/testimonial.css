@@ -1,0 +1,83 @@
+/* Desktop */
+/* Background Box */
+
+.testimonial {
+    margin-top: 100px;
+    max-width: 610px;
+    background: white;
+    border: 0.5px solid black;
+}
+
+/* Testimonial Picture */
+
+.testimonial--pic {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    margin-left: -100px;
+    transform: translateY(-80px);
+    overflow: hidden;
+}
+
+.testimonial--pic > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 50%;
+    top: -100%;
+    left: -100%;
+    right: -100%;
+    bottom: -100%;
+}
+
+/* Text Container */
+
+.testimonial--content {
+    margin-top: -60px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+/* [[ Text ]] */
+
+.testimonial--content > h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.testimonial--content > p {
+    font-size: 26px;
+    font-style: italic;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+    .testimonial {
+        margin-top: 30px;
+    }
+
+    .testimonial--pic {
+        width: 90px;
+        height: 90px;
+        margin-left: -45px;
+        transform: translateY(-35px);
+    }
+
+    .testimonial--content {
+        margin-top: -15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .testimonial--content > h1 {
+        font-size: 20px;
+    }
+
+    .testimonial--content > p {
+        font-size: 16px;
+    }
+}
