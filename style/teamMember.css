@@ -1,0 +1,31 @@
+.teamMember{
+    position: absolute;
+    width: 264.81px;
+    height: 393.84px;
+    left: 75px;
+    top: 1853px;
+
+}
+
+.teamMember--name{
+    display: block;
+    text-align: center;
+    font-size: 35px;
+}
+
+.teamMember--photo{
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    overflow: hidden;
+}
+.teamMember--photo > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.teamMember--role{
+    font-size: 20px;
+    font-style: italic;
+}
