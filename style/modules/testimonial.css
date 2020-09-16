@@ -1,4 +1,5 @@
 .testimonial {
+    position: relative;
     margin-top: 100px;
     max-width: 610px;
     background: white;
@@ -6,7 +7,7 @@
 }
 
 .testimonial--pic {
-    position: relative;
+    position: absolute;
     width: 200px;
     height: 200px;
     left: 50%;
@@ -22,7 +23,7 @@
 }
 
 .testimonial--content {
-    margin-top: -60px;
+    padding-top: 150px;
     padding-left: 35px;
     padding-right: 35px;
 }
@@ -51,7 +52,7 @@
     }
 
     .testimonial--content {
-        margin-top: -15px;
+        padding-top: 70px;
         padding-left: 15px;
         padding-right: 15px;
     }
