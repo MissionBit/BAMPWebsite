@@ -11,8 +11,7 @@
     width: 200px;
     height: 200px;
     left: 50%;
-    margin-left: -100px;
-    transform: translateY(-80px);
+    transform: translate(-50%, -40%);
     overflow: hidden;
 }
 
@@ -47,8 +46,6 @@
     .testimonial--pic {
         width: 90px;
         height: 90px;
-        margin-left: -45px;
-        transform: translateY(-35px);
     }
 
     .testimonial--content {
