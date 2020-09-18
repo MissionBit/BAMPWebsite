@@ -21,3 +21,7 @@
 .gridBox-col3 > * {
     flex-basis: 32%;
 }
+
+.gridBox-col4 > * {
+    flex-basis: 23%;
+}
