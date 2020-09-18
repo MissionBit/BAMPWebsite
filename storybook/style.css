@@ -36,7 +36,7 @@ section + section {
 }
 
 @media (max-width: 620px) {
-    .l-nav {
+    .l-sidebar {
         display: none;
     }
 }
