@@ -8,6 +8,10 @@
     margin: 5px; /* the space between blocks. Doesn't affect on the components inside the blocks */
 }
 
+.gridBox-center {
+    justify-content: center;
+}
+
 /* columns */
 
 .gridBox-col1 > * {
