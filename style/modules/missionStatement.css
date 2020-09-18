@@ -1,4 +1,4 @@
-.missionStatement--box {
+.missionStatement {
     max-width: 60%;
     margin: 0 auto;
     margin-top: 110px;
@@ -22,7 +22,7 @@
     margin-left: -120px;
 }
 
-.missionStatement--box > p {
+.missionStatement > p {
     margin-top: 90px;
     font-size: 30px;
     font-style: italic;
@@ -31,7 +31,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .missionStatement--box {
+    .missionStatement {
         margin-top: 60px;
         max-width: 80%;
         padding-left: 30px;
@@ -40,7 +40,7 @@
         text-align: center;
      }
 
-    .missionStatement--box > p {
+    .missionStatement > p {
        font-size: 16px;
        margin-top: 60px;
     }
