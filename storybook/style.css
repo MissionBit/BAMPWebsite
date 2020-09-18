@@ -7,17 +7,25 @@ body {
 }
 
 section {
-    padding: 18px 24px;
+    padding: 0 24px 24px;
 }
 
 section + section {
     padding-top: 36px;
 }
 
+h1, h2, h3 {
+    font-family: "Libre Franklin";
+}
+
 
 /* layout rules */
 
-.l-body {
+.l-topbar {
+    margin: 16px;
+}
+
+.l-container {
     display: flex;
     justify-content: space-between;
 }
@@ -39,6 +47,19 @@ section + section {
     .l-sidebar {
         display: none;
     }
+}
+
+
+/* .sbTopbar module */
+
+.sbTopbar {
+    display: flex;
+    align-items: center;
+}
+
+.sbTopbar--logo {
+    width: 50px;
+    margin-right: 12px;
 }
 
 
