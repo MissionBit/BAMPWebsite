@@ -148,16 +148,21 @@ section .sbHeading {
 
 /* ---- extra styles for module demos ---- */
 
-.sbPage .box {
+.demo[data-module-name="box"] .box {
     margin-bottom: 24px;
+    display: block !important;
+    padding: 16px;
+    min-width: 45vw;
 }
 
-.sbPage .gridBox {
+.demo[data-module-name="gridBox"] .gridBox {
     margin-bottom: 48px;
 }
 
-.sbPage .gridBox > * {
-    background: #508EFF;
+.demo[data-module-name="gridBox"] .gridBox > * {
+    box-sizing: border-box;
+    padding: 8px;
+    border: 2px dashed #508EFF;
     height: 100px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
