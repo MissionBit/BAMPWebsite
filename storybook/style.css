@@ -1,12 +1,76 @@
-/* base */
+/* base rules */
 
 body {
     font-family: 'ibm plex sans';
+    margin: 0;
+    padding: 0;
 }
 
 section {
-    padding: 24px;
+    padding: 36px 24px;
 }
+
+
+/* layout rules */
+
+.l-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.l-sidebar {
+    flex: 0 0 200px;
+    height: 100vh;
+    padding-left: 16px;
+    position: sticky;
+    top: 0;
+}
+
+.l-main {
+    flex: 0 1 auto;
+    min-width: 0;
+}
+
+@media (max-width: 620px) {
+    .l-nav {
+        display: none;
+    }
+}
+
+
+/* .sbNavHeading module */
+
+.sbNavHeading {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+
+/* .sbNavList module */
+
+.sbNavList {
+    padding-left: 0;
+    margin: 0;
+}
+
+.sbNavList--item {
+    font-size: 18px;
+    list-style-type: none;
+}
+
+.sbNavList--item > a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    line-height: 200%;
+    color: #113255;
+}
+
+.sbNavList--item > a:hover {
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
 
 /* .sbHeading module */
 
@@ -19,6 +83,7 @@ section {
 section .sbHeading {
     margin-bottom: 8px;
 }
+
 
 /* .sbPage module */
 
@@ -72,6 +137,7 @@ section .sbHeading {
         display: none;
     }
 }
+
 
 /* ---- extra styles for module demos ---- */
 

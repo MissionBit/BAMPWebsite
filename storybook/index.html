@@ -10,184 +10,187 @@
         <script src="script.js" defer></script>
     </head>
 
-    <body>
-        <section class="demo">
-            <div class="box">
-                Hello
-            </div>
-            <div class="box box-red">
-                Hello
-            </div>
-            <div class="box box-blue">
-                Hello
-            </div>
-            <div class="box box-yellow">
-                Hello
-            </div>
-        </section>
+    <body class="l-body">
+        <nav class="l-sidebar">
+            <h2 class="sbNavHeading">Modules</h2>
+            <ul class="sbNavList"><!-- list items will be added dynamically --></ul>
+        </nav>
 
-        <section class="demo">
-            <div class="faqContainer">
-                <div class="faq">
-                    <input id="q1" type="checkbox" class="faq--checkbox">
-                        <label for="q1" class="faq--question">
-                            What is the meaning of life?
+        <main class="l-main">
+            <section class="demo" data-module-name="box">
+                <div class="box">
+                    Hello
+                </div>
+                <div class="box box-red">
+                    Hello
+                </div>
+                <div class="box box-blue">
+                    Hello
+                </div>
+                <div class="box box-yellow">
+                    Hello
+                </div>
+            </section>
 
-                            <div class="faq--plus">+</div>
-                        </label>
-                    <div class="faq--answers">
-                        Life is very complex, so just live the best life. Nothing really matters, just go go with the flow. We're all figuring it out as we go. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <section class="demo" data-module-name="faq">
+                <div class="faqContainer">
+                    <div class="faq">
+                        <input id="q1" type="checkbox" class="faq--checkbox">
+                            <label for="q1" class="faq--question">
+                                What is the meaning of life?
+                                <div class="faq--plus">+</div>
+                            </label>
+                        <div class="faq--answers">
+                            Life is very complex, so just live the best life. Nothing really matters, just go go with the flow. We're all figuring it out as we go. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <input id="q2" type="checkbox" class="faq--checkbox">
+                            <label for="q2" class="faq--question">
+                                What is the meaning of life?
+                                <div class="faq--plus">+</div>
+                            </label>
+                        <div class="faq--answers">42</div>
+                    </div>
+                    <div class="faq">
+                        <input id="q3" type="checkbox" class="faq--checkbox">
+                            <label for="q3" class="faq--question">
+                                What is the meaning of life?
+                                <div class="faq--plus">+</div>
+                            </label>
+                        <div class="faq--answers">42</div>
                     </div>
                 </div>
-                <div class="faq">
-                    <input id="q2" type="checkbox" class="faq--checkbox">
-                        <label for="q2" class="faq--question">
-                            What is the meaning of life?
+            </section>
 
-                            <div class="faq--plus">+</div>
-                        </label>
-                    <div class="faq--answers">42</div>
+            <section class="demo" data-module-name="gridBox">
+                <div class="gridBox gridBox-col1">
+                    <div>
+                        <h1 class="sectionHeading">Hello</h1>
+                    </div>
                 </div>
-                <div class="faq">
-                    <input id="q3" type="checkbox" class="faq--checkbox">
-                        <label for="q3" class="faq--question">
-                            What is the meaning of life?
+                <div class="gridBox gridBox-col2">
+                    <div>
+                        <h1 class="sectionHeading">Hello</h1>
+                    </div>
+                    <div>
+                        <h1 class="sectionHeading">Hello</h1>
+                    </div>
+                    <div>
+                        <h1 class="sectionHeading">Hello</h1>
+                    </div>
+                </div>
+                <div class="gridBox gridBox-col3">
+                    <div>
+                        <h1 class="sectionHeading">Hello</h1>
+                    </div>
+                    <div>
+                        <h1 class="sectionHeading">Hello</h1>
+                    </div>
+                    <div>
+                        <h1 class="sectionHeading">Hello</h1>
+                    </div>
+                    <div>
+                        <h1 class="sectionHeading">Hello</h1>
+                    </div>
+                    <div>
+                        <h1 class="sectionHeading">Hello</h1>
+                    </div>
+                    <div>
+                        <h1 class="sectionHeading">Hello</h1>
+                    </div>
+                </div>
+            </section>
 
-                            <div class="faq--plus">+</div>
-                        </label>
-                    <div class="faq--answers">42</div>
+            <section class="demo" data-module-name="scrollCarousel">
+                <div class="scrollCarousel">
+                    <div class="scrollCarousel--contents">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="demo">
-            <div class="gridBox gridBox-col1">
-                <div>
-                    <h1 class="sectionHeading">Hello</h1>
+            <section class="demo" data-module-name="teamMember">
+                <div class="teamMember">
+                    <div class="teamMember--photo">
+                        <img src="https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2020/09/09/106695701-1599664926959-gettyimages-1228423382-AFP_8PL8JF.600x400.jpeg?v=1599664969">
+                    </div>
+                    <div class="teamMember--name">
+                        Andre Jones
+                    </div>
+                    <div class="teamMember--role">
+                        BAMP Executive Director/ <br> Lead Artist
+                    </div>
+                    <a class="teamMember--icon" href="#">
+                        <img src="../images/linkedin.svg">
+                    </a>
+                    <a class="teamMember--icon" href="#">
+                        <img src="../images/mail.svg">
+                    </a>
                 </div>
-            </div>
+            </section>
 
-            <div class="gridBox gridBox-col2">
-                <div>
-                    <h1 class="sectionHeading">Hello</h1>
+            <section class="demo" data-module-name="missionStatement">
+                <div class="missionStatement">
+                    <div class="missionStatement--logo">
+                        <img src="../images/logo-gold-border.svg">
+                    </div>
+                    <p>Our program is constantly establishing new standards of excellence in the practice of public and contemporary art creation and exhibition. Our collaborative dialogue processes empower artists and communities to address and organize issues in the community. Community art builds bridges from conceptual connection to a physical understanding. With close attention to our clients desires the results are beautiful murals that inspire and motivate viewers.</p>
                 </div>
-                <div>
-                    <h1 class="sectionHeading">Hello</h1>
-                </div>
-                <div>
-                    <h1 class="sectionHeading">Hello</h1>
-                </div>
-            </div>
-            <div class="gridBox gridBox-col3">
-                <div>
-                    <h1 class="sectionHeading">Hello</h1>
-                </div>
-                <div>
-                    <h1 class="sectionHeading">Hello</h1>
-                </div>
-                <div>
-                    <h1 class="sectionHeading">Hello</h1>
-                </div>
-                <div>
-                    <h1 class="sectionHeading">Hello</h1>
-                </div>
-                <div>
-                    <h1 class="sectionHeading">Hello</h1>
-                </div>
-                <div>
-                    <h1 class="sectionHeading">Hello</h1>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="demo">
-            <div class="scrollCarousel">
-                <div class="scrollCarousel--contents">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
-                    <img src="https://static.wixstatic.com/media/d45a2e_9d25ee533e854c1ba4b3007f1789f6b4~mv2.jpg">
+            <section class="demo" data-module-name="testimonial">
+                <div class="testimonial">
+                    <div class="testimonial--pic">
+                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg">
+                    </div>
+                    <div class="testimonial--content">
+                        <span class="testimonial--name">Community Member</span>
+                        <p class="testimonial--quote">“Whether I shall turn out to be the hero of my own life, or whether that station will be held by anybody else, these pages must show.”</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="demo">
-            <div class="teamMember">
-                <div class="teamMember--photo">
-                    <img src="https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2020/09/09/106695701-1599664926959-gettyimages-1228423382-AFP_8PL8JF.600x400.jpeg?v=1599664969">
-                </div>
-                <div class="teamMember--name">
-                    Andre Jones
-                </div>
-                <div class="teamMember--role">
-                    BAMP Executive Director/ <br> Lead Artist
-                </div>
-                <a class="teamMember--icon" href="#">
-                    <img src="../images/linkedin.svg">
-                </a>
-                <a class="teamMember--icon" href="#">
-                    <img src="../images/mail.svg">
-                </a>
-            </div>
-        </section>
-
-        <section class="demo">
-            <div class="missionStatement">
-                <div class="missionStatement--logo">
-                    <img src="../images/logo-gold-border.svg">
-                </div>
-                <p>Our program is constantly establishing new standards of excellence in the practice of public and contemporary art creation and exhibition. Our collaborative dialogue processes empower artists and communities to address and organize issues in the community. Community art builds bridges from conceptual connection to a physical understanding. With close attention to our clients desires the results are beautiful murals that inspire and motivate viewers.</p>
-            </div>
-        </section>
-
-        <section class="demo">
-            <div class="testimonial">
-                <div class="testimonial--pic">
-                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg">
-                </div>
-                <div class="testimonial--content">
-                    <span class="testimonial--name">Community Member</span>
-                    <p class="testimonial--quote">“Whether I shall turn out to be the hero of my own life, or whether that station will be held by anybody else, these pages must show.”</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="demo">
-            <p>Small</p>
-            <a class="btnLink btnLink-small" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Button</a>
-            <a class="btnLink btnLink-red btnLink-small">Button</a>
-            <p>Normal</p>
-            <a class="btnLink">Button</a>
-            <a class="btnLink btnLink-red">Button</a>
-            <p>Large</p>
-            <a class="btnLink btnLink-large">Button</a>
-            <a class="btnLink btnLink-red btnLink-large">Button</a>
-        </section>
+            <section class="demo" data-module-name="btnLink">
+                <p>Small</p>
+                <a class="btnLink btnLink-small" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Button</a>
+                <a class="btnLink btnLink-red btnLink-small">Button</a>
+                <p>Normal</p>
+                <a class="btnLink">Button</a>
+                <a class="btnLink btnLink-red">Button</a>
+                <p>Large</p>
+                <a class="btnLink btnLink-large">Button</a>
+                <a class="btnLink btnLink-red btnLink-large">Button</a>
+            </section>
+        </main>
     </body>
 </html>

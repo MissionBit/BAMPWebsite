@@ -11,17 +11,30 @@ const titlebar = () =>
 
 const page = contents => {
     const inner = $('<div>').addClass('sbPage--inner').append(contents)
-    const div = $('<div>').addClass('sbPage').append(titlebar(), inner)
-    return div
+    return $('<div>').addClass('sbPage').append(titlebar(), inner)
+}
+
+const bookmark = moduleName =>
+    $('<a>').prop('name', moduleName)
+
+const navItem = moduleName => {
+    const item = $('<li>').addClass('sbNavList--item')
+    const link = $('<a>').prop('href', '#' + moduleName).text(moduleName)
+    return item.append(link)
 }
 
 
+const nav = $('nav ul')
+
 for (const section of $('.demo')) {
     const contents = $(section).children()
-    const h1text = contents[0].classList[0]
+    const moduleName = $(section).data('module-name')
 
     $(section).empty().append([
-        heading(h1text),
+        bookmark(moduleName),
+        heading(moduleName),
         page(contents)
     ])
+
+    $(nav).append(navItem(moduleName))
 }
