@@ -11,7 +11,6 @@
     animation-duration: 60s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-
 }
 
 .scrollCarousel--contents > * {
