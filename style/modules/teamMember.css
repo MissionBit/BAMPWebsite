@@ -61,11 +61,7 @@
         border-radius: 50%;
     }
 
-    .teamMember--linkedin {
-        display: none;
-    }
-
-    .teamMember--mail {
+    .teamMember--icon {
         display: none;
     }
 }
