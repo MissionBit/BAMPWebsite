@@ -1,0 +1,42 @@
+.btnLink {
+    display: inline-block;
+    background: #3D81FF;
+    color: #FFFFFF;
+    margin: 5px;
+    border: none;
+    padding: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 100px;
+    opacity: 100%;
+    outline: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 24px;
+    transition: all 250ms;
+    user-select: none;
+    text-decoration: none;
+}
+
+.btnLink:hover{
+    cursor: pointer;
+    opacity: 85%;
+}
+
+.btnLink:active {
+    transform: scale(0.90);
+    opacity: 100%;
+}
+
+.btnLink-red {
+    background: #FF3D3D;
+}
+
+.btnLink-small {
+    font-size: 14px;
+}
+
+.btnLink-large {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
