@@ -1,6 +1,7 @@
 .box {
     background: #F5F5F5;
     box-shadow: 6px 6px 0px #303030;
+    width: max-content;
 }
 
 .box-red {
@@ -16,6 +17,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    .box {
+        box-shadow: 4px 4px 0px #303030;
+    }
+
     .box-red {
         box-shadow: 4px 4px 0px #FF6D6D;
     }
