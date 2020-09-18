@@ -7,7 +7,11 @@ body {
 }
 
 section {
-    padding: 36px 24px;
+    padding: 18px 24px;
+}
+
+section + section {
+    padding-top: 36px;
 }
 
 
@@ -23,7 +27,7 @@ section {
     height: 100vh;
     padding-left: 16px;
     position: sticky;
-    top: 0;
+    top: 18px;
 }
 
 .l-main {
@@ -35,14 +39,6 @@ section {
     .l-nav {
         display: none;
     }
-}
-
-
-/* .sbNavHeading module */
-
-.sbNavHeading {
-    font-size: 22px;
-    margin-bottom: 8px;
 }
 
 
@@ -76,8 +72,10 @@ section {
 
 .sbHeading {
     width: max-content;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
+    line-height: 200%;
+    margin: 0;
 }
 
 section .sbHeading {
