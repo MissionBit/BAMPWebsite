@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@1,700&display=swap');
+
+
 /* base rules */
 
 body {
@@ -93,8 +96,10 @@ h1, h2, h3 {
 .sbVariant {
     font-size: 12px;
     color: gray;
-    font-family: monospace;
+    font-family: 'courier prime', monospace;
     line-height: 200%;
+    font-weight: bold;
+    font-style: italic;
 }
 
 
