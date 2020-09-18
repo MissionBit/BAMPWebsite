@@ -1,4 +1,5 @@
 .missionStatement {
+    position: relative;
     max-width: 60%;
     margin: 0 auto;
     margin-top: 110px;
@@ -18,8 +19,7 @@
     width: 200px;
     background-color: white;
     left: 50%;
-    transform: translateY(-110px);
-    margin-left: -120px;
+    transform: translate(-50%, -50%);
 }
 
 .missionStatement > p {
