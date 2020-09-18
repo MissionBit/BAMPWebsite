@@ -163,6 +163,5 @@ section .sbHeading {
     box-sizing: border-box;
     padding: 8px;
     border: 2px dashed #508EFF;
-    height: 100px;
     border-radius: 8px;
 }
