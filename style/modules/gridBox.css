@@ -21,3 +21,7 @@
 .gridBox-col3 > * {
     flex-basis: 30%;
 }
+
+.gridBox-center {
+    justify-content: space-evenly;
+}
