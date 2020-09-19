@@ -13,14 +13,11 @@
     animation-iteration-count: infinite;
 
 }
-img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 150px;
-  }
 
-
+.scrollCarousel--contents > * {
+    margin: 0 10px;
+    height: 120px;
+}
 
 @keyframes moveSlideshow {
     0% {
