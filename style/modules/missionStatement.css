@@ -1,0 +1,54 @@
+.missionStatement {
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 110px;
+    background: white;
+    border: 2px solid #113255;
+    border-radius: 34px;
+    padding: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 40px;
+    text-align: justify;
+}
+
+.missionStatement--logo {
+    position: absolute;
+    padding: 20px;
+    width: 200px;
+    background-color: white;
+    left: 50%;
+    transform: translateY(-110px);
+    margin-left: -120px;
+}
+
+.missionStatement > p {
+    margin-top: 90px;
+    font-size: 30px;
+    font-style: italic;
+    color: #113255;
+    line-height: 150%;
+}
+
+@media only screen and (max-width: 600px) {
+    .missionStatement {
+        margin-top: 60px;
+        max-width: 80%;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        text-align: center;
+     }
+
+    .missionStatement > p {
+       font-size: 16px;
+       margin-top: 60px;
+    }
+
+    .missionStatement--logo {
+        width: 130px;
+        transform: translateY(-85px);
+        left: 50%;
+        margin-left: -80px;
+    }
+}
