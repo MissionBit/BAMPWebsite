@@ -1,0 +1,58 @@
+.emailForm {
+    display: inline-block;
+    width: 100%;
+    max-width: 330px;
+    text-align: center;
+}
+
+.emailForm--title {
+    font-size: 20px;
+    color: #303030;
+}
+
+.emailForm--inputBox {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #BBBBBB;
+    border-radius: 5px;
+    background: #EEEEEE;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
+    transition: 150ms;
+    box-shadow: none;
+}
+
+.emailForm--inputBox::placeholder {
+    font-style: italic;
+    color: gray;
+}
+
+.emailForm--inputBox:invalid:focus:not(:placeholder-shown) {
+    box-shadow: 0 0 5px rgba(228, 72, 72, .5);
+    border-color:rgba(228, 72, 72, .5);
+}
+
+.emailForm--inputBox:focus, textarea:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border-color:rgba(81, 203, 238, 1);
+}
+
+@media only screen and (max-width: 600px) {
+    .emailForm {
+        max-width: 100%;
+    }
+
+    .emailForm--inputBox {
+        width: 70%;
+    }
+
+    .emailForm > .btnLink {
+        width: 28%;
+        font-size: 20px;
+        padding: 12px;
+        vertical-align: top;
+    }
+}
