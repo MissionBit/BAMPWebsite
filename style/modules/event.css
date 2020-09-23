@@ -1,7 +1,7 @@
 .box .event {
     display: block;
     width: 500px;
-    height: 750px;
+    height: 720px;
 }
 
 .event--img {
@@ -54,12 +54,12 @@
     .box .event {
         display: block;
         width: 400px;
-        height: 600px;
+        height: 500px;
     }
     
     .event--img {
         width: 400px;
-        height: 300px;
+        height: 200px;
         object-fit: cover;
     }
     
