@@ -46,7 +46,7 @@ h1, h2, h3 {
     min-width: 0;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 800px) {
     .l-sidebar {
         display: none;
     }
