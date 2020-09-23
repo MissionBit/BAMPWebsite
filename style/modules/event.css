@@ -9,32 +9,32 @@
 }
 
 .event--img {
-    width: 500%;
-    height: 500%;
-    margin-left: auto;
+    width: 1000px;
+    height: 1000px;
 }
 
 .event--title {
-    padding: none;
+    padding: 0px 40px 0px;
     color: #113255;
-    text-align: center;
     font-family: "Libre Franklin";
     font-size: 25px;
 }
 
 .event--text {
     font-size: 17px;
-    padding: 40px;
+    padding: 0px 40px 0px;
 }
 
 .event--dateTitle {
+    float: left;
     padding: none;
     color: #113255;
     font-family: "Libre Franklin";
     font-size: 23px;
-    padding: 40px;
+    padding: 0px 10px 0px 40px;
 }
 
 .event--date {
-    float: right;
+    padding-top: 28px;
+    font-size: 15px;
 }
