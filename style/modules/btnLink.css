@@ -15,7 +15,7 @@
     transition: 150ms;
     user-select: none;
     text-decoration: none;
-    border: none;
+    white-space: nowrap;
 }
 
 .btnLink:hover {
