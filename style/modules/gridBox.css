@@ -5,7 +5,7 @@
 
 .gridBox > * {  /* applies to all the items in the grid */
     vertical-align: top;
-    margin: 12px; /* the space between blocks. Doesn't affect on the components inside the blocks */
+    margin: 12px;
     box-sizing: border-box;
 }
 
