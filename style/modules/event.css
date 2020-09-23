@@ -1,0 +1,40 @@
+.box .event {
+    display: block;
+    height: 775px;
+    width: 572px;
+}
+
+.event {
+    display: inline-block;
+}
+
+.event--img {
+    width: 500%;
+    height: 500%;
+    margin-left: auto;
+}
+
+.event--title {
+    padding: none;
+    color: #113255;
+    text-align: center;
+    font-family: "Libre Franklin";
+    font-size: 25px;
+}
+
+.event--text {
+    font-size: 17px;
+    padding: 40px;
+}
+
+.event--dateTitle {
+    padding: none;
+    color: #113255;
+    font-family: "Libre Franklin";
+    font-size: 23px;
+    padding: 40px;
+}
+
+.event--date {
+    float: right;
+}
