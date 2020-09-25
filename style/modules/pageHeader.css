@@ -1,21 +1,44 @@
 .pageHeader {
     display: block;
-    min-width: 800px;
+    /* min-width: 600px; */
 }
 
 .pageHeader--img {
     width: 100%;
     overflow: visible;
+    object-fit: cover;
 }
 
-.pageHeader--captionBox{
+.pageHeader > .box {
     position: relative;
     top: -200px;
     left: 40px;
-    min-width: 800px;
+    width: 95%;
+    box-sizing: border-box;
+    padding: 1px 30px;
 }
 
 .pageHeader--text {
     color: #7C7C7C;
+    position: relative;
+    top: -30px;
     font-size: 28px;
+}
+
+@media only screen and (max-width: 600px) {
+    .pageHeader > .box {
+        position: relative;
+        top: -90px;
+        left: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0px 20px;
+    }
+    
+    .pageHeader--text {
+        color: #7C7C7C;
+        position: relative;
+        top: -30px;
+        font-size: 15px;
+    }
 }
