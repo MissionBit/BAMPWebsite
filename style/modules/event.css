@@ -22,9 +22,9 @@
     color: #303030;
 }
 
-.event--container {
+.event--bottom {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 .event--dateTitle {
