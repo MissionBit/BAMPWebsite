@@ -1,12 +1,11 @@
 .event {
     display: block;
-    width: 500px;
-    height: 720px;
+    min-width: 450px;
+    padding-bottom: 10px;
 }
 
 .event--img {
-    width: 500px;
-    height: 300px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -51,15 +50,13 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .box .event {
+    .event {
         display: block;
-        width: 400px;
-        height: 500px;
+        min-width: 400px;
     }
     
     .event--img {
-        width: 400px;
-        height: 200px;
+        width: 100%;
         object-fit: cover;
     }
     
