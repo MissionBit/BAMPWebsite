@@ -1,0 +1,7 @@
+.pageHeader {
+    display: block;
+    min-width: 500px;
+}
+.pageHeader--img{
+    width: 100%;
+}
