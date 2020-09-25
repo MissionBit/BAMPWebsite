@@ -1,30 +1,21 @@
 .pageHeader {
     display: block;
-    min-width: 500px;
-    max-width: 800px;
+    min-width: 800px;
 }
 
-.pageHeader--container {
-    display: flex;
-}
-
-.pageHeader--img{
+.pageHeader--img {
     width: 100%;
+    overflow: visible;
 }
 
-.pageHeader--titleBox{
-    max-width: 1000px;
-    padding: 50px;
-    z-index: 2;
+.pageHeader--captionBox{
+    position: relative;
+    top: -200px;
+    left: 40px;
+    min-width: 800px;
 }
 
-.pageHeader--title{
-    font: "Libre Franklin";
-    font-size: 48px;
-    color: #113255;
-}
-
-.pageHeader--text{
+.pageHeader--text {
     color: #7C7C7C;
     font-size: 28px;
 }
