@@ -1,0 +1,28 @@
+.program {
+    display: block;
+    min-width: 900px;
+}
+
+.program--flex {
+    display: flex;
+    flex-direction: row; 
+    align-content: flex-start;
+}
+
+.program--img {
+    align-self: flex-start;
+    width: 100%;
+    object-fit: cover;
+}
+
+.program--title {
+    /* padding: 0px 40px 0px; */
+    align-self: flex-start;
+    color: #113255;
+    font-family: "Libre Franklin";
+    font-size: 25px;
+}
+
+.program--text {
+    align-self: flex-start;
+}
