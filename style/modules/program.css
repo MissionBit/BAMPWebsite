@@ -1,28 +1,50 @@
 .program {
     display: block;
     min-width: 900px;
-}
-
-.program--flex {
     display: flex;
     flex-direction: row; 
-    align-content: flex-start;
 }
 
 .program--img {
-    align-self: flex-start;
-    width: 100%;
+    /* align-self: flex-start; */
+    padding: 10px;
+    width: 30%;
     object-fit: cover;
+    /* float: right; */
+}
+
+.program--caption {
+    flex-grow: 5;
+    padding: 10px 40px;    
 }
 
 .program--title {
     /* padding: 0px 40px 0px; */
-    align-self: flex-start;
+    /* align-self: flex-start; */
     color: #113255;
     font-family: "Libre Franklin";
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .program--text {
+    color: #303030;
     align-self: flex-start;
+}
+
+.program--details {
+    color: #606060;
+    margin-bottom;: 0;
+}
+
+.program--bottom {
+    margin-top: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.program--price {
+    font-size: 30px;
+    font-style: italic;
+    float: right;
 }
