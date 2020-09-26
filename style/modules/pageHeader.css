@@ -34,7 +34,7 @@
     .pageHeader > .box {
         top: -90px;
         left: 10px;
-        padding: 2px 25px; 
+        padding: 18px 25px; 
     }
 
     .pageHeader .sectionHeading {
@@ -43,5 +43,6 @@
     
     .pageHeader--text {
         font-size: 15px;
+        margin-top: 10px;
     }
 }
