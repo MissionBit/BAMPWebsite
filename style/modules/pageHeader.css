@@ -16,15 +16,14 @@
     left: 40px;
     width: 98%;
     box-sizing: border-box;
-    padding: 2px 35px 0px; 
+    padding: 30px 50px; 
 }
 
 .pageHeader--text {
     color: #7C7C7C;
-    position: relative;
-    top: -30px;
     font-size: 28px;
-    padding-bottom: 22px;
+    margin-top: 30px;
+    margin-bottom: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -35,16 +34,14 @@
     .pageHeader > .box {
         top: -90px;
         left: 10px;
-        padding: 2px 25px 0px; 
+        padding: 2px 25px; 
     }
 
-    .pageHeader > .sectionHeading {
+    .pageHeader .sectionHeading {
         font-size: 20px;
     }
     
     .pageHeader--text {
         font-size: 15px;
-        top: -15px;
-        padding-bottom: 7px;
     }
 }
