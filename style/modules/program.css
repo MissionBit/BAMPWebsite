@@ -6,21 +6,17 @@
 }
 
 .program--img {
-    /* align-self: flex-start; */
-    padding: 10px;
+    padding: 20px;
     width: 30%;
     object-fit: cover;
-    /* float: right; */
 }
 
 .program--caption {
-    flex-grow: 5;
+    flex-grow: 0;
     padding: 10px 40px;    
 }
 
 .program--title {
-    /* padding: 0px 40px 0px; */
-    /* align-self: flex-start; */
     color: #113255;
     font-family: "Libre Franklin";
     font-size: 30px;
@@ -43,8 +39,52 @@
     justify-content: space-between;
 }
 
+.program--btn2 {
+    display: none;
+}
+
 .program--price {
     font-size: 30px;
     font-style: italic;
-    float: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .program {
+        min-width: 350px;
+        flex-direction: column-reverse; 
+    }
+    
+    .program--img {
+        padding: 10px 20px;
+        width: 90%;
+        object-fit: cover;
+    }
+    
+    .program--caption {
+        padding: 10px 40px;  
+    }
+    
+    .program--title {
+        font-size: 18px;
+    }
+    
+    .program--text {
+        font-size: 15px;
+    }
+    
+    .program--details {
+        font-size: 13px;
+    }
+
+    .program--btn2 {
+        display: block;
+    }
+    
+    .program--btn1 {
+        display: none;
+    }
+ 
+    .program--price {
+        font-size: 18px;
+    }
 }
