@@ -1,0 +1,48 @@
+.pageHeader {
+    display: block;
+    padding: 10px;
+}
+
+.pageHeader--img {
+    width: 100%;
+    max-height: 800px;
+    overflow: visible;
+    object-fit: cover;
+}
+
+.pageHeader > .box {
+    position: relative;
+    top: -150px;
+    left: 40px;
+    width: 98%;
+    box-sizing: border-box;
+    padding: 30px 50px; 
+}
+
+.pageHeader--text {
+    color: #7C7C7C;
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .pageHeader {
+        padding: 0px;
+    }
+
+    .pageHeader > .box {
+        top: -90px;
+        left: 10px;
+        padding: 18px 25px; 
+    }
+
+    .pageHeader .sectionHeading {
+        font-size: 20px;
+    }
+    
+    .pageHeader--text {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}

@@ -5,3 +5,7 @@ h1 {
 p {
     font-family: 'IBM Plex Sans', sans-serif;
 }
+
+button, input[type="submit"] {
+  border: none;
+}

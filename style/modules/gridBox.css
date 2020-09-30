@@ -5,7 +5,8 @@
 
 .gridBox > * {  /* applies to all the items in the grid */
     vertical-align: top;
-    margin: 5px; /* the space between blocks. Doesn't affect on the components inside the blocks */
+    margin: 12px;
+    box-sizing: border-box;
 }
 
 .gridBox-center {
@@ -19,13 +20,13 @@
 }
 
 .gridBox-col2 > * {
-    flex-basis: 48%;
+    flex-basis: 45%;
 }
 
 .gridBox-col3 > * {
-    flex-basis: 32%;
+    flex-basis: 30%;
 }
 
 .gridBox-col4 > * {
-    flex-basis: 23%;
+    flex-basis: 22%;
 }

@@ -1,7 +1,7 @@
 .box {
     background: #F5F5F5;
     box-shadow: 6px 6px 0px #303030;
-    width: max-content;
+    display: inline-block;
 }
 
 .box-red {
