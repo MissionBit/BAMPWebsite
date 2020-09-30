@@ -10,14 +10,14 @@
 }
 
 .muralThumbnail--location {
-    font-size: 10px;
+    font-size: 13px;
     color: gray;
     padding: 8px 8px 0 8px;
 }
 
 .muralThumbnail--name {
     font-size: 24px;
-    padding: 0px 8px 8px 8px ;
+    padding: 3px 8px 8px 8px ;
 }
 
 .muralThumbnail:hover {
