@@ -1,0 +1,64 @@
+.footer {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    background: #F5F5F5;
+}
+
+.footer hr {
+    border: 0.5px solid #DCDADA;
+    opacity: 75%;
+    margin: 35px 0 35px 0; 
+}
+
+.footer > div {
+    width: 33.333%;
+    margin: 50px 80px 50px 80px;
+}
+
+.footer--div-center {
+    text-align: center;
+}
+
+.footer--midSection {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.footer--midSection > div{
+    width: 50%;
+}
+
+.footer--midSection > div * {
+    display: block;
+}
+
+.footer--normalLink > a {
+    color: #303030;
+    line-height: 375%;
+    text-decoration: none;
+}
+
+.footer--normalLink {
+    margin-bottom: 80px;
+}
+
+.footer--midSection > div > .btnLink {
+    max-width: 100px;
+    text-align: center;
+}
+
+.footer--logo {
+    display: block;
+    max-width: 75%;
+    min-width: 200px;
+} 
+
+/* Sub Footer */
+
+.subFooter {
+    width: 100%;
+    height: 100px;
+    background: #303030;
+}
