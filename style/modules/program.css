@@ -1,5 +1,4 @@
 .program {
-    display: block;
     min-width: 900px;
     display: flex;
     flex-direction: row; 
@@ -25,6 +24,7 @@
 .program--text {
     color: #303030;
     align-self: flex-start;
+    line-height: 125%;
 }
 
 .program--details {
