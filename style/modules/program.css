@@ -1,0 +1,91 @@
+.program {
+    min-width: 500px;
+    display: flex;
+    flex-direction: row; 
+}
+
+.program--img {
+    padding: 20px;
+    width: 30%;
+    object-fit: cover;
+}
+
+.program--caption {
+    padding: 10px 40px;    
+}
+
+.program--title {
+    color: #113255;
+    font-family: "Libre Franklin";
+    font-size: 30px;
+}
+
+.program--text {
+    color: #303030;
+    align-self: flex-start;
+    line-height: 125%;
+}
+
+.program--details {
+    color: #606060;
+    margin-bottom: 0;
+}
+
+.program--bottom {
+    margin-top: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.program--btn2 {
+    display: none;
+}
+
+.program--price {
+    font-size: 30px;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+    .program {
+        min-width: 350px;
+        flex-direction: column-reverse; 
+    }
+    
+    .program--img {
+        box-sizing: border-box;
+        width: 100%;
+        object-fit: cover;
+        flex-grow: 1;
+    }
+    
+    .program--caption {
+        padding: 10px 40px;  
+        flex-grow: 0;
+    }
+    
+    .program--title {
+        font-size: 18px;
+    }
+    
+    .program--text {
+        font-size: 15px;
+    }
+    
+    .program--details {
+        font-size: 13px;
+    }
+
+    .program--btn2 {
+        display: block;
+    }
+    
+    .program--btn1 {
+        display: none;
+    }
+ 
+    .program--price {
+        font-size: 18px;
+    }
+}
