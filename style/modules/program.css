@@ -1,5 +1,5 @@
 .program {
-    min-width: 900px;
+    min-width: 500px;
     display: flex;
     flex-direction: row; 
 }
@@ -54,8 +54,8 @@
     }
     
     .program--img {
-        padding: 10px 20px;
-        width: 90%;
+        box-sizing: border-box;
+        width: 100%;
         object-fit: cover;
     }
     
