@@ -1,0 +1,29 @@
+.navModal {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .navModal--p {
+        display: none;
+    }
+
+    .navModal {
+        display: block;
+        padding: 30px;
+    }
+
+    .navModal--h1 {
+        font-size: 35px;
+        text-align: right;
+    }
+
+    .navModal--h2 {
+        font-size: 30px;
+        line-height: 200%;
+        margin: 0;
+    }
+
+    .navModal--btn {
+        padding-top: 30px;
+    } 
+}
