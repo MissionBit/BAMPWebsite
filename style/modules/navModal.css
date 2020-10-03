@@ -12,15 +12,23 @@
         padding: 30px;
     }
 
-    .navModal--h1 {
-        font-size: 35px;
-        text-align: right;
+    .navModal--linkList {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
     }
 
-    .navModal--h2 {
-        font-size: 30px;
+    .navModal--link {
+        text-decoration: none;
         line-height: 200%;
-        margin: 0;
+        font-size: 30px;
+        color: #303030;
+        font-weight: bold;
+    }
+
+    .navModal--h1 {
+        font-size: 40px;
+        text-align: right;
     }
 
     .navModal--btn {
