@@ -1,5 +1,5 @@
 h1 {
-  margin: 0;
+    margin: 0;
 }
 
 p {
@@ -7,5 +7,6 @@ p {
 }
 
 button, input[type="submit"] {
-  border: none;
+    border: none;
+    background: none;
 }
