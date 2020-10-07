@@ -1,0 +1,42 @@
+/* .header { */
+    /* display: table; */
+    /* margin: 0 auto; */
+    /* height: 200px;
+    width: 1000px; */
+/* } */
+
+.header--logo{
+    width: 100px;
+    float: left;
+}
+
+.header--linkList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-items: flex-start; */
+    /* max-width: 10000px; */
+}
+
+.header--link {
+    text-decoration: none;
+    padding: 10px; 
+    font-size: 16px;
+    text-align: center;
+    color: #7E7E7E;
+    max-width: 140px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.header .btnLink {
+    /* padding: 10px; */
+    margin: 10px;
+}
+/* .header li {
+    display: inline;
+    font-size: 16px; */
+    /* text-decoration: none; */
+    /* list-style-type: none; */
+/* } */
