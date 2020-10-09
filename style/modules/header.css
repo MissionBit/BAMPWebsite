@@ -5,6 +5,10 @@
     width: 1000px; */
 /* } */
 
+.header {
+    min-width: 500px;
+}
+
 .header--logo{
     width: 100px;
     float: left;
@@ -21,13 +25,13 @@
 
 .header--link {
     text-decoration: none;
-    padding: 10px; 
+    /* padding: 10px;  */
     font-size: 16px;
     text-align: center;
     color: #7E7E7E;
-    max-width: 140px;
+    /* max-width: 140px; */
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
 }
 
 .header .btnLink {
