@@ -17,8 +17,9 @@
 .header--linkList {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    
     /* align-items: flex-start; */
     /* max-width: 10000px; */
 }
@@ -30,14 +31,15 @@
     text-align: center;
     color: #7E7E7E;
     /* max-width: 140px; */
-    display: flex;
-    align-items: flex-end;
+    /* display: flex;
+    align-items: flex-end; */
+    /* flex-grow: 2; */
 }
 
-.header .btnLink {
-    /* padding: 10px; */
+/* .header .btnLink {
+    padding: 10px; 
     margin: 10px;
-}
+} */
 /* .header li {
     display: inline;
     font-size: 16px; */
