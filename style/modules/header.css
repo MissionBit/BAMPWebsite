@@ -6,6 +6,11 @@
     align-items: center;
 }
 
+.header > *:not(:first-child) {
+    flex-grow: 1;
+    text-align: center;
+}
+
 .header--logo {
     width: 100px;
 }
@@ -13,22 +18,9 @@
 .header--linkLogo {
     flex-grow: 2;
 }
-/* add hover */
 
 .header--link {
     text-decoration: none;
-    flex-grow: 1;
     font-size: 16px;
-    text-align: center;
     color: #7E7E7E;
-}
-
-.header .btnLink {
-   flex-grow: 1;
-}
-
-.header .btnLink + .btnLink {
-    margin: 0;
-    flex-grow: 1;
-    display: block;
 }
