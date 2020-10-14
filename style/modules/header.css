@@ -2,11 +2,11 @@
     min-width: 500px;
     display: block;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
 }
 
 .header > *:not(:first-child) {
+    padding: 10px;
     flex-grow: 1;
     text-align: center;
 }
@@ -17,6 +17,7 @@
 
 .header--linkLogo {
     flex-grow: 2;
+    margin-right: auto;
 }
 
 .header--link {
