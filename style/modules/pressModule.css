@@ -1,37 +1,33 @@
-.pressModule {
+.press {
     display: flex;
-    /* overflow: hidden; */
+    text-decoration: none;
     background: #f5f5f5;
-    /* width: 1080px; */
-    height: 250px;
-    width: 1200px;
+    width: 100%;
+    color:#808080
 }
 
-.pressModule--img {
+.press--img {
     width: 35%;
     object-fit: cover;
-
 }
 
-.pressModule--header {
+.press--container {
+    padding: 25px 50px 30px;
+}
+
+.press--headline {
     font-size: 20px;
-    color: gray;
-    padding: 35px 50px 30px;
 }
 
-.pressModule--text {
+.press--text {
     font-size: 20px;
-    color:black;
-    padding: 15px 0px;
+    color:#303030;
 }
 
-.pressModule--info {
-    font-size: 20px;
-    color:gray;
-    padding: 15px 0px;
-}
-
-.pressModule--date {
+.press--date {
     font-size: 15px;
-    padding: 3px;
+}
+
+.press--info {
+    font-size: 20px;
 }
