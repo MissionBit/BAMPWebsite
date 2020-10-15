@@ -14,24 +14,24 @@
 }
 
 .pressModule--header {
-    font-size: 18px;
+    font-size: 20px;
     color: gray;
-    padding: 40px 50px 30px;
+    padding: 35px 50px 30px;
 }
 
 .pressModule--text {
-    font-size: 18px;
+    font-size: 20px;
     color:black;
     padding: 15px 0px;
 }
 
 .pressModule--info {
-    font-size: 18px;
+    font-size: 20px;
     color:gray;
     padding: 15px 0px;
 }
 
 .pressModule--date {
-    font-size: 13px;
+    font-size: 15px;
     padding: 3px;
 }
