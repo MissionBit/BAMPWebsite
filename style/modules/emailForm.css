@@ -23,7 +23,7 @@
     outline: none;
     transition: 150ms;
     box-shadow: none;
-    font-family: 'IBM Plex Sans';
+    font-family: "IBM Plex Sans", sans-serif;
 }
 
 .emailForm--inputBox::placeholder {

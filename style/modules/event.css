@@ -12,7 +12,7 @@
 .event--title {
     padding: 0 40px;
     color: #113255;
-    font-family: "Libre Franklin";
+    font-family: "Libre Franklin", sans-serif;
     font-size: 25px;
 }
 
@@ -29,7 +29,7 @@
 
 .event--dateTitle {
     color: #113255;
-    font-family: "Libre Franklin";
+    font-family: "Libre Franklin", sans-serif;
     font-size: 20px;
     flex-grow: 0.5;
     padding-left: 40px;
