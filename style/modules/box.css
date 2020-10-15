@@ -13,7 +13,7 @@
 }
 
 .box-yellow {
-    box-shadow: 6px 6px 0 #f7e85d;
+    box-shadow: 6px 6px 0 var(--yellow);
 }
 
 @media screen and (max-width: 600px) {
@@ -30,6 +30,6 @@
     }
 
     .box-yellow {
-        box-shadow: 4px 4px 0 #f7e85d;
+        box-shadow: 4px 4px 0 var(--yellow);
     }
 }
