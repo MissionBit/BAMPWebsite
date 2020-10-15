@@ -33,12 +33,13 @@
 
 .emailForm--inputBox:invalid:focus:not(:placeholder-shown) {
     box-shadow: 0 0 5px rgba(228, 72, 72, .5);
-    border-color:rgba(228, 72, 72, .5);
+    border-color: rgba(228, 72, 72, .5);
 }
 
-.emailForm--inputBox:focus, textarea:focus {
+.emailForm--inputBox:focus,
+textarea:focus {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-    border-color:rgba(81, 203, 238, 1);
+    border-color: rgba(81, 203, 238, 1);
 }
 
 @media only screen and (max-width: 600px) {
