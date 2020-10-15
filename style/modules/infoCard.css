@@ -13,7 +13,7 @@
 }
 
 .infoCard--title {
-    color: #113255;
+    color: --var(dark-blue);
     font-family: "Libre Franklin", sans-serif;
     font-size: 40px;
     margin: 0;
