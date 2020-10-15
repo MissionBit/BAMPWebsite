@@ -189,6 +189,6 @@ section .sbHeading {
 .demo[data-module-name="gridBox"] .gridBox > * {
     box-sizing: border-box;
     padding: 8px;
-    border: 2px dashed #508EFF;
+    border: 2px dashed var(--light-blue);
     border-radius: 8px;
 }
