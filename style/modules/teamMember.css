@@ -1,5 +1,5 @@
 .teamMember {
-    background-color: white;
+    background-color: var(--white);
     text-align: center;
 }
 
