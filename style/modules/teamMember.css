@@ -6,7 +6,7 @@
 .teamMember--name {
     padding: 6px;
     font-size: 24px;
-    color: #303030;
+    color: var(--dark-gray);
 }
 
 .teamMember--role {
@@ -38,7 +38,7 @@
     .teamMember--name {
         padding: 4px;
         font-size: 17px;
-        color: #303030;
+        color: var(--dark-gray);
     }
 
     .teamMember--role {

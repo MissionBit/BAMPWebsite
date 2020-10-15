@@ -21,7 +21,7 @@
 }
 
 .program--text {
-    color: #303030;
+    color: var(--dark-gray);
     align-self: flex-start;
     line-height: 125%;
 }

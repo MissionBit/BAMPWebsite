@@ -19,7 +19,7 @@
 .event--text {
     font-size: 17px;
     padding: 0 40px;
-    color: #303030;
+    color: var(--dark-gray);
 }
 
 .event--bottom {
