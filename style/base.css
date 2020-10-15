@@ -1,11 +1,13 @@
 h1 {
-  margin: 0;
+    margin: 0;
 }
 
 p {
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
-button, input[type="submit"] {
-  border: none;
+button,
+input[type="submit"] {
+    border: none;
+    background: none;
 }

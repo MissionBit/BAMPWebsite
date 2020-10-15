@@ -17,9 +17,9 @@
 
 .muralThumbnail--name {
     font-size: 24px;
-    padding: 3px 8px 8px 15px ;
+    padding: 3px 8px 8px 15px;
 }
 
 .muralThumbnail:hover {
-	opacity: .5;
+    opacity: 0.5;
 }

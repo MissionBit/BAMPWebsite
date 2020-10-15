@@ -1,0 +1,52 @@
+.infoCard {
+    min-width: 500px;
+    display: flex;
+}
+
+.infoCard--img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.infoCard--caption {
+    padding: 20px;
+}
+
+.infoCard--title {
+    color: #113255;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 40px;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.infoCard--text {
+    line-height: 150%;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .infoCard {
+        min-width: 350px;
+        flex-direction: column;
+    }
+
+    .infoCard--img {
+        width: 100%;
+    }
+
+    .infoCard--title {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    .infoCard--text {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    .infoCard--btn1 {
+        text-align: center;
+    }
+}

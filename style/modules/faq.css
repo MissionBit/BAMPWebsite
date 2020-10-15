@@ -4,11 +4,11 @@
 }
 
 .faq {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border: 2px solid #113255;
     border-color: #113255;
     border-style: solid;
-    border-width: 2px 2px 0 2px; 
+    border-width: 2px 2px 0 2px;
     padding: 0.75em;
 }
 
@@ -18,17 +18,17 @@
 
 .faq--question {
     color: #113255;
-    display: block; 
+    display: block;
     width: 100%;
     cursor: pointer;
-    font-size: 20px
+    font-size: 20px;
 }
 
 .faq--answers {
     font-size: 15px;
     display: block;
     max-height: 0;
-    transition: .3s ease;
+    transition: 0.3s ease;
     visibility: hidden;
     overflow-y: hidden;
     padding: 0 14px;
@@ -39,14 +39,14 @@
     max-height: 300px;
     padding: 14px;
     opacity: 1;
-    visibility: visible; 
+    visibility: visible;
 }
 
 .faq--plus {
     float: right;
     font-size: 32px;
     line-height: 20px;
-    transition: .2s ease;
+    transition: 0.2s ease;
     user-select: none;
 }
 
