@@ -28,7 +28,7 @@
 
 .emailForm--inputBox::placeholder {
     font-style: italic;
-    color: gray;
+    color: var(--gray);
 }
 
 .emailForm--inputBox:focus,

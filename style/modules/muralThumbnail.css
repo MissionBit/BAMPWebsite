@@ -10,7 +10,7 @@
 
 .muralThumbnail--location {
     font-size: 13px;
-    color: gray;
+    color: var(--gray);
     padding: 8px 8px 0 15px;
 }
 

@@ -38,7 +38,7 @@
 .event--date {
     font-size: 15px;
     flex-grow: 2;
-    color: #606060;
+    color: var(--gray);
 }
 
 .event--btn {
@@ -78,7 +78,7 @@
 
     .event--date {
         font-size: 12px;
-        color: #606060;
+        color: var(--gray);
     }
 
     .event--btn {

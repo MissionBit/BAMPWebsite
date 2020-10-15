@@ -96,7 +96,7 @@ h1, h2, h3 {
 
 .sbVariant {
     font-size: 12px;
-    color: gray;
+    color: var(--gray);
     font-family: 'courier prime', monospace;
     line-height: 200%;
     font-weight: bold;

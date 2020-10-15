@@ -12,7 +12,7 @@
 .teamMember--role {
     padding-bottom: 6px;
     font-size: 15px;
-    color: #606060;
+    color: var(--gray);
 }
 
 .teamMember--photo {
@@ -44,7 +44,7 @@
     .teamMember--role {
         padding-bottom: 4px;
         font-size: 10px;
-        color: #606060;
+        color: var(--gray);
     }
 
     .teamMember--photo {

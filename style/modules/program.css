@@ -27,7 +27,7 @@
 }
 
 .program--details {
-    color: #606060;
+    color: var(--gray);
     margin-bottom: 0;
 }
 
