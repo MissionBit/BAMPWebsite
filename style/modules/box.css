@@ -1,35 +1,35 @@
 .box {
     background: #F5F5F5;
-    box-shadow: 6px 6px 0px #303030;
+    box-shadow: 6px 6px 0 #303030;
     display: inline-block;
 }
 
 .box-red {
-    box-shadow: 6px 6px 0px #FF6D6D;
+    box-shadow: 6px 6px 0 #FF6D6D;
 }
 
 .box-blue {
-    box-shadow: 6px 6px 0px #6DA0FF;
+    box-shadow: 6px 6px 0 #6DA0FF;
 }
 
 .box-yellow {
-    box-shadow: 6px 6px 0px #F7E85D;
+    box-shadow: 6px 6px 0 #F7E85D;
 }
 
 @media screen and (max-width: 600px) {
     .box {
-        box-shadow: 4px 4px 0px #303030;
+        box-shadow: 4px 4px 0 #303030;
     }
 
     .box-red {
-        box-shadow: 4px 4px 0px #FF6D6D;
+        box-shadow: 4px 4px 0 #FF6D6D;
     }
 
     .box-blue {
-        box-shadow: 4px 4px 0px #6DA0FF;
+        box-shadow: 4px 4px 0 #6DA0FF;
     }
 
     .box-yellow {
-        box-shadow: 4px 4px 0px #F7E85D;
+        box-shadow: 4px 4px 0 #F7E85D;
     }
 }

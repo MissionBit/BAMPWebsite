@@ -32,8 +32,8 @@
 }
 
 .emailForm--inputBox:invalid:focus:not(:placeholder-shown) {
-    box-shadow: 0 0 5px rgba(228, 72, 72, .5);
-    border-color: rgba(228, 72, 72, .5);
+    box-shadow: 0 0 5px rgba(228, 72, 72, 0.5);
+    border-color: rgba(228, 72, 72, 0.5);
 }
 
 .emailForm--inputBox:focus,
