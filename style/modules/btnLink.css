@@ -1,11 +1,7 @@
-.btnLink + .btnLink {
-    margin-left: 8px;
-}
-
 .btnLink {
     display: inline-block;
-    background: #3D81FF;
-    color: #FFFFFF;
+    background: #3d81ff;
+    color: #ffffff;
     padding: 5px 15px;
     border-radius: 100px;
     opacity: 100%;
@@ -18,6 +14,10 @@
     white-space: nowrap;
 }
 
+.btnLink + .btnLink {
+    margin-left: 8px;
+}
+
 .btnLink:hover {
     cursor: pointer;
     opacity: 85%;
@@ -28,7 +28,7 @@
 }
 
 .btnLink-red {
-    background: #FF3D3D;
+    background: #ff3d3d;
 }
 
 .btnLink-small {
