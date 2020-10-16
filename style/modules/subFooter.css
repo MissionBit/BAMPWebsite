@@ -1,0 +1,32 @@
+.subFooter {
+    display: block;
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+    padding: 10px;
+    background-color: #303030;
+}
+
+.subFooter > *:not(:last-child) {
+    flex-grow: 1;
+}
+
+.subFooter--svg {
+    width: 30px;
+}
+
+.subFooter--text {
+    text-align: right;
+    flex-grow: 2;
+    color: #DDDDDD;
+}
+
+@media only screen and (max-width: 600px) {
+    .subFooter--svg {
+        width: 25px;
+    }
+
+    .subFooter--text {
+        font-size: 15px;
+    }
+}
