@@ -2,7 +2,6 @@
     display: block;
     display: flex;
     align-items: center;
-    border: 1px solid red;
     padding: 10px;
     background-color: #303030;
 }
@@ -15,18 +14,31 @@
     width: 30px;
 }
 
+.subFooter--socials {
+    padding: 5px;
+}
+
 .subFooter--text {
     text-align: right;
     flex-grow: 2;
     color: #DDDDDD;
+    white-space: nowrap;
 }
 
 @media only screen and (max-width: 600px) {
+    .subFooter {
+        flex-wrap: wrap;
+    }
+
     .subFooter--svg {
         width: 25px;
     }
 
     .subFooter--text {
-        font-size: 15px;
+        font-size: 8px;
+    }
+
+    .subFooter--copyright {
+        margin: 0;
     }
 }
