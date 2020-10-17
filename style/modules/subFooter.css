@@ -17,11 +17,12 @@
     padding: 5px;
 }
 
-.subFooter--text {
+.subFooter--copyright {
     text-align: right;
     flex-grow: 2;
     color: #DDDDDD;
     white-space: nowrap;
+    margin: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -33,11 +34,7 @@
         width: 25px;
     }
 
-    .subFooter--text {
-        font-size: 9px;
-    }
-
     .subFooter--copyright {
-        margin: 0;
+        font-size: 9px;
     }
 }
