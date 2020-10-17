@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-.header > *:not(:first-child) {
+.header > *:not(.header--linkLogo) {
     padding: 10px;
     flex-grow: 1;
     text-align: center;
@@ -28,4 +28,20 @@
 
 .header--link:hover {
     color: #113255;
+}
+
+.header--hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .header--link,
+    .header .btnLink {
+        display: none;
+    }
+
+    .header--hamburger {
+        display: block;
+        font-size: 40px;
+    }
 }
