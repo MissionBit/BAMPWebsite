@@ -7,6 +7,7 @@
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
             crossorigin="anonymous"></script>
+        <script src="../script.js" defer></script>
         <script src="script.js" defer></script>
     </head>
 
@@ -23,6 +24,43 @@
                 <ul class="sbNavList"><!-- list items will be added dynamically --></ul>
             </nav>
             <main class="l-main">
+
+                <section class="demo" data-module-name="header">
+                    <div class="header">
+                        <a class="header--linkLogo" href="#"> 
+                            <img class="header--logo" src="../images/logo-mini-color.svg">
+                        </a>
+                        <a class="header--link" href="#">Artwork</a>
+                        <a class="header--link" href="#">About Us</a>
+                        <a class="header--link" href="#">Programs</a>
+                        <a class="header--link" href="#">Events</a>
+                        <a class="header--link" href="#">Services</a>
+                        <a class="header--link" href="#">Shop</a>
+                        <a class="header--link" href="#">Get Involved</a>
+                        <a href="#"><span class="btnLink btnLink-small">Get Updates</span></a>
+                        <a href="#"><span class="btnLink btnLink-red btnLink-small">Donate</span></a>
+                        <button id="hamburger" class="header--hamburger">☰</button>
+                    </div>
+                </section>
+
+                <section class="demo" data-module-name="navModal">
+                    <div id="navModal" class="navModal">
+                        <button id="close" class="navModal--close">×</button>
+                        <ul class="navModal--linkList">
+                            <li><a class="navModal--link" href="#">Home</a></li>
+                            <li><a class="navModal--link" href="#">Artwork</a></li>
+                            <li><a class="navModal--link" href="#">About Us</a></li>
+                            <li><a class="navModal--link" href="#">Programs</a></li>
+                            <li><a class="navModal--link" href="#">Events</a></li>
+                            <li><a class="navModal--link" href="#">Services</a></li>
+                            <li><a class="navModal--link" href="#">Shop</a></li>
+                            <li><a class="navModal--link" href="#">Get Involved</a></li>
+                            <li><a class="btnLink btnLink-large">Get Updates</a></li>
+                            <li><a class="btnLink btnLink-red btnLink-large">Donate</a></li>
+                        </ul>
+                    </div>
+                </section>
+
                 <section class="demo" data-module-name="box">
                     <p class="sbVariant">.box</p>
                     <div class="box">
@@ -39,6 +77,25 @@
                     <p class="sbVariant">.box.box-yellow</p>
                     <div class="box box-yellow">
                         Hello
+                    </div>
+                </section>
+
+                <section class="demo" data-module-name="navModal">
+                    <p class="navModal--p">Only available in Mobile</p>
+                    <div id="navModal" class="navModal">
+                        <button class="navModal--close">×</button>
+                        <ul class="navModal--linkList">
+                            <li><a class="navModal--link" href="#">Home</a></li>
+                            <li><a class="navModal--link" href="#">Artwork</a></li>
+                            <li><a class="navModal--link" href="#">About Us</a></li>
+                            <li><a class="navModal--link" href="#">Programs</a></li>
+                            <li><a class="navModal--link" href="#">Events</a></li>
+                            <li><a class="navModal--link" href="#">Services</a></li>
+                            <li><a class="navModal--link" href="#">Shop</a></li>
+                            <li><a class="navModal--link" href="#">Get Involved</a></li>
+                            <li><a class="btnLink btnLink-large">Get Updates</a></li>
+                            <li><a class="btnLink btnLink-red btnLink-large">Donate</a></li>
+                        </ul>
                     </div>
                 </section>
 
@@ -206,24 +263,6 @@
                         <h1 class="sectionHeading">Hello</h1>
                     </div>
                 </section>
-
-                <section class="demo" data-module-name="header">
-                    <div class="header">
-                            <a class="header--linkLogo" href="#"> 
-                                <img class="header--logo" src="../images/logo-mini-color.svg">
-                            </a>
-                            <a class="header--link" href="#">Artwork</a>
-                            <a class="header--link" href="#">About Us</a>
-                            <a class="header--link" href="#">Programs</a>
-                            <a class="header--link" href="#">Events</a>
-                            <a class="header--link" href="#">Services</a>
-                            <a class="header--link" href="#">Shop</a>
-                            <a class="header--link" href="#">Get Involved</a>
-                            <a href="#"><span class="btnLink btnLink-small">Get Updates</span></a>
-                            <a href="#"><span class="btnLink btnLink-red btnLink-small">Donate</span></a>
-                            <button class="header--hamburger">☰</button>
-                    </div>
-                </section>
  
                 <section class="demo" data-module-name="infoCard">
                     <div class="box box-yellow">
@@ -356,25 +395,6 @@
                       <div class="muralThumbnail--img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS73Kk1K63Laa0bWG-7nwb7gCl4hKxoxeqfRw&usqp=CAU"></div>
                       <div class="muralThumbnail--location">Oakland Ca</div>
                       <div class="muralThumbnail--name">I dont Know</div>
-                    </div>
-                </section>
-
-                <section class="demo" data-module-name="navModal">
-                    <p class="navModal--p">Only available in Mobile</p>
-                    <div class="navModal">
-                        <button class="navModal--close">×</button>
-                        <ul class="navModal--linkList">
-                            <li><a class="navModal--link" href="#">Home</a></li>
-                            <li><a class="navModal--link" href="#">Artwork</a></li>
-                            <li><a class="navModal--link" href="#">About Us</a></li>
-                            <li><a class="navModal--link" href="#">Programs</a></li>
-                            <li><a class="navModal--link" href="#">Events</a></li>
-                            <li><a class="navModal--link" href="#">Services</a></li>
-                            <li><a class="navModal--link" href="#">Shop</a></li>
-                            <li><a class="navModal--link" href="#">Get Involved</a></li>
-                            <li><a class="btnLink btnLink-large">Get Updates</a></li>
-                            <li><a class="btnLink btnLink-red btnLink-large">Donate</a></li>
-                        </ul>
                     </div>
                 </section>
 
