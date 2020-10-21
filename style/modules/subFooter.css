@@ -20,7 +20,7 @@
 .subFooter--copyright {
     text-align: right;
     flex-grow: 2;
-    color: #DDDDDD;
+    color: var(--silver);
     white-space: nowrap;
     margin: 0;
 }
