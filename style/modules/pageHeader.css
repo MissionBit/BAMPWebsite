@@ -20,7 +20,7 @@
 }
 
 .pageHeader--text {
-    color: #7c7c7c;
+    color: var(--gray);
     font-size: 28px;
     margin-top: 30px;
     margin-bottom: 0;

@@ -17,7 +17,7 @@
     position: absolute;
     padding: 20px;
     width: 200px;
-    background-color: white;
+    background-color: var(--white);
     left: 50%;
     transform: translate(-50%, -50%);
 }
