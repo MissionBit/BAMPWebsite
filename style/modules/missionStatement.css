@@ -3,8 +3,8 @@
     max-width: 60%;
     margin: 0 auto;
     margin-top: 110px;
-    background: white;
-    border: 2px solid #113255;
+    background: var(--white);
+    border: 2px solid var(--dark-blue);
     border-radius: 34px;
     padding: 10px;
     padding-left: 80px;
@@ -17,7 +17,7 @@
     position: absolute;
     padding: 20px;
     width: 200px;
-    background-color: white;
+    background-color: var(--white);
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -26,7 +26,7 @@
     margin-top: 90px;
     font-size: 30px;
     font-style: italic;
-    color: #113255;
+    color: var(--dark-blue);
     line-height: 150%;
 }
 
@@ -38,11 +38,11 @@
         padding-right: 30px;
         padding-bottom: 20px;
         text-align: center;
-     }
+    }
 
     .missionStatement > p {
-       font-size: 16px;
-       margin-top: 60px;
+        font-size: 16px;
+        margin-top: 60px;
     }
 
     .missionStatement--logo {

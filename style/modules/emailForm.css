@@ -7,38 +7,39 @@
 
 .emailForm--title {
     font-size: 20px;
-    color: #303030;
+    color: var(--dark-gray);
 }
 
 .emailForm--inputBox {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
-    border: 2px solid #BBBBBB;
+    border: 2px solid #bbbbbb;
     border-radius: 5px;
-    background: #EEEEEE;
+    background: #eeeeee;
     box-sizing: border-box;
     text-align: center;
     font-size: 20px;
     outline: none;
     transition: 150ms;
     box-shadow: none;
-    font-family: 'IBM Plex Sans'
+    font-family: "IBM Plex Sans", sans-serif;
 }
 
 .emailForm--inputBox::placeholder {
     font-style: italic;
-    color: gray;
+    color: var(--gray);
+}
+
+.emailForm--inputBox:focus,
+textarea:focus {
+    box-shadow: 0 0 5px var(--focus-ring-good);
+    border-color: var(--focus-ring-good);
 }
 
 .emailForm--inputBox:invalid:focus:not(:placeholder-shown) {
-    box-shadow: 0 0 5px rgba(228, 72, 72, .5);
-    border-color:rgba(228, 72, 72, .5);
-}
-
-.emailForm--inputBox:focus, textarea:focus {
-    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-    border-color:rgba(81, 203, 238, 1);
+    box-shadow: 0 0 5px var(--focus-ring-bad);
+    border-color: var(--focus-ring-bad);
 }
 
 @media only screen and (max-width: 600px) {

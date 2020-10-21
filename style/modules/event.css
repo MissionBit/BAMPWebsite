@@ -10,16 +10,16 @@
 }
 
 .event--title {
-    padding: 0px 40px 0px;
-    color: #113255;
-    font-family: "Libre Franklin";
+    padding: 0 40px;
+    color: var(--dark-blue);
+    font-family: "Libre Franklin", sans-serif;
     font-size: 25px;
 }
 
 .event--text {
     font-size: 17px;
-    padding: 0px 40px 0px;
-    color: #303030;
+    padding: 0 40px;
+    color: var(--dark-gray);
 }
 
 .event--bottom {
@@ -28,20 +28,21 @@
 }
 
 .event--dateTitle {
-    color: #113255;
-    font-family: "Libre Franklin";
+    color: var(--dark-blue);
+    font-family: "Libre Franklin", sans-serif;
     font-size: 20px;
-    flex-grow: .5;
+    flex-grow: 0.5;
     padding-left: 40px;
 }
 
 .event--date {
     font-size: 15px;
     flex-grow: 2;
-    color: #606060;
+    color: var(--gray);
 }
+
 .event--btn {
-    flex-grow: .5;
+    flex-grow: 0.5;
     padding-right: 20px;
 }
 
@@ -54,33 +55,34 @@
         display: block;
         min-width: 400px;
     }
-    
+
     .event--img {
         width: 100%;
         object-fit: cover;
     }
-    
+
     .event--title {
-        padding: 0px 30px 0px;
+        padding: 0 30px;
         font-size: 16px;
     }
-    
+
     .event--text {
         font-size: 13px;
-        padding: 0px 30px 0px;
+        padding: 0 30px;
     }
-    
+
     .event--dateTitle {
         font-size: 14px;
         padding-left: 30px;
     }
-    
+
     .event--date {
         font-size: 12px;
-        color: #606060;
+        color: var(--gray);
     }
+
     .event--btn {
-       display: none;
+        display: none;
     }
 
     .event--btn2 {

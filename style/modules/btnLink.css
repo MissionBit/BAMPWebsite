@@ -1,7 +1,7 @@
 .btnLink {
     display: inline-block;
-    background: #3d81ff;
-    color: #ffffff;
+    background: #3d81ff !important;
+    color: var(--white);
     padding: 5px 15px;
     border-radius: 100px;
     opacity: 100%;

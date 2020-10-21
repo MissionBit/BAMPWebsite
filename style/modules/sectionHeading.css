@@ -1,6 +1,6 @@
 .sectionHeading {
-    font-family: "libre franklin";
+    font-family: "Libre Franklin", sans-serif;
     font-weight: 700;
-    color: #113255;
+    color: var(--dark-blue);
     font-size: 48px;
 }
