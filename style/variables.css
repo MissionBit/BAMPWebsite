@@ -7,4 +7,6 @@
     --dark-blue: #113255;
     --yellow: #f7e85d;
     --red: #ff3d3d;
+    --focus-ring-good: rgba(81, 203, 238, 1);
+    --focus-ring-bad: rgba(228, 72, 72, 0.5);
 }
