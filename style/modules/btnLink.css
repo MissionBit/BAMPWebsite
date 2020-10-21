@@ -28,7 +28,7 @@
 }
 
 .btnLink-red {
-    background: #ff3d3d;
+    background: var(--red) !important; 
 }
 
 .btnLink-small {
