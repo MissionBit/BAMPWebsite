@@ -1,14 +1,14 @@
 .footer {
     display: flex;
     flex-wrap: nowrap;
-    width: 100%;
+    min-width: 1290px;
     background: #F5F5F5;
 }
 
 .footer hr {
     border: 0.5px solid #DCDADA;
     opacity: 75%;
-    margin: 35px 0 35px 0; 
+    margin: 40px 0; 
 }
 
 .footer > div {
@@ -16,36 +16,46 @@
     margin: 50px 80px 50px 80px;
 }
 
-.footer--div-center {
+.footer--rightSection {
     text-align: center;
 }
 
 .footer--midSection {
     width: 100%;
+    padding-top: 10px;
+}
+
+.footer--midSection > div {
     display: flex;
     flex-wrap: nowrap;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
 }
 
-.footer--midSection > div{
-    width: 50%;
-}
-
-.footer--midSection > div * {
+.footer--navLink-section > a {
     display: block;
-}
-
-.footer--normalLink > a {
     color: #303030;
-    line-height: 375%;
+    line-height: 60px;
     text-decoration: none;
+    text-align: left;
+    padding-left: 20%;
 }
 
-.footer--normalLink {
-    margin-bottom: 80px;
+.footer--navLink-section {
+    width: 50%;
+ }
+ 
+ .footer--navLink-section > a:hover {
+     opacity: 75%;
+ }
+ 
+.footer--navLink-section > div {
+    padding-top: 80px;
+    padding-left: 20%;
 }
 
-.footer--midSection > div > .btnLink {
-    max-width: 100px;
+.footer--midSection .btnLink {
     text-align: center;
 }
 
@@ -54,11 +64,3 @@
     max-width: 75%;
     min-width: 200px;
 } 
-
-/* Sub Footer */
-
-.subFooter {
-    width: 100%;
-    height: 100px;
-    background: #303030;
-}
