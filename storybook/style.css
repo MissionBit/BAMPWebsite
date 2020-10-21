@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@1,700&display=swap');
 
-
 /* base rules */
 
 body {
-    font-family: 'ibm plex sans';
+    font-family: 'ibm plex sans', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -17,10 +16,11 @@ section + section {
     padding-top: 36px;
 }
 
-h1, h2, h3 {
-    font-family: "Libre Franklin";
+h1,
+h2,
+h3 {
+    font-family: "Libre Franklin", sans-serif;
 }
-
 
 /* layout rules */
 
@@ -52,7 +52,6 @@ h1, h2, h3 {
     }
 }
 
-
 /* .sbTopbar module */
 
 .sbTopbar {
@@ -64,7 +63,6 @@ h1, h2, h3 {
     width: 50px;
     margin-right: 12px;
 }
-
 
 /* .sbNavList module */
 
@@ -91,7 +89,6 @@ h1, h2, h3 {
     background-color: #f9f9f9;
 }
 
-
 /* .sbVariant module */
 
 .sbVariant {
@@ -102,7 +99,6 @@ h1, h2, h3 {
     font-weight: bold;
     font-style: italic;
 }
-
 
 /* .sbHeading module */
 
@@ -117,7 +113,6 @@ h1, h2, h3 {
 section .sbHeading {
     margin-bottom: 8px;
 }
-
 
 /* .sbPage module */
 
@@ -137,6 +132,7 @@ section .sbHeading {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
+
 .sbPage--yellowBtn,
 .sbPage--greenBtn,
 .sbPage--redBtn {
@@ -171,7 +167,6 @@ section .sbHeading {
         display: none;
     }
 }
-
 
 /* ---- extra styles for module demos ---- */
 
