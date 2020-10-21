@@ -15,19 +15,19 @@
 }
 
 .program--title {
-    color: #113255;
+    color: var(--dark-blue);
     font-family: "Libre Franklin", sans-serif;
     font-size: 30px;
 }
 
 .program--text {
-    color: #303030;
+    color: var(--dark-gray);
     align-self: flex-start;
     line-height: 125%;
 }
 
 .program--details {
-    color: #606060;
+    color: var(--gray);
     margin-bottom: 0;
 }
 

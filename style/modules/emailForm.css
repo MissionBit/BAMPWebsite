@@ -7,7 +7,7 @@
 
 .emailForm--title {
     font-size: 20px;
-    color: #303030;
+    color: var(--dark-gray);
 }
 
 .emailForm--inputBox {
@@ -28,18 +28,18 @@
 
 .emailForm--inputBox::placeholder {
     font-style: italic;
-    color: gray;
+    color: var(--gray);
 }
 
 .emailForm--inputBox:focus,
 textarea:focus {
-    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-    border-color: rgba(81, 203, 238, 1);
+    box-shadow: 0 0 5px var(--focus-ring-good);
+    border-color: var(--focus-ring-good);
 }
 
 .emailForm--inputBox:invalid:focus:not(:placeholder-shown) {
-    box-shadow: 0 0 5px rgba(228, 72, 72, 0.5);
-    border-color: rgba(228, 72, 72, 0.5);
+    box-shadow: 0 0 5px var(--focus-ring-bad);
+    border-color: var(--focus-ring-bad);
 }
 
 @media only screen and (max-width: 600px) {

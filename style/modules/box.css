@@ -1,6 +1,6 @@
 .box {
     background: #f5f5f5;
-    box-shadow: 6px 6px 0 #303030;
+    box-shadow: 6px 6px 0 var(--dark-gray);
     display: inline-block;
 }
 
@@ -13,12 +13,12 @@
 }
 
 .box-yellow {
-    box-shadow: 6px 6px 0 #f7e85d;
+    box-shadow: 6px 6px 0 var(--yellow);
 }
 
 @media screen and (max-width: 600px) {
     .box {
-        box-shadow: 4px 4px 0 #303030;
+        box-shadow: 4px 4px 0 var(--dark-gray);
     }
 
     .box-red {
@@ -30,6 +30,6 @@
     }
 
     .box-yellow {
-        box-shadow: 4px 4px 0 #f7e85d;
+        box-shadow: 4px 4px 0 var(--yellow);
     }
 }
