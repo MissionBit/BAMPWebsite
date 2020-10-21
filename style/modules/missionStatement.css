@@ -26,7 +26,7 @@
     margin-top: 90px;
     font-size: 30px;
     font-style: italic;
-    color: --var(dark-blue);
+    color: var(--dark-blue);
     line-height: 150%;
 }
 

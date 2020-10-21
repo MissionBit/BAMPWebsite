@@ -83,7 +83,7 @@ h1, h2, h3 {
     width: 100%;
     text-decoration: none;
     line-height: 200%;
-    color: --var(dark-blue);
+    color: var(--dark-blue);
 }
 
 .sbNavList--item > a:hover {

@@ -15,7 +15,7 @@
 }
 
 .program--title {
-    color: --var(dark-blue);
+    color: var(--dark-blue);
     font-family: "Libre Franklin", sans-serif;
     font-size: 30px;
 }
