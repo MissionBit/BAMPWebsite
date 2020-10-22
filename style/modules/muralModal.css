@@ -1,0 +1,35 @@
+.muralModal {
+    display: flex;
+    background: #f5f5f5;
+    max-width: 1250px;
+    max-height: 1000px;
+    color: #606060;
+}
+
+.muralModal--name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #113255;
+}
+
+.muralModal--container {
+    padding: 35px 35px;
+}
+
+.muralModal--end {
+    padding-top: 105px;
+}
+
+.muralModal--bold {
+    font-weight: bold;
+    font-size: 20px;
+    color: #303030;
+}
+
+.muralModal--text {
+    font-size: 20px;
+}
+
+.muralModal--img {
+    width: 70%;
+}
