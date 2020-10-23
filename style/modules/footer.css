@@ -47,20 +47,19 @@
     white-space: nowrap;
 }
 
-.footer--navColumn > a {
+.footer--navLink {
     display: block;
     color: var(--dark-gray);
     line-height: 60px;
     text-decoration: none;
-    text-align: left;
     padding-left: 20%;
 }
 
-.footer--navColumn > a:hover {
+.footer--navLink:hover {
     opacity: 75%;
 }
 
-.footer--navColumn > div {
-    padding-top: 80px;
-    padding-left: 20%;
+.footer--navColumn .btnLink {
+    margin-top: 60px;
+    margin-left: 20%;
 }
