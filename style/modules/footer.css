@@ -22,10 +22,6 @@
 }
 
 .footer--panel-middle {
-    padding-top: 10px;
-}
-
-.footer--panel-middle > div {
     display: flex;
     padding: 10px;
     font-size: 18px;
