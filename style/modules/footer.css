@@ -5,7 +5,8 @@
 }
 
 .footer hr {
-    border: 0.5px solid var(--silver);
+    border-width: 0;
+    border-right: 1px solid var(--silver);
     margin: 40px 0;
 }
 
