@@ -9,7 +9,7 @@
     margin: 40px 0;
 }
 
-.footer > div {
+.footer--panel {
     width: 33.33%;
     margin: 50px 80px;
 }
@@ -21,11 +21,11 @@
     margin-bottom: 24px;
 }
 
-.footer--midSection {
+.footer--panel-middle {
     padding-top: 10px;
 }
 
-.footer--midSection > div {
+.footer--panel-middle > div {
     display: flex;
     padding: 10px;
     font-size: 18px;
