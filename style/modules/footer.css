@@ -49,7 +49,7 @@
 
 .footer--navColumn > a {
     display: block;
-    color: #303030;
+    color: var(--dark-gray);
     line-height: 60px;
     text-decoration: none;
     text-align: left;
