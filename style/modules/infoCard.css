@@ -13,8 +13,8 @@
 }
 
 .infoCard--title {
-    color: #113255;
-    font-family: "Libre Franklin";
+    color: var(--dark-blue);
+    font-family: "Libre Franklin", sans-serif;
     font-size: 40px;
     margin: 0;
     padding-bottom: 15px;
@@ -29,18 +29,18 @@
 @media only screen and (max-width: 600px) {
     .infoCard {
         min-width: 350px;
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .infoCard--img {
         width: 100%;
     }
-    
+
     .infoCard--title {
         font-size: 25px;
         padding-bottom: 10px;
     }
-    
+
     .infoCard--text {
         font-size: 15px;
         padding-bottom: 10px;

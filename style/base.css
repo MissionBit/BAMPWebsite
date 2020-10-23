@@ -6,7 +6,8 @@ p {
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
-button, input[type="submit"] {
+button,
+input[type="submit"] {
     border: none;
     background: none;
 }
