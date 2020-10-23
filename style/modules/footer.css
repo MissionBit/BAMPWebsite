@@ -15,8 +15,10 @@
     margin: 50px 80px;
 }
 
-.footer--rightSection {
-    text-align: center;
+.footer--logo {
+    display: block;
+    max-width: 75%;
+    min-width: 200px;
 }
 
 .footer--midSection {
@@ -57,8 +59,6 @@
     text-align: center;
 }
 
-.footer--logo {
-    display: block;
-    max-width: 75%;
-    min-width: 200px;
+.footer--rightSection {
+    text-align: center;
 }
