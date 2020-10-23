@@ -1,6 +1,6 @@
 .btnLink {
     display: inline-block;
-    background: #3d81ff !important;
+    background: var(--light-blue) !important;
     color: var(--white);
     padding: 5px 15px;
     border-radius: 100px;
@@ -28,7 +28,7 @@
 }
 
 .btnLink-red {
-    background: var(--red) !important; 
+    background: var(--red) !important;
 }
 
 .btnLink-small {
