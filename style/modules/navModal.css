@@ -7,21 +7,11 @@
     display: block;
 }
 
-<<<<<<< HEAD
 .navModal--linkList {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-=======
-    .navModal--link {
-        text-decoration: none;
-        line-height: 200%;
-        font-size: 30px;
-        color: var(--dark-gray);
-        font-weight: bold;
-    }
->>>>>>> master
 
 .navModal--link {
     text-decoration: none;
@@ -31,18 +21,12 @@
     font-weight: bold;
 }
 
-<<<<<<< HEAD
 .navModal--close {
     font-size: 40px;
     float: right;
     position: relative;
     right: -20px;
     top: -20px;
-=======
-    .navModal .btnLink {
-        margin-top: 30px;
-    }
->>>>>>> master
 }
 
 .navModal .btnLink {
