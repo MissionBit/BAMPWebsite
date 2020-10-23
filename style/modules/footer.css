@@ -65,3 +65,19 @@
 .footer--panel-right {
     margin: auto;
 }
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer hr {
+        width: 90%;
+        border-bottom: 1px solid var(--silver);
+        margin: 0 auto;
+    }
+
+    .footer .emailForm {
+        margin-top: 50px;
+    }
+}
