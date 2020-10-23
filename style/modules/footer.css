@@ -1,6 +1,5 @@
 .footer {
     display: flex;
-    flex-wrap: nowrap;
     min-width: 1290px;
     background: #f5f5f5;
 }
@@ -12,8 +11,8 @@
 }
 
 .footer > div {
-    width: 33.333%;
-    margin: 50px 80px 50px 80px;
+    width: 33.33%;
+    margin: 50px 80px;
 }
 
 .footer--rightSection {
@@ -27,7 +26,6 @@
 
 .footer--midSection > div {
     display: flex;
-    flex-wrap: nowrap;
     width: 100%;
     padding: 10px;
     font-size: 18px;
