@@ -28,7 +28,6 @@
 
 .footer--midSection > div {
     display: flex;
-    width: 100%;
     padding: 10px;
     font-size: 18px;
 }
@@ -53,12 +52,4 @@
 .footer--navLink-section > div {
     padding-top: 80px;
     padding-left: 20%;
-}
-
-.footer--midSection .btnLink {
-    text-align: center;
-}
-
-.footer--rightSection {
-    text-align: center;
 }
