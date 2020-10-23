@@ -27,11 +27,11 @@
     font-size: 18px;
 }
 
-.footer--navLink-section {
+.footer--navColumn {
     width: 50%;
 }
 
-.footer--navLink-section > a {
+.footer--navColumn > a {
     display: block;
     color: #303030;
     line-height: 60px;
@@ -40,11 +40,11 @@
     padding-left: 20%;
 }
 
-.footer--navLink-section > a:hover {
+.footer--navColumn > a:hover {
     opacity: 75%;
 }
 
-.footer--navLink-section > div {
+.footer--navColumn > div {
     padding-top: 80px;
     padding-left: 20%;
 }
