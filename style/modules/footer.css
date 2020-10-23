@@ -16,6 +16,8 @@
     flex-grow: 1;
 }
 
+/* -- left: business card -- */
+
 .footer--bizCard {
     width: 240px;
     text-align: left;
@@ -30,6 +32,8 @@
 .footer--bizCard p {
     white-space: nowrap;
 }
+
+/* -- middle: nav links -- */
 
 .footer--panel-middle {
     display: flex;
