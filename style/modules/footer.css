@@ -1,7 +1,7 @@
 .footer {
     display: flex;
-    min-width: 1290px;
     background: var(--light-gray);
+    flex-wrap: wrap;
 }
 
 .footer hr {
@@ -11,8 +11,9 @@
 }
 
 .footer--panel {
-    width: 33.33%;
-    margin: 50px 80px;
+    text-align: center;
+    margin: 50px 20px;
+    flex-grow: 1;
 }
 
 .footer--bizCard {
@@ -38,6 +39,8 @@
 
 .footer--navColumn {
     width: 50%;
+    text-align: left;
+    white-space: nowrap;
 }
 
 .footer--navColumn > a {
@@ -56,8 +59,4 @@
 .footer--navColumn > div {
     padding-top: 80px;
     padding-left: 20%;
-}
-
-.footer--panel-right {
-    text-align: center;
 }
