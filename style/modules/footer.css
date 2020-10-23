@@ -27,6 +27,10 @@
     font-size: 18px;
 }
 
+.footer--navLink-section {
+    width: 50%;
+}
+
 .footer--navLink-section > a {
     display: block;
     color: #303030;
@@ -34,10 +38,6 @@
     text-decoration: none;
     text-align: left;
     padding-left: 20%;
-}
-
-.footer--navLink-section {
-    width: 50%;
 }
 
 .footer--navLink-section > a:hover {
