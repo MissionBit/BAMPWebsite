@@ -32,7 +32,7 @@
     flex-grow: 1;
 }
 .header--link:hover {
-    color: #113255;
+    color: var(--darkblue);
 }
 
 .header--hamburger {
@@ -40,8 +40,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .header--link,
-    .header .btnLink {
+    .header--link {
         display: none;
     }
 
