@@ -1,0 +1,45 @@
+.header {
+    min-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.header--logo {
+    width: 100px;
+}
+
+.header--linkLogo {
+    flex-grow: 16;
+    margin-right: auto;
+}
+
+.header--link {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--gray);
+    padding: 4px;
+    flex-grow: 2;
+    text-align: center;
+}
+
+.header--link-tight {
+    flex-grow: 1;
+}
+.header--link:hover {
+    color: var(--darkblue);
+}
+
+.header--hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .header--link {
+        display: none;
+    }
+
+    .header--hamburger {
+        display: block;
+        font-size: 40px;
+    }
+}
