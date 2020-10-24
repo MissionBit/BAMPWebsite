@@ -1,66 +1,83 @@
 .footer {
     display: flex;
-    flex-wrap: nowrap;
-    min-width: 1290px;
-    background: #F5F5F5;
+    background: var(--light-gray);
+    flex-wrap: wrap;
 }
 
 .footer hr {
-    border: 0.5px solid #DCDADA;
-    opacity: 75%;
-    margin: 40px 0; 
+    border-width: 0;
+    border-right: 1px solid var(--silver);
+    margin: 40px 0;
 }
 
-.footer > div {
-    width: 33.333%;
-    margin: 50px 80px 50px 80px;
-}
-
-.footer--rightSection {
+.footer--panel {
     text-align: center;
+    margin: 50px 20px;
+    flex-grow: 1;
 }
 
-.footer--midSection {
-    width: 100%;
-    padding-top: 10px;
+/* -- left: business card -- */
+
+.footer--bizCard {
+    width: 240px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.footer--midSection > div {
+.footer--bizCard p {
+    white-space: nowrap;
+}
+
+/* -- middle: nav links -- */
+
+.footer--panel-middle {
     display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
     padding: 10px;
     font-size: 18px;
 }
 
-.footer--navLink-section > a {
+.footer--navColumn {
+    width: 50%;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.footer--navLink {
     display: block;
-    color: #303030;
+    color: var(--dark-gray);
     line-height: 60px;
     text-decoration: none;
-    text-align: left;
     padding-left: 20%;
 }
 
-.footer--navLink-section {
-    width: 50%;
- }
- 
- .footer--navLink-section > a:hover {
-     opacity: 75%;
- }
- 
-.footer--navLink-section > div {
-    padding-top: 80px;
-    padding-left: 20%;
+.footer--navLink:hover {
+    opacity: 75%;
 }
 
-.footer--midSection .btnLink {
-    text-align: center;
+.footer--navColumn .btnLink {
+    margin-top: 80px;
+    margin-left: 20%;
 }
 
-.footer--logo {
-    display: block;
-    max-width: 75%;
-    min-width: 200px;
-} 
+/* -- right: email form -- */
+
+.footer--panel-right {
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer hr {
+        width: 90%;
+        border-bottom: 1px solid var(--silver);
+        margin: 0 auto;
+    }
+
+    .footer .emailForm {
+        margin-top: 50px;
+    }
+}
