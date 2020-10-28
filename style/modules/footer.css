@@ -66,6 +66,8 @@
     margin: auto;
 }
 
+/* -- breakpoints -- */
+
 @media only screen and (max-width: 1000px) {
     .footer hr:nth-of-type(2) {
         display: none;
