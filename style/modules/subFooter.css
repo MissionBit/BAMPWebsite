@@ -28,6 +28,7 @@
 @media only screen and (max-width: 600px) {
     .subFooter {
         flex-wrap: wrap;
+        padding: 10px;
     }
 
     .subFooter--svg {
