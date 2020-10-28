@@ -4,7 +4,10 @@ body {
     padding: 0;
 }
 
-h1 {
+h1,
+h2,
+h3 {
+    font-family: "Libre Franklin", sans-serif;
     margin: 0;
 }
 
