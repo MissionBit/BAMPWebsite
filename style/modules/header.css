@@ -25,6 +25,7 @@
 .header--link-tight {
     flex-grow: 1;
 }
+
 .header--link:hover {
     color: var(--darkblue);
 }
