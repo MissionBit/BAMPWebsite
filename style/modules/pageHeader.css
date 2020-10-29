@@ -1,6 +1,6 @@
 .pageHeader {
     display: block;
-    padding: 40px;
+    padding: 0 40px;
 }
 
 .pageHeader--img {
@@ -28,7 +28,7 @@
 
 @media only screen and (max-width: 600px) {
     .pageHeader {
-        padding: 5px;
+        padding: 0 5px;
     }
 
     .pageHeader > .box {
