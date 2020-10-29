@@ -1,6 +1,7 @@
-.btnLink {
+.btnLink,
+input[type="submit"].btnLink {
     display: inline-block;
-    background: var(--light-blue) !important;
+    background: var(--light-blue);
     color: var(--white);
     padding: 5px 15px;
     border-radius: 100px;
@@ -28,7 +29,7 @@
 }
 
 .btnLink-red {
-    background: var(--red) !important;
+    background: var(--red);
 }
 
 .btnLink-small {
