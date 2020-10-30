@@ -1,7 +1,7 @@
 .header {
-    min-width: 500px;
     display: flex;
     align-items: center;
+    padding: 6px;
 }
 
 .header--logo {
@@ -25,6 +25,7 @@
 .header--link-tight {
     flex-grow: 1;
 }
+
 .header--link:hover {
     color: var(--darkblue);
 }
@@ -33,7 +34,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 850px) {
     .header--link {
         display: none;
     }
