@@ -2,7 +2,7 @@
     position: relative;
     max-width: 60%;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 0;
     background: var(--white);
     border: 2px solid var(--dark-blue);
     border-radius: 34px;
