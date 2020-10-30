@@ -1,7 +1,7 @@
 .subFooter {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 10px 50px;
     background-color: var(--dark-gray);
 }
 
@@ -28,6 +28,7 @@
 @media only screen and (max-width: 600px) {
     .subFooter {
         flex-wrap: wrap;
+        padding: 10px;
     }
 
     .subFooter--svg {
