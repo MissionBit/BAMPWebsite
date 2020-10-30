@@ -4,7 +4,6 @@
     max-height: 1000px;
     color: #606060;
     position: relative;
-
 }
 
 .muralModal--name {
@@ -34,6 +33,7 @@
 
 .muralModal--img {
     width: 70%;
+    object-fit: cover;
 }
 
 .muralModal--icon {
