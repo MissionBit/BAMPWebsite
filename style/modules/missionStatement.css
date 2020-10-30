@@ -1,21 +1,17 @@
 .missionStatement {
     position: relative;
     max-width: 60%;
-    margin: 0 auto;
-    margin-top: 110px;
+    margin: 72px auto 0;
     background: var(--white);
     border: 2px solid var(--dark-blue);
     border-radius: 34px;
-    padding: 10px;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 40px;
+    padding: 10px 80px 40px;
     text-align: justify;
 }
 
 .missionStatement--logo {
     position: absolute;
-    padding: 20px;
+    padding: 0 20px;
     width: 200px;
     background-color: var(--white);
     left: 50%;
@@ -23,7 +19,7 @@
 }
 
 .missionStatement > p {
-    margin-top: 90px;
+    margin-top: 100px;
     font-size: 30px;
     font-style: italic;
     color: var(--dark-blue);
@@ -32,22 +28,19 @@
 
 @media only screen and (max-width: 600px) {
     .missionStatement {
-        margin-top: 60px;
         max-width: 80%;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-bottom: 20px;
+        padding: 10px 30px 20px;
         text-align: center;
     }
 
     .missionStatement > p {
         font-size: 16px;
-        margin-top: 60px;
+        margin-top: 45px;
     }
 
     .missionStatement--logo {
         width: 130px;
-        transform: translateY(-85px);
+        transform: translateY(-70px);
         left: 50%;
         margin-left: -80px;
     }
