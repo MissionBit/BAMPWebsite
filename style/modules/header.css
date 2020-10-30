@@ -1,5 +1,4 @@
 .header {
-    min-width: 500px;
     display: flex;
     align-items: center;
 }
@@ -25,6 +24,7 @@
 .header--link-tight {
     flex-grow: 1;
 }
+
 .header--link:hover {
     color: var(--darkblue);
 }
