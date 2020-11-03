@@ -1,40 +1,34 @@
 .navModal {
     display: none;
+    padding: 30px;
 }
 
-@media only screen and (max-width: 600px) {
-    .navModal--p {
-        display: none;
-    }
+.navModal-is-shown {
+    display: block;
+}
 
-    .navModal {
-        display: block;
-        padding: 30px;
-    }
+.navModal--linkList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
-    .navModal--linkList {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
+.navModal--link {
+    text-decoration: none;
+    line-height: 200%;
+    font-size: 30px;
+    color: #303030;
+    font-weight: bold;
+}
 
-    .navModal--link {
-        text-decoration: none;
-        line-height: 200%;
-        font-size: 30px;
-        color: #303030;
-        font-weight: bold;
-    }
+.navModal--close {
+    font-size: 40px;
+    float: right;
+    position: relative;
+    right: -20px;
+    top: -20px;
+}
 
-    .navModal--close {
-        font-size: 40px;
-        float: right;
-        position: relative;
-        right: -20px;
-        top: -20px;
-    }
-
-    .navModal .btnLink {
-        margin-top: 30px;
-    }
+.navModal .btnLink {
+    margin-top: 30px;
 }

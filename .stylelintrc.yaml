@@ -3,3 +3,4 @@ rules:
   indentation: 4
   color-hex-length: null
   no-empty-source: null
+  at-rule-empty-line-before: null

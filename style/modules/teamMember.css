@@ -1,18 +1,18 @@
 .teamMember {
-    background-color: white;
+    background-color: var(--white);
     text-align: center;
 }
 
 .teamMember--name {
     padding: 6px;
     font-size: 24px;
-    color: #303030;
+    color: var(--dark-gray);
 }
 
 .teamMember--role {
     padding-bottom: 6px;
     font-size: 15px;
-    color: #606060;
+    color: var(--gray);
 }
 
 .teamMember--photo {
@@ -38,13 +38,13 @@
     .teamMember--name {
         padding: 4px;
         font-size: 17px;
-        color: #303030;
+        color: var(--dark-gray);
     }
 
     .teamMember--role {
         padding-bottom: 4px;
         font-size: 10px;
-        color: #606060;
+        color: var(--gray);
     }
 
     .teamMember--photo {
