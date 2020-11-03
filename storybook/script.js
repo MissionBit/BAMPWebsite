@@ -1,3 +1,10 @@
+const { sortBy, pipe, prop } = R
+
+const moduleName = pipe(prop('dataset'), prop('moduleName'))
+
+const bookmark = name =>
+    $('<a>').prop('name', `sb-${name}`)
+
 const heading = text =>
     $('<h1>').addClass('sbHeading').text(text)
 
@@ -14,27 +21,37 @@ const page = contents => {
     return $('<div>').addClass('sbPage').append(titlebar(), inner)
 }
 
-const bookmark = moduleName =>
-    $('<a>').prop('name', moduleName)
+const finishSection = demo => {
+    const children = $(demo).children()
 
-const navItem = moduleName => {
+    $(demo).empty().append([
+        bookmark(moduleName(demo)),
+        heading(moduleName(demo)),
+        page(children)
+    ])
+}
+
+const navLink = name => {
     const item = $('<li>').addClass('sbNavList--item')
-    const link = $('<a>').prop('href', '#' + moduleName).text(moduleName)
+    const link = $('<a>').prop('href', `#sb-${name}`).text(name)
     return item.append(link)
 }
 
+const appendNavLink = demo =>
+    $('ul.sbNavList').append(navLink(moduleName(demo)))
 
-const nav = $('nav ul')
-
-for (const section of $('.demo')) {
-    const contents = $(section).children()
-    const moduleName = $(section).data('module-name')
-
-    $(section).empty().append([
-        bookmark(moduleName),
-        heading(moduleName),
-        page(contents)
-    ])
-
-    $(nav).append(navItem(moduleName))
+const reinsert = elem => {
+    const parent = $(elem).parent()
+    $(elem).remove()
+    parent.append(elem)
 }
+
+const sortedDemos = sortBy(moduleName, $('.demo'))
+
+for (const demo of sortedDemos) {
+    reinsert(demo)
+    appendNavLink(demo)
+    finishSection(demo)
+}
+
+$('body').show()
