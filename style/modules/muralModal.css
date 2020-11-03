@@ -13,7 +13,7 @@
     width: calc(100% - 0.5em); /* prevent collide w/ close btn */
 }
 
-.muralModal--container {
+.muralModal--caption {
     padding: 16px 32px;
     background: var(--white);
 }
@@ -58,7 +58,7 @@
         font-size: 17px;
     }
 
-    .muralModal--container {
+    .muralModal--caption {
         position: relative;
         top: -40px;
         border-top-left-radius: 20px;
