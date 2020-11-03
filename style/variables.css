@@ -3,8 +3,8 @@
     --dark-blue: #113255;
     --yellow: #f7e85d;
     --red: #ff3d3d;
-    --focus-ring-good: rgba(81, 203, 238, 1);
-    --focus-ring-bad: rgba(228, 72, 72, 0.5);
+    --box-red: #ff6d6d;
+    --box-blue: #6da0ff;
 
     /* grays */
     --white: #ffffff;
@@ -12,4 +12,10 @@
     --light-gray: #dddddd;
     --gray: #707070;
     --dark-gray: #303030;
+
+    /* inputs */
+    --input-bg: #eeeeee;
+    --input-border: #bbbbbb;
+    --focus-ring-good: rgba(81, 203, 238, 1);
+    --focus-ring-bad: rgba(228, 72, 72, 0.5);
 }
