@@ -37,7 +37,7 @@
 
 @media only screen and (max-width: 600px) {
     .teamMember {
-        padding: 0 25px;
+        padding: 0 15px;
     }
 
     .teamMember--name {
