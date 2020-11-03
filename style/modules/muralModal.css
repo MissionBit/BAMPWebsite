@@ -2,19 +2,18 @@
     display: flex;
     max-width: 1250px;
     max-height: 1000px;
-    color: #606060;
     position: relative;
 }
 
 .muralModal--name {
     font-size: 28px;
     font-weight: bold;
-    color: #113255;
+    color: var(--dark-blue);
 }
 
 .muralModal--container {
     padding: 35px 35px;
-    background: white;
+    background: var(--white);
 }
 
 .muralModal--end {
@@ -24,11 +23,12 @@
 .muralModal--bold {
     font-weight: bold;
     font-size: 20px;
-    color: #303030;
+    color: var(--dark-gray);
 }
 
 .muralModal--text {
     font-size: 20px;
+    color: var(--gray);
 }
 
 .muralModal--img {
