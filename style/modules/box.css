@@ -1,5 +1,5 @@
 .box {
-    background: #f5f5f5;
+    background: var(--light-gray);
     box-shadow: 6px 6px 0 var(--dark-gray);
     display: inline-block;
 }

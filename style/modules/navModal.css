@@ -17,7 +17,7 @@
     text-decoration: none;
     line-height: 200%;
     font-size: 30px;
-    color: #303030;
+    color: var(--dark-gray);
     font-weight: bold;
 }
 
