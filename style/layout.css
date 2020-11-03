@@ -9,3 +9,9 @@
 .l-press {
     padding: 60px;
 }
+
+@media only screen and (max-width: 600px) {
+    .l-section {
+        padding: 50px;
+    }
+}

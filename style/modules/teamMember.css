@@ -36,6 +36,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .teamMember {
+        padding: 0 25px;
+    }
+
     .teamMember--name {
         padding: 4px;
         font-size: 17px;
@@ -52,8 +56,8 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 110px;
-        height: 110px;
+        width: 140px;
+        height: 140px;
     }
 
     .teamMember--photo > img {
