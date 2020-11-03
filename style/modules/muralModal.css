@@ -6,9 +6,10 @@
 }
 
 .muralModal--name {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
     color: var(--dark-blue);
+    font-family: "Libre Franklin", sans-serif;
 }
 
 .muralModal--container {
