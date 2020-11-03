@@ -10,10 +10,11 @@
     font-weight: bold;
     color: var(--dark-blue);
     font-family: "Libre Franklin", sans-serif;
+    width: calc(100% - 0.5em); /* prevent collide w/ close btn */
 }
 
 .muralModal--container {
-    padding: 35px 35px;
+    padding: 16px 32px;
     background: var(--white);
 }
 
@@ -44,10 +45,11 @@
 
 .muralModal--close {
     position: absolute;
-    top: 20px;
-    right: 25px;
-    width: 50px;
-    font-size: 20px;
+    top: 0;
+    right: 0;
+    width: 1.25em;
+    font-size: 42px;
+    text-align: center;
 }
 
 @media only screen and (max-width: 1000px) {
