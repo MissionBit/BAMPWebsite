@@ -1,7 +1,7 @@
 .press {
     display: flex;
     text-decoration: none;
-    background: var(--light-gray);
+    background: var(--silver);
     width: 100%;
     max-width: 1600px;
     color: var(--gray);
