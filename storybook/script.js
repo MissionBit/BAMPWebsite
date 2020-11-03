@@ -46,8 +46,12 @@ const reinsert = elem => {
     parent.append(elem)
 }
 
-for (const demo of sortBy(moduleName, $('.demo'))) {
-    finishSection(demo)
-    appendNavLink(demo)
+const sortedDemos = sortBy(moduleName, $('.demo'))
+
+for (const demo of sortedDemos) {
     reinsert(demo)
+    appendNavLink(demo)
+    finishSection(demo)
 }
+
+$('body').show()
