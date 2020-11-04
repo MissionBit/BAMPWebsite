@@ -1,17 +1,19 @@
 <!doctype html>
 <html>
     <head>
-        <script src="script.js" defer></script>
-        <link rel="stylesheet" href="../style/index.css">
-        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/style/index.css">
+        <link rel="stylesheet" href="/storybook/style.css">
         <script
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-            crossorigin="anonymous"></script>   
-        <script src="../script/index.js" type="module" defer></script>
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ramda/0.25.0/ramda.min.js"></script>
+        <script src="/scripts/index.js" type="module" defer></script>
+        <script src="/storybook/script.js" defer></script>
     </head>
 
-    <body>
+    <body style="display: none;"><!-- unhidden in JS after sorting -->
         <div class="l-topbar">
             <div class="sbTopbar">
                 <img class="sbTopbar--logo" src="../images/logo-gold-border.svg">
@@ -43,8 +45,9 @@
                 </section>
 
                 <section class="demo" data-module-name="navModal">
+                    <p>To show, set browser to mobile width and click hamburger icon in <span class="sbVariant"><a href="#header">.header</a></span>.
                     <div id="navModal" class="navModal">
-                        <button id="closeNavModal" class="navModal--close">×</button>
+                        <button id="closeNavModal" class="navModal--close" aria-label="Close">×</button>
                         <ul class="navModal--linkList">
                             <li><a class="navModal--link" href="#">Home</a></li>
                             <li><a class="navModal--link" href="#">Artwork</a></li>
@@ -319,12 +322,11 @@
                 </section>
 
                 <section class="demo" data-module-name="pageHeader">
-                        <div class="pageHeader">
-                            <img class="pageHeader--img" src="https://i.pinimg.com/originals/e8/c7/c4/e8c7c4d4e14a9e3b21faf3d7b37c5b03.jpg">
-                            <div class="box">
-                                <h1 class="sectionHeading">BAMP</h1>
-                                <p class="pageHeader--text">BAMP is a nonprofit organization of local artists dedicated to facilitating and creating public art.  Our vision is to turn bare, blighted walls into artistic gateways into the community's surrounding environment.</p>
-                            </div>
+                    <div class="pageHeader">
+                        <img class="pageHeader--img" src="https://i.pinimg.com/originals/e8/c7/c4/e8c7c4d4e14a9e3b21faf3d7b37c5b03.jpg">
+                        <div class="box">
+                            <h1 class="sectionHeading">BAMP</h1>
+                            <p class="pageHeader--text">BAMP is a nonprofit organization of local artists dedicated to facilitating and creating public art.  Our vision is to turn bare, blighted walls into artistic gateways into the community's surrounding environment.</p>
                         </div>
                     </div>
                 </section>
@@ -369,18 +371,6 @@
                             <img src="../images/mail.svg">
                         </a>
                     </div>
-                </section>
-
-                <section class="demo">
-                    <p>Small</p>
-                    <a class="btnLink btnLink-small" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Button</a>
-                    <a class="btnLink btnLink-red btnLink-small">Button</a>
-                    <p>Normal</p>
-                    <a class="btnLink">Button</a>
-                    <a class="btnLink btnLink-red">Button</a>
-                    <p>Large</p>
-                    <a class="btnLink btnLink-large">Button</a>
-                    <a class="btnLink btnLink-red btnLink-large">Button</a>
                 </section>
 
                 <section class="demo" data-module-name="muralThumbnail">
@@ -453,6 +443,28 @@
                                 <p class="press--text">As a blessing from the Saint's Corpse, Love Train is an overwhelmingly powerful ability that is both lethal and invincible thanks to its power over the concept of "misfortune". Only a miraculous power of the same scope as the Saint's Corpse may overpower it.</p>
                             </div>
                         </a>
+                    </div>
+                </section>
+                <section class="demo" data-module-name="muralModal">
+                    <div class="muralModal">
+                        <img class="muralModal--img" src="https://greatschoolvoices.org/wp-content/uploads/2020/06/Lodestar1.jpeg">
+                        <div class="muralModal--caption">
+                            <h2 class="muralModal--name">Lodestar</h2>
+                            <button class="muralModal--close" aria-label="Close">×</button>
+                            <p class="muralModal--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nunc sed ipsum faucibus finibus. Donec sed efficitur lectus. Fusce risus tellus, sodales vel tellus convallis, aliquam ullamcorper velit. Vestibulum commodo velit ac eleifend tincidunt. Quisque tincidunt purus sem, at interdum dolor hendrerit eu. Quisque dui metus, laoreet at malesuada fringilla, ullamcorper tempus mauris.</p>
+                            <p>
+                                <img class="muralModal--icon" src="../images/palette.svg">
+                                <span class="muralModal--bold">Lead Artist</span><span class="muralModal--text">: Rachel</span>
+                            </p>
+                            <p>
+                              <img class="muralModal--icon" src="../images/map-marker.svg">
+                              <span class="muralModal--bold">Location</span><span class="muralModal--text">: Lodestar Public School</span>
+                            </p>
+                            <div class="muralModal--end">
+                                <img class="muralModal--icon" src="../images/calendar.svg">
+                                <span class="muralModal--bold">Date</span><span class="muralModal--text">: April, 2020</span>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
