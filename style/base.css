@@ -1,7 +1,8 @@
 body {
-    font-family: 'ibm plex sans', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: var(--white);
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 h1,
