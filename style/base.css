@@ -2,8 +2,11 @@ body {
     background-color: var(--white);
 }
 
-h1 {
+h1,
+h2,
+h3 {
     margin: 0;
+    font-family: "Libre Franklin", sans-serif;
 }
 
 p {
