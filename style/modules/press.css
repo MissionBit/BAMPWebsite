@@ -8,6 +8,10 @@
     transition: opacity 0.3s, transform 0.3s;
 }
 
+.press + .press {
+    margin-top: 20px;
+}
+
 .press:hover {
     opacity: 0.8;
     transform: scale(0.99);

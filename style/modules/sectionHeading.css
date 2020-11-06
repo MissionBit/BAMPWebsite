@@ -4,3 +4,14 @@
     color: var(--dark-blue);
     font-size: 48px;
 }
+
+.sectionHeading-centered {
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .sectionHeading {
+        font-size: 36px;
+    }
+}

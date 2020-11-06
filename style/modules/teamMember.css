@@ -1,5 +1,6 @@
 .teamMember {
     text-align: center;
+    padding: 12px 0;
 }
 
 .teamMember--name {
@@ -26,6 +27,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .teamMember--icon {
@@ -33,7 +35,11 @@
     width: 25px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
+    .teamMember {
+        padding: 0 15px;
+    }
+
     .teamMember--name {
         padding: 4px;
         font-size: 17px;
@@ -50,8 +56,8 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 110px;
-        height: 110px;
+        width: 140px;
+        height: 140px;
     }
 
     .teamMember--photo > img {
@@ -62,5 +68,12 @@
 
     .teamMember--icon {
         display: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .teamMember--photo {
+        height: 220px;
+        width: 220px;
     }
 }
