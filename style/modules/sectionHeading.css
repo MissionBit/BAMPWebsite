@@ -4,3 +4,8 @@
     color: var(--dark-blue);
     font-size: 48px;
 }
+
+.sectionHeading-centered {
+    width: 100%;
+    text-align: center;
+}
