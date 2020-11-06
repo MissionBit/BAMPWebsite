@@ -1,0 +1,17 @@
+.l-section {
+    padding: 60px;
+}
+
+.l-missionStatement {
+    padding: 0 0 60px;
+}
+
+.l-press {
+    padding: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+    .l-section {
+        padding: 50px;
+    }
+}
