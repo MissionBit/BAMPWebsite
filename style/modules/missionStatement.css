@@ -2,7 +2,6 @@
     position: relative;
     max-width: 60%;
     margin: 72px auto 0;
-    background: var(--white);
     border: 2px solid var(--dark-blue);
     border-radius: 34px;
     padding: 10px 80px 40px;
@@ -13,7 +12,7 @@
     position: absolute;
     padding: 0 20px;
     width: 200px;
-    background-color: var(--white);
+    background-color: var(--white); /* clips outline */
     left: 50%;
     transform: translate(-50%, -50%);
 }
