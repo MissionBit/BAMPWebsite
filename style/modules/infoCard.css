@@ -1,7 +1,10 @@
 .infoCard {
     min-width: 500px;
     display: flex;
-    padding: 20px 0;
+}
+
+.infoCard + .infoCard {
+    margin-top: 100px;
 }
 
 .infoCard--img {
