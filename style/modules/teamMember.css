@@ -35,7 +35,7 @@
     width: 25px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .teamMember {
         padding: 0 15px;
     }
@@ -68,5 +68,12 @@
 
     .teamMember--icon {
         display: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .teamMember--photo {
+        height: 220px;
+        width: 220px;
     }
 }
