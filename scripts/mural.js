@@ -1,17 +1,17 @@
-function showMuralModal() {
+function showMuralModalContainer() {
     console.log('bruh')
     const muralModalContainer = document.getElementById('muralModalContainer')
     muralModalContainer.classList.add('muralModalContainer-is-shown')
 }
 
-function hideMuralModal() {
+function hideMuralModalContainer() {
     const muralModalContainer = document.getElementById('muralModalContainer')
     muralModalContainer.classList.remove('muralModalContainer-is-shown')
 }
 
 const openMuralModalBtn = document.getElementById('openMuralModal')
-openMuralModalBtn.addEventListener('click', showMuralModal)
+openMuralModalBtn.addEventListener('click', showMuralModalContainer)
 const closeMuralModalBtn = document.getElementById('closeMuralModal')
-closeMuralModalBtn.addEventListener('click', hideMuralModal)
+closeMuralModalBtn.addEventListener('click', hideMuralModalContainer)
 
 // const modal = document.querySelector('.muralModal[data-mural-name="lodestar"]')

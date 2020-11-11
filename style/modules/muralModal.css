@@ -1,9 +1,3 @@
-.muralModal {
-    display: flex;
-    max-width: 1300px;
-    position: relative;
-}
-
 .muralModalContainer {
     display: none;
     position: fixed;
@@ -17,7 +11,13 @@
     z-index: 10;
 }
 
-.muralModalContainer.muralModalContainer-is-shown {
+.muralModal {
+    display: flex;
+    max-width: 1300px;
+    position: relative;
+}
+
+.muralModalContainer .muralModalContainer-is-shown {
     display: block;
 }
 
