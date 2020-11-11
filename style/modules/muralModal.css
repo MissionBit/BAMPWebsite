@@ -4,6 +4,30 @@
     position: relative;
 }
 
+.muralModalContainer {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+}
+
+.muralModalContainer .muralModal {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.muralModalContainer.muralModalContainer-is-shown {
+    display: block;
+}
+
 .muralModal--name {
     font-size: 32px;
     font-weight: bold;
