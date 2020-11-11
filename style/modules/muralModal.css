@@ -1,3 +1,9 @@
+.muralModal {
+    display: flex;
+    max-width: 1300px;
+    position: relative;
+}
+
 .muralModalContainer {
     display: none;
     position: fixed;
@@ -11,21 +17,15 @@
     z-index: 10;
 }
 
-.muralModal {
-    display: flex;
-    max-width: 1300px;
-    position: relative;
-}
-
-.muralModalContainer .muralModalContainer-is-shown {
-    display: block;
-}
-
 .muralModalContainer .muralModal {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.muralModalContainer-is-shown {
+    display: block;
 }
 
 .muralModal--name {

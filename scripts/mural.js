@@ -1,5 +1,5 @@
 function showMuralModalContainer() {
-    console.log('bruh')
+    console.log('helllllooooo')
     const muralModalContainer = document.getElementById('muralModalContainer')
     muralModalContainer.classList.add('muralModalContainer-is-shown')
 }
