@@ -1,5 +1,4 @@
 function showMuralModalContainer() {
-    console.log('helllllooooo')
     const muralModalContainer = document.getElementById('muralModalContainer')
     muralModalContainer.classList.add('muralModalContainer-is-shown')
 }
@@ -14,4 +13,4 @@ openMuralModalBtn.addEventListener('click', showMuralModalContainer)
 const closeMuralModalBtn = document.getElementById('closeMuralModal')
 closeMuralModalBtn.addEventListener('click', hideMuralModalContainer)
 
-// const modal = document.querySelector('.muralModal[data-mural-name="lodestar"],')
+// const modal = document.querySelector('.muralModal[data-mural-name="lodestar"]','.muralModal[data-mural-name="mural1"]')
