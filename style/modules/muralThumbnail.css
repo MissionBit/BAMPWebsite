@@ -4,6 +4,10 @@
     transition: opacity 0.5s ease;
 }
 
+#openMuralModal + #openMuralModal {
+    margin-left: 0;
+}
+
 .muralThumbnail--img {
     width: 100%;
 }
