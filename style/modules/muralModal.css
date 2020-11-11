@@ -17,15 +17,15 @@
     z-index: 10;
 }
 
+.muralModalContainer.muralModalContainer-is-shown {
+    display: block;
+}
+
 .muralModalContainer .muralModal {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.muralModalContainer.muralModalContainer-is-shown {
-    display: block;
 }
 
 .muralModal--name {

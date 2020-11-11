@@ -9,8 +9,8 @@ function hideMuralModal() {
     muralModalContainer.classList.remove('muralModalContainer-is-shown')
 }
 
-const openMuralBtn = document.getElementById('openMuralModal')
-openMuralBtn.addEventListener('click', showMuralModal)
+const openMuralModalBtn = document.getElementById('openMuralModal')
+openMuralModalBtn.addEventListener('click', showMuralModal)
 const closeMuralModalBtn = document.getElementById('closeMuralModal')
 closeMuralModalBtn.addEventListener('click', hideMuralModal)
 
