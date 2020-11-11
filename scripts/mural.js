@@ -14,4 +14,4 @@ openMuralModalBtn.addEventListener('click', showMuralModalContainer)
 const closeMuralModalBtn = document.getElementById('closeMuralModal')
 closeMuralModalBtn.addEventListener('click', hideMuralModalContainer)
 
-// const modal = document.querySelector('.muralModal[data-mural-name="lodestar"]')
+// const modal = document.querySelector('.muralModal[data-mural-name="lodestar"],')
