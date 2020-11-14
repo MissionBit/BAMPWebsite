@@ -1,2 +1,2 @@
-import './header.js';
-import './mural.js';
+import './header.js'
+import './mural.js'
