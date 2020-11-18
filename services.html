@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Services</title>
+        <link rel="stylesheet" href="style/index.css">
+        <script src="scripts/index.js" type="module" defer></script>
+    </head>
+
+    <body>
+        <div class="header">
+            <a class="header--linkLogo" href="#">
+                <img class="header--logo" src="images/logo-mini-color.svg">
+            </a>
+            <a class="header--link" href="#">Artwork</a>
+            <a class="header--link" href="#">About Us</a>
+            <a class="header--link" href="#">Programs</a>
+            <a class="header--link" href="#">Events</a>
+            <a class="header--link" href="#">Services</a>
+            <a class="header--link" href="#">Shop</a>
+            <a class="header--link" href="#">Get Involved</a>
+            <a class="header--link header--link-tight" href="#"><span class="btnLink btnLink-small">Get Updates</span></a>
+            <a class="header--link header--link-tight" href="#"><span class="btnLink btnLink-red btnLink-small">Donate</span></a>
+            <button id="hamburger" class="header--hamburger">☰</button>
+        </div>
+
+        <div id="navModal" class="navModal">
+            <button id="closeNavModal" class="navModal--close">×</button>
+            <ul class="navModal--linkList">
+                <li><a class="navModal--link" href="#">Home</a></li>
+                <li><a class="navModal--link" href="#">Artwork</a></li>
+                <li><a class="navModal--link" href="#">About Us</a></li>
+                <li><a class="navModal--link" href="#">Programs</a></li>
+                <li><a class="navModal--link" href="#">Events</a></li>
+                <li><a class="navModal--link" href="#">Services</a></li>
+                <li><a class="navModal--link" href="#">Shop</a></li>
+                <li><a class="navModal--link" href="#">Get Involved</a></li>
+                <li><a class="btnLink btnLink-large">Get Updates</a></li>
+                <li><a class="btnLink btnLink-red btnLink-large">Donate</a></li>
+            </ul>
+        </div>
+
+        <section class="pageHeader">
+            <img class="pageHeader--img" src="https://miro.medium.com/max/4862/1*9GvXiSGfHhXio0ub_x51WA.jpeg">
+            <div class="box box-yellow">
+                <h1 class="sectionHeading">Our Services</h1>
+                <p class="pageHeader--text">BAMP is a nonprofit organization of local artists dedicated to facilitating and creating public art.  Our vision is to turn bare, blighted walls into artistic gateways into the community's surrounding environment.</p>
+            </div>
+        </section>
+
+        <section class="l-section">
+            <div class="infoCard box box-red">
+                <img class="infoCard--img" src="/images/pictures/drawing-class-1.jpg">
+                <div class="infoCard--caption">
+                    <p class="infoCard--title">Classes</p>
+                    <p class="infoCard--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    <div class="infoCard--btn">
+                        <a class="btnLink">Apply</a>
+                        <a class="btnLink btnLink-large">Apply</a>
+                    </div>
+                </div>
+            </div>
+            <div class="infoCard box box-blue">
+                <img class="infoCard--img" src="/images/pictures/screenprint-class.jpg">
+                <div class="infoCard--caption">
+                    <p class="infoCard--title">Screen Printing</p>
+                    <p class="infoCard--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    <div class="infoCard--btn">
+                        <a class="btnLink">Apply</a>
+                        <a class="btnLink btnLink-large">Apply</a>
+                    </div>
+                </div>
+            </div>
+            <div class="infoCard box box-yellow">
+                <img class="infoCard--img" src="https://img1.looper.com/img/gallery/things-about-thanos-that-didnt-make-it-into-the-mcu/intro-1590779038.jpg">
+                <div class="infoCard--caption">
+                    <p class="infoCard--title">Don't see it here?</p>
+                    <p class="infoCard--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    <div class="infoCard--btn">
+                        <a class="btnLink">Apply</a>
+                        <a class="btnLink btnLink-large">Apply</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer">
+            <div class="footer--panel">
+                <div class="footer--bizCard">
+                    <img src="../images/logo-gold-border.svg">
+                    <p>BAY AREA MURAL PROGRAM</p>
+                    <p><b>Headquarters</b><br>3463 San Pablo Ave.<br>Oakland, CA 94608<br>(510) 965-5315</p>
+                </div>
+            </div>
+            <hr>
+            <div class="footer--panel footer--panel-middle">
+                <div class="footer--navColumn">
+                    <a class="footer--navLink" href="#">Artwork</a>
+                    <a class="footer--navLink" href="#">Events</a>
+                    <a class="footer--navLink" href="#">About Us</a>
+                    <a class="btnLink" href="#">Contact</a>
+                </div>
+                <div class="footer--navColumn">
+                    <a class="footer--navLink" href="#">Services</a>
+                    <a class="footer--navLink" href="#">Programs</a>
+                    <a class="footer--navLink" href="#">Get Involved</a>
+                    <a class="btnLink btnLink-red" href="#">Donate</a>
+                </div>
+            </div>
+            <hr>
+            <div class="footer--panel footer--panel-right">
+                <form class="emailForm">
+                    <p class="emailForm--title">Get updates with BAMP's newsletter</p>
+                    <input type="email" class="emailForm--inputBox" placeholder="Your email address" name="email" required>
+                    <input type="submit" class="btnLink" value="Sign Up!">
+                </form>
+            </div>
+        </div>
+
+        <div class="subFooter">
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/mail.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/instagram.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/twitter.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/facebook.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/youtube.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/linkedin.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/yelp.svg"></a>
+            <p class="subFooter--copyright">© 2020 BAY AREA MURAL PROGRAM</p>
+        </div>
+
+    </body>
+</html>

@@ -3,6 +3,10 @@
     display: flex;
 }
 
+.infoCard + .infoCard {
+    margin-top: 100px;
+}
+
 .infoCard--img {
     width: 50%;
     object-fit: cover;
@@ -10,6 +14,8 @@
 
 .infoCard--caption {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .infoCard--title {
@@ -17,13 +23,18 @@
     font-family: "Libre Franklin", sans-serif;
     font-size: 40px;
     margin: 0;
-    padding-bottom: 15px;
+    padding-bottom: 0.5em;
 }
 
 .infoCard--text {
     line-height: 150%;
     margin: 0;
-    padding-bottom: 15px;
+    padding-bottom: 1.5em;
+    flex-grow: 1;
+}
+
+.infoCard--btn > .btnLink.btnLink-large {
+    display: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -38,15 +49,32 @@
 
     .infoCard--title {
         font-size: 25px;
-        padding-bottom: 10px;
     }
 
     .infoCard--text {
         font-size: 15px;
-        padding-bottom: 10px;
     }
 
-    .infoCard--btn1 {
+    .infoCard--btn {
         text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .infoCard--caption {
+        padding: 20px;
+    }
+
+    .infoCard--text {
+        font-size: 25px;
+    }
+
+    .infoCard--btn > .btnLink {
+        display: none;
+    }
+
+    .infoCard--btn > .btnLink.btnLink-large {
+        display: inline-block;
+        margin: 0;
     }
 }
