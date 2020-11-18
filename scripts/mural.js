@@ -1,16 +1,24 @@
-function showMuralModalContainer() {
+function showMuralModalContainer(event) {
+    console.log(event.target)
     const muralModalContainer = document.getElementById('muralModalContainer')
     muralModalContainer.classList.add('muralModalContainer-is-shown')
 }
 
-function hideMuralModalContainer() {
+function hideMuralModalContainer(event) {
     const muralModalContainer = document.getElementById('muralModalContainer')
     muralModalContainer.classList.remove('muralModalContainer-is-shown')
 }
 
-const openMuralModalBtn = document.getElementById('openMuralModal')
-openMuralModalBtn.addEventListener('click', showMuralModalContainer)
-const closeMuralModalBtn = document.getElementById('closeMuralModal')
-closeMuralModalBtn.addEventListener('click', hideMuralModalContainer)
 
-// const modal = document.querySelector('.muralModal[data-mural-name="lodestar"]','.muralModal[data-mural-name="mural1"]')
+const thumbnails = document.querySelectorAll('.muralThumbnail')
+console.log(thumbnails)
+for (const thumbnail of thumbnails) {
+    thumbnail.addEventListener('click', showMuralModalContainer)
+}
+
+const modal = document.querySelectorAll('.muralModal')
+console.log(modal)
+
+// const closeBtns = document.querySelectorAll('.closeMuralModal')
+// closeBtns.addEventListener('click', hideMuralModalContainer)
+// const modal = document.querySelector('.muralModal[data-mural-name="lodestar"]')
