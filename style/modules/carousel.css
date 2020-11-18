@@ -11,7 +11,8 @@
     width: 20px;
     top: 50%;
     padding: 16px;
-    margin: -60px 10px 0 10px;
+    transform: translateY(-50%);
+    margin: 0 10px;
     user-select: none;
     transition: 150ms;
     color: var(--white);
@@ -23,15 +24,12 @@
     color: var(--dark-gray);
 }
 
-.carousel--slider:active {
-    transform: scale(0.95);
-}
-
 .carousel--next {
     right: 0;
 }
 
 .carousel--dots {
+    position: relative;
     width: 100%;
     text-align: center;
     user-select: none;
@@ -43,12 +41,12 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: var(--silver);
+    background: #afaeae;
     transition: 150ms;
     margin: 20px 10px 20px 0;
 }
 
-.carousel-items {
+.carousel--items {
     position: relative;
 }
 
@@ -60,13 +58,14 @@
 }
 
 .carousel--item-hide {
-    display: none;
+    position: fixed;
+    opacity: 0;
 }
 
 .carousel--dots > *:hover {
-    background: var(--gray);
+    background: var(--dark-gray);
 }
 
 .carousel--dot-active {
-    background: var(--gray);
+    background: var(--dark-gray);
 }

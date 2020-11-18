@@ -1,81 +1,84 @@
-const carousel = document.querySelectorAll(".carousel");
-
-for (let i = 0; i < carousel.length; i++) {
-    const current_carousel = carousel[i];
-    const carousel_items = current_carousel.querySelector(".carousel--items");
-    let carousel_dots = current_carousel.querySelector(".carousel--dots");
-    carousel_items.setAttribute("alt", 0);
-    let next_btn = current_carousel.querySelector(".carousel--next");
-    let prev_btn = current_carousel.querySelector(".carousel--prev");
+function setup(carousel) {
+    const items = carousel.querySelector(".carousel--items");
     
-    update_items(carousel_items, carousel_dots);
-    setup_dots(carousel_dots, carousel_items.children.length);
+    items.setAttribute("alt", 0);
+    let nextBtn = carousel.querySelector(".carousel--next");
+    let prevBtn = carousel.querySelector(".carousel--prev");
 
-    next_btn.addEventListener('click', next);
-    prev_btn.addEventListener('click', prev);
+    setupDots(carousel, items.querySelectorAll(".carousel--item").length);
+    let dots = carousel.querySelector(".carousel--dots");
+    updateItems(items, dots);
+
+    nextBtn.addEventListener('click', next);
+    prevBtn.addEventListener('click', prev);
 }
 
-function update_items(carousel_items, carousel_dots) {
-    let index = parseInt(carousel_items.getAttribute("alt"), 10);
-    carousel_items = carousel_items.children;
-    for (let i = 0; i < carousel_items.length; i++) {
+function updateItems(items, dots) {
+    let index = parseInt(items.getAttribute("alt"), 10);
+    items = items.querySelectorAll(".carousel--item");
+    for (let i = 0; i < items.length; i++) {
         if (i != index) {
-            carousel_items[i].classList.add("carousel--item-hide");
-            if (carousel_dots.children[i] != null) {
-                carousel_dots.children[i].classList.remove("carousel--dot-active");
+            items[i].classList.add("carousel--item-hide");
+            if (dots != null) {
+                dots.children[i].classList.remove("carousel--dot-active");
             }
         } else {
-            carousel_items[i].classList.remove("carousel--item-hide");
-            if (carousel_dots.children[i] != null) {
-                carousel_dots.children[i].classList.add("carousel--dot-active");
+            items[i].classList.remove("carousel--item-hide");
+            if (dots != null) {
+                dots.children[i].classList.add("carousel--dot-active");
             }
         }
     }
 }
 
-function setup_dots(carousel_dot, items_count) {
-    if (items_count > 8) {return}
-    for (let i = 0; i < items_count; i++) {
+function setupDots(carousel, itemsCount) {
+    if (itemsCount > 8) {return}
+    let dots = document.createElement("DIV");
+    dots.className = "carousel--dots";
+    carousel.appendChild(dots);
+    for (let i = 0; i < itemsCount; i++) {
         const dot = document.createElement("DIV");
-        carousel_dot.appendChild(dot);
-        dot.addEventListener("click", dot_button);
+        dots.appendChild(dot);
+        dot.addEventListener("click", dotButton);
     }
 }
 
-function dot_button() {
-    const carousel_dots = this.parentElement;
-    const carousel_items = carousel_dots.parentElement.querySelector(".carousel--items");
-    let index = 0;
-    for (let i = 0; i < carousel_dots.children.length; i++) {
-        if (carousel_dots.children[i] == this){
-            index = i;
-            break;
-        }
-    }
-    carousel_items.setAttribute("alt", index);
-    update_items(carousel_items, carousel_dots);
+function dotButton() {
+    const dot = this
+    const dots = dot.parentElement;
+    const items = dots.parentElement.querySelector(".carousel--items");
+    let index = Array.from(dots.children).indexOf(dot);
+    items.setAttribute("alt", index);
+    updateItems(items, dots);
 }
 
 function next() {
-    const carousel_items = this.parentElement.querySelector(".carousel--items");
-    const carousel_dots = this.parentElement.querySelector(".carousel--dots");
-    let index = parseInt(carousel_items.getAttribute("alt"), 10);
+    const items = this.parentElement;
+    const dots = items.parentElement.querySelector(".carousel--dots");
+    console.log("Lol")
+    let index = parseInt(items.getAttribute("alt"), 10);
     index = index + 1;
-    if ((carousel_items.children.length) == index) {
+    if ((items.querySelectorAll(".carousel--item").length) == index) {
         index = 0;
     }
-    carousel_items.setAttribute("alt", index);
-    update_items(carousel_items, carousel_dots);
+    items.setAttribute("alt", index);
+    updateItems(items, dots);
 }
 
 function prev() {
-    const carousel_items = this.parentElement.querySelector(".carousel--items");
-    const carousel_dots = this.parentElement.querySelector(".carousel--dots");
-    let index = parseInt(carousel_items.getAttribute("alt"), 10);
+    const items = this.parentElement;
+    const dots = items.parentElement.querySelector(".carousel--dots");
+    let index = parseInt(items.getAttribute("alt"), 10);
     index = index - 1;
     if (index < 0) {
-        index = carousel_items.children.length -1;
+        index = items.querySelectorAll(".carousel--item").length -1;
     }
-    carousel_items.setAttribute("alt", index);
-    update_items(carousel_items, carousel_dots);
+    items.setAttribute("alt", index);
+    updateItems(items, dots);
+}
+
+const carousels = document.querySelectorAll(".carousel");
+
+for (const carousel of carousels) {
+    setup(carousel);
 }
