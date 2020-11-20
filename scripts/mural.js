@@ -1,35 +1,33 @@
-// function showMuralModalContainer(event) {
-//     console.log(event.target)
-//     const muralModalContainer = document.getElementById('muralModalContainer')
-//     muralModalContainer.classList.add('muralModalContainer-is-shown')
-// }
-
 function showMuralModalContainer(event) {
-    // console.log(event.target.closest('.muralThumbnail[data-mural-name]'))
     const thumbnail = event.target.closest('.muralThumbnail[data-mural-name]')
-    console.log(thumbnail.dataset.muralName)
     const muralName = thumbnail.dataset.muralName
-    const modal = document.querySelector(`.muralModal[data-mural-name="${muralName}"]`)
-    // console.log(modal)
-    const muralModalContainer = document.querySelector
-    muralModalContainer.classList.add('muralModalContainer-is-shown')
-    // const thumbnail = event.target.closest('.thumbnail')
-    // thumbnail.classList.add('muralModalContainer-is-shown')
+    const modal = document.querySelector(`.muralModalContainer[data-mural-name="${muralName}"]`)
+    modal.classList.add('muralModalContainer-is-shown')
+    document.body.classList.add('l-noScroll')
 }
 
-// function hideMuralModalContainer(event) {
-//     const muralModalContainer = document.getElementById('muralModalContainer')
-//     muralModalContainer.classList.remove('muralModalContainer-is-shown')
-// }
+function hideMuralModalContainer(event) {
+    const modal = event.target.closest('.muralModalContainer')
+    modal.classList.remove('muralModalContainer-is-shown')
+    document.body.classList.remove('l-noScroll')
+}
 
 const thumbnails = document.querySelectorAll('.muralThumbnail')
-// console.log(thumbnails)
 for (const thumbnail of thumbnails) {
     thumbnail.addEventListener('click', showMuralModalContainer)
 }
 
-const modal = document.querySelectorAll('.muralModal')
-// console.log(modal)
+const closeBtns = document.querySelectorAll('.muralModal--close')
+for (const closeBtn of closeBtns) {
+    closeBtn.addEventListener('click', hideMuralModalContainer)
+}
 
-// const closeBtns = document.querySelectorAll('.closeMuralModal')
-// closeBtns.addEventListener('click', hideMuralModalContainer)
+document.body.addEventListener('keyup', function(e) {
+    if (e.key == "Escape") {
+        const modal = document.querySelector('.muralModalContainer-is-shown')
+        if (modal) {
+            modal.classList.remove('muralModalContainer-is-shown')
+            document.body.classList.remove('l-noScroll')
+        }
+    }
+})
