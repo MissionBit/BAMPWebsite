@@ -1,2 +1,3 @@
 import './header.js'
-import './carousel.js'
+import './mural.js'
+import './carousel'
