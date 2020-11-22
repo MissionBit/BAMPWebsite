@@ -1,7 +1,6 @@
 .muralModal {
     display: flex;
     max-width: 1500px;
-    /* margin: 100px; */
 }
 
 .muralModalContainer {
@@ -19,11 +18,10 @@
 
 .muralModalContainer .muralModal {
     position: relative;
-    /* margin: 0; */
-    /* top: 50%; */
+    margin: 0;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: calc(50% + 40px);
 }
 
 .muralModalContainer-is-shown {
