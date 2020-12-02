@@ -5,8 +5,8 @@
 }
 
 .muralThumbnail--img {
-    width: 25vw;
-    height: 20vw;
+    width: 22vw;
+    height: 18vw;
 }
 
 .muralThumbnail--img > img {
@@ -30,7 +30,7 @@
     opacity: 0.5;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     .muralThumbnail--img {
         width: 80vw;
         height: 64vw;
