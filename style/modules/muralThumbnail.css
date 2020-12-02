@@ -5,7 +5,14 @@
 }
 
 .muralThumbnail--img {
+    width: 25vw;
+    height: 20vw;
+}
+
+.muralThumbnail--img > img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .muralThumbnail--location {
@@ -21,4 +28,19 @@
 
 .muralThumbnail:hover {
     opacity: 0.5;
+}
+
+@media only screen and (max-width: 500px) {
+    .muralThumbnail--img {
+        width: 80vw;
+        height: 64vw;
+    }
+
+    .muralThumbnail--location {
+        font-size: 10px;
+    }
+
+    .muralThumbnail--name {
+        font-size: 18px;
+    }
 }
