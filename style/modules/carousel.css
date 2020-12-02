@@ -66,6 +66,6 @@
     background: var(--dark-gray);
 }
 
-.carousel--dot-active {
+.carousel--dot-is-active {
     background: var(--dark-gray);
 }
