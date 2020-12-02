@@ -57,7 +57,7 @@
     transition: 150ms;
 }
 
-.carousel--item-hide {
+.carousel--item-is-hidden {
     position: fixed;
     opacity: 0;
 }
