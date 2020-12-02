@@ -2,6 +2,7 @@
     display: block;
     overflow: hidden;
     transition: opacity 0.5s ease;
+    margin: auto;
 }
 
 .muralThumbnail--img {
