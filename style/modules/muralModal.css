@@ -14,6 +14,8 @@
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 10;
+    padding: 100px;
+    box-sizing: border-box;
 }
 
 .muralModalContainer .muralModal {
@@ -79,6 +81,10 @@
     .muralModal {
         flex-direction: column;
         font-size: 17px;
+    }
+
+    .muralModalContainer {
+        padding: 0;
     }
 
     .muralModalContainer .muralModal {
