@@ -88,7 +88,7 @@
     }
 
     .muralModalContainer .muralModal {
-        top: 65%;
+        top: calc(50% + 20px);
     }
 
     .muralModal--caption {
