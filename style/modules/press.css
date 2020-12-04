@@ -6,8 +6,6 @@
     max-width: 1600px;
     color: var(--gray);
     transition: opacity 0.3s, transform 0.3s;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .press + .press {
