@@ -1,5 +1,15 @@
-h1 {
+body {
     margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-family: "Libre Franklin", sans-serif;
 }
 
 p {

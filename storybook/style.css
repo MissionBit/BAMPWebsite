@@ -127,7 +127,7 @@ section .sbHeading {
 }
 
 .sbPage--titlebar {
-    background-color: var(--silver);
+    background-color: var(--light-gray);
     height: 24px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;

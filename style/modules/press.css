@@ -1,11 +1,15 @@
 .press {
     display: flex;
     text-decoration: none;
-    background: #f5f5f5;
+    background: var(--silver);
     width: 100%;
     max-width: 1600px;
     color: var(--gray);
     transition: opacity 0.3s, transform 0.3s;
+}
+
+.press + .press {
+    margin-top: 20px;
 }
 
 .press:hover {

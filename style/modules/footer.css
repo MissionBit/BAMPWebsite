@@ -1,12 +1,12 @@
 .footer {
     display: flex;
-    background: var(--light-gray);
+    background: var(--silver);
     flex-wrap: wrap;
 }
 
 .footer hr {
     border-width: 0;
-    border-right: 1px solid var(--silver);
+    border-right: 1px solid var(--light-gray);
     margin: 40px 0;
 }
 
@@ -86,7 +86,7 @@
 
     .footer hr {
         width: 90%;
-        border-bottom: 1px solid var(--silver);
+        border-bottom: 1px solid var(--light-gray);
         margin: 0 auto;
     }
 
