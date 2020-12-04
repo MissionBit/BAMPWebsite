@@ -30,7 +30,9 @@ function updateItems(items, dots) {
 }
 
 function setupDots(carousel, itemsCount) {
-    if (itemsCount > 8) {return}
+    if (itemsCount > 8) {
+        return
+    }
     let dots = document.createElement("DIV")
     dots.className = "carousel--dots"
     carousel.appendChild(dots)
