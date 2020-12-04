@@ -128,4 +128,9 @@
     .footer--navColumn .btnLink {
         display: none;
     }
+
+    .footer .emailForm {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
 }
