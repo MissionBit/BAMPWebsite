@@ -26,7 +26,12 @@
 }
 
 .footer--bizCard p {
-    white-space: nowrap;
+    /* white-space: nowrap; */
+    word-wrap: break-word;
+}
+
+.footer--mobileButton {
+    display: none;
 }
 
 /* -- middle: nav links -- */
@@ -92,5 +97,35 @@
 
     .footer hr:nth-of-type(2) {
         display: block;
+    }
+
+    .footer--bizCard {
+        width: 80%;
+        text-align: center;
+    }
+
+    .footer--mobileBizCard {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 15px;
+    }
+
+    .footer--panel {
+        margin: 20px 8px;
+    }
+
+    .footer--mobileButton {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+    }
+
+    .footer--address br {
+        display: none;
+    }
+
+    .footer--navColumn .btnLink {
+        display: none;
     }
 }
