@@ -21,7 +21,7 @@
     margin: 20px 0 0;
 }
 
-.metrics--stats {
+.metrics--text {
     margin: 0;
     font-size: 20px;
 }
@@ -32,7 +32,7 @@
         height: 150px;
     }
 
-    .metrics--stats {
+    .metrics--text {
         font-size: 17px;
     }
 }
