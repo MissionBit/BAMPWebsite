@@ -26,7 +26,6 @@
 }
 
 .footer--bizCard p {
-    /* white-space: nowrap; */
     word-wrap: break-word;
 }
 
