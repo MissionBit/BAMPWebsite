@@ -17,8 +17,12 @@
     object-fit: cover;
 }
 
-.metrics .sectionHeading {
+.metrics--stats {
     margin: 20px 0 0;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 700;
+    color: var(--dark-blue);
+    font-size: 48px;
 }
 
 .metrics--text {
@@ -34,5 +38,9 @@
 
     .metrics--text {
         font-size: 17px;
+    }
+
+    .metrics--stats {
+        font-size: 36px;
     }
 }
