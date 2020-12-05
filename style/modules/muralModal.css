@@ -1,7 +1,31 @@
 .muralModal {
     display: flex;
-    max-width: 1300px;
+    max-width: 1500px;
+}
+
+.muralModalContainer {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.muralModalContainer .muralModal {
     position: relative;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.muralModalContainer-is-shown {
+    display: block;
 }
 
 .muralModal--name {
@@ -57,11 +81,23 @@
         font-size: 17px;
     }
 
+    .muralModalContainer .muralModal {
+        top: 65%;
+    }
+
     .muralModal--caption {
         position: relative;
         top: -40px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+    }
+
+    .muralModal--bold {
+        font-size: 17px;
+    }
+
+    .muralModal--text {
+        font-size: 17px;
     }
 
     .muralModal--img {

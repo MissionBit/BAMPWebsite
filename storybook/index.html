@@ -26,6 +26,19 @@
                 <ul class="sbNavList"><!-- list items will be added dynamically --></ul>
             </nav>
             <main class="l-main">
+                <section class="demo" data-module-name="carousel">
+                    <div class="carousel">
+                        <div class="carousel--items">
+                            <img class="carousel--item" src="https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg">
+                            <img class="carousel--item" src="https://media.istockphoto.com/photos/child-hands-formig-heart-shape-picture-id951945718?k=6&m=951945718&s=612x612&w=0&h=ih-N7RytxrTfhDyvyTQCA5q5xKoJToKSYgdsJ_mHrv0=">
+                            <img class="carousel--item" src="https://cdn.eso.org/images/thumb300y/eso1907a.jpg">
+                            <video class="carousel--item" controls=""><source src="http://media.w3.org/2010/05/sintel/trailer.mp4"></video>
+                            <div class="carousel--slider carousel--prev">&#10094;</div>
+                            <div class="carousel--slider carousel--next">&#10095;</div>
+                        </div>
+                    </div>
+                </section>
+
                 <section class="demo" data-module-name="header">
                     <div class="header">
                         <a class="header--linkLogo" href="#">
@@ -375,13 +388,36 @@
                 </section>
 
                 <section class="demo" data-module-name="muralThumbnail">
-                    <button>
-                        <div class="box box-red">
-                            <div class="muralThumbnail--img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS73Kk1K63Laa0bWG-7nwb7gCl4hKxoxeqfRw&usqp=CAU"></div>
-                            <div class="muralThumbnail--location">Oakland Ca</div>
-                            <div class="muralThumbnail--name">I dont Know</div>
+                    <div class="gridBox gridBox-col3 gridBox-center">
+                        <div>
+                            <button class="muralThumbnail box box-red" data-mural-name="lodestar">
+                                <div class="muralThumbnail--img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS73Kk1K63Laa0bWG-7nwb7gCl4hKxoxeqfRw&usqp=CAU"></div>
+                                <div class="muralThumbnail--location">Oakland Ca</div>
+                                <div class="muralThumbnail--name">I dont Know</div>
+                            </button>
                         </div>
-                    </button>
+                        <div>
+                            <button class="muralThumbnail box box-blue" data-mural-name="mural1">
+                                <div class="muralThumbnail--img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS73Kk1K63Laa0bWG-7nwb7gCl4hKxoxeqfRw&usqp=CAU"></div>
+                                <div class="muralThumbnail--location">Oakland Ca</div>
+                                <div class="muralThumbnail--name">I dont Know</div>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="muralThumbnail box box-yellow" data-mural-name="mural2">
+                                <div class="muralThumbnail--img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS73Kk1K63Laa0bWG-7nwb7gCl4hKxoxeqfRw&usqp=CAU"></div>
+                                <div class="muralThumbnail--location">Oakland Ca</div>
+                                <div class="muralThumbnail--name">I dont Know</div>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="muralThumbnail box box-red" data-mural-name="mural3">
+                                <div class="muralThumbnail--img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS73Kk1K63Laa0bWG-7nwb7gCl4hKxoxeqfRw&usqp=CAU"></div>
+                                <div class="muralThumbnail--location">Oakland Ca</div>
+                                <div class="muralThumbnail--name">I dont Know</div>
+                            </button>
+                        </div>
+                    </div>
                 </section>
 
                 <section class="demo" data-module-name="testimonial">
@@ -402,9 +438,15 @@
                     <div class="footer">
                         <div class="footer--panel">
                             <div class="footer--bizCard">
-                                <img src="../images/logo-gold-border.svg">
+                                <div class="footer--mobileBizCard">
+                                    <img src="../images/logo-gold-border.svg">
+                                    <div class="footer--mobileButton">
+                                        <a class="btnLink" href="#">Contact</a><br><br>
+                                        <a class="btnLink btnLink-red" href="#">Donate</a>
+                                    </div>
+                                </div>
                                 <p>BAY AREA MURAL PROGRAM</p>
-                                <p><b>Headquarters</b><br>3463 San Pablo Ave.<br>Oakland, CA 94608<br>(510) 965-5315</p>
+                                <p class="footer--address"><b>Headquarters: </b><br>3463 San Pablo Ave., <br>Oakland, CA 94608  <br>(510) 965-5315</p>
                             </div>
                         </div>
                         <hr>
@@ -447,23 +489,91 @@
                     </div>
                 </section>
                 <section class="demo" data-module-name="muralModal">
-                    <div class="muralModal">
-                        <img class="muralModal--img" src="https://greatschoolvoices.org/wp-content/uploads/2020/06/Lodestar1.jpeg">
-                        <div class="muralModal--caption">
-                            <h2 class="muralModal--name">Lodestar</h2>
-                            <button class="muralModal--close" aria-label="Close">×</button>
-                            <p class="muralModal--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nunc sed ipsum faucibus finibus. Donec sed efficitur lectus. Fusce risus tellus, sodales vel tellus convallis, aliquam ullamcorper velit. Vestibulum commodo velit ac eleifend tincidunt. Quisque tincidunt purus sem, at interdum dolor hendrerit eu. Quisque dui metus, laoreet at malesuada fringilla, ullamcorper tempus mauris.</p>
-                            <p>
-                                <img class="muralModal--icon" src="../images/palette.svg">
-                                <span class="muralModal--bold">Lead Artist</span><span class="muralModal--text">: Rachel</span>
-                            </p>
-                            <p>
-                              <img class="muralModal--icon" src="../images/map-marker.svg">
-                              <span class="muralModal--bold">Location</span><span class="muralModal--text">: Lodestar Public School</span>
-                            </p>
-                            <div class="muralModal--end">
-                                <img class="muralModal--icon" src="../images/calendar.svg">
-                                <span class="muralModal--bold">Date</span><span class="muralModal--text">: April, 2020</span>
+                    <div class="muralModalContainer" data-mural-name="lodestar">
+                        <div class="muralModal">
+                            <img class="muralModal--img" src="https://greatschoolvoices.org/wp-content/uploads/2020/06/Lodestar1.jpeg">
+                            <div class="muralModal--caption">
+                                <h2 class="muralModal--name">Lodestar</h2>
+                                <button class="muralModal--close" aria-label="Close">×</button>
+                                <p class="muralModal--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nunc sed ipsum faucibus finibus. Donec sed efficitur lectus. Fusce risus tellus, sodales vel tellus convallis, aliquam ullamcorper velit. Vestibulum commodo velit ac eleifend tincidunt. Quisque tincidunt purus sem, at interdum dolor hendrerit eu. Quisque dui metus, laoreet at malesuada fringilla, ullamcorper tempus mauris.</p>
+                                <p>
+                                    <img class="muralModal--icon" src="../images/palette.svg">
+                                    <span class="muralModal--bold">Lead Artist</span><span class="muralModal--text">: Rachel</span>
+                                </p>
+                                <p>
+                                    <img class="muralModal--icon" src="../images/map-marker.svg">
+                                    <span class="muralModal--bold">Location</span><span class="muralModal--text">: Lodestar Public School</span>
+                                </p>
+                                <div class="muralModal--end">
+                                    <img class="muralModal--icon" src="../images/calendar.svg">
+                                    <span class="muralModal--bold">Date</span><span class="muralModal--text">: April, 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="muralModalContainer" data-mural-name="mural1">
+                        <div class="muralModal">
+                            <img class="muralModal--img" src="https://greatschoolvoices.org/wp-content/uploads/2020/06/Lodestar1.jpeg">
+                            <div class="muralModal--caption">
+                                <h2 class="muralModal--name">Lodestar</h2>
+                                <button class="muralModal--close" aria-label="Close">×</button>
+                                <p class="muralModal--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nunc sed ipsum faucibus finibus. Donec sed efficitur lectus. Fusce risus tellus, sodales vel tellus convallis, aliquam ullamcorper velit. Vestibulum commodo velit ac eleifend tincidunt. Quisque tincidunt purus sem, at interdum dolor hendrerit eu. Quisque dui metus, laoreet at malesuada fringilla, ullamcorper tempus mauris.</p>
+                                <p>
+                                    <img class="muralModal--icon" src="../images/palette.svg">
+                                    <span class="muralModal--bold">Lead Artist</span><span class="muralModal--text">: Rachel</span>
+                                </p>
+                                <p>
+                                    <img class="muralModal--icon" src="../images/map-marker.svg">
+                                    <span class="muralModal--bold">Location</span><span class="muralModal--text">: Lodestar Public School</span>
+                                </p>
+                                <div class="muralModal--end">
+                                    <img class="muralModal--icon" src="../images/calendar.svg">
+                                    <span class="muralModal--bold">Date</span><span class="muralModal--text">: April, 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="muralModalContainer" data-mural-name="mural2">
+                        <div class="muralModal">
+                            <img class="muralModal--img" src="https://greatschoolvoices.org/wp-content/uploads/2020/06/Lodestar1.jpeg">
+                            <div class="muralModal--caption">
+                                <h2 class="muralModal--name">Lodestar</h2>
+                                <button class="muralModal--close" aria-label="Close">×</button>
+                                <p class="muralModal--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nunc sed ipsum faucibus finibus. Donec sed efficitur lectus. Fusce risus tellus, sodales vel tellus convallis, aliquam ullamcorper velit. Vestibulum commodo velit ac eleifend tincidunt. Quisque tincidunt purus sem, at interdum dolor hendrerit eu. Quisque dui metus, laoreet at malesuada fringilla, ullamcorper tempus mauris.</p>
+                                <p>
+                                    <img class="muralModal--icon" src="../images/palette.svg">
+                                    <span class="muralModal--bold">Lead Artist</span><span class="muralModal--text">: Rachel</span>
+                                </p>
+                                <p>
+                                    <img class="muralModal--icon" src="../images/map-marker.svg">
+                                    <span class="muralModal--bold">Location</span><span class="muralModal--text">: Lodestar Public School</span>
+                                </p>
+                                <div class="muralModal--end">
+                                    <img class="muralModal--icon" src="../images/calendar.svg">
+                                    <span class="muralModal--bold">Date</span><span class="muralModal--text">: April, 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="muralModalContainer" data-mural-name="mural3">
+                        <div class="muralModal">
+                            <img class="muralModal--img" src="https://greatschoolvoices.org/wp-content/uploads/2020/06/Lodestar1.jpeg">
+                            <div class="muralModal--caption">
+                                <h2 class="muralModal--name">MURAL NUMBER 3</h2>
+                                <button class="muralModal--close" aria-label="Close">×</button>
+                                <p class="muralModal--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nunc sed ipsum faucibus finibus. Donec sed efficitur lectus. Fusce risus tellus, sodales vel tellus convallis, aliquam ullamcorper velit. Vestibulum commodo velit ac eleifend tincidunt. Quisque tincidunt purus sem, at interdum dolor hendrerit eu. Quisque dui metus, laoreet at malesuada fringilla, ullamcorper tempus mauris.</p>
+                                <p>
+                                    <img class="muralModal--icon" src="../images/palette.svg">
+                                    <span class="muralModal--bold">Lead Artist</span><span class="muralModal--text">: Rachel</span>
+                                </p>
+                                <p>
+                                    <img class="muralModal--icon" src="../images/map-marker.svg">
+                                    <span class="muralModal--bold">Location</span><span class="muralModal--text">: Lodestar Public School</span>
+                                </p>
+                                <div class="muralModal--end">
+                                    <img class="muralModal--icon" src="../images/calendar.svg">
+                                    <span class="muralModal--bold">Date</span><span class="muralModal--text">: April, 2020</span>
+                                </div>
                             </div>
                         </div>
                     </div>
