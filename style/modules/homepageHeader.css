@@ -1,0 +1,38 @@
+.homepageHeader {
+    position: relative;
+    width: 100%;
+}
+
+.homepageHeader--img {
+    /* width: 100%; */
+    width: 90vw;
+    height: 75vh;
+    object-fit: cover;
+}
+
+.homepageHeader--svg {
+    display: none;
+    position: absolute;
+    /* display: block; */
+    /* height: 100%; */
+    width: 40%;
+    top: 65%;
+    right: 0;
+}
+
+.homepageHeader--text {
+    display: none;
+    position: absolute;
+    /* margin-left: 20px; */
+    top: 69%;
+    left: 65%;
+    right: 0;
+    font-size: 28px;
+}
+
+@media only screen and (max-width: 700px) {
+    .homepageHeader--img {
+        width: 80vw;
+        height: 40vh;
+    }
+}
