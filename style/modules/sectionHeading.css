@@ -4,6 +4,9 @@
     color: var(--dark-blue);
     font-size: 48px;
 }
+.sectionHeading-spaced {
+    margin-bottom: 100px;
+}
 
 .sectionHeading-centered {
     width: 100%;
