@@ -1,6 +1,8 @@
 .infoCard {
     min-width: 500px;
+    max-width: 1050px;
     display: flex;
+    margin-left: 45px;
 }
 
 .infoCard + .infoCard {
@@ -8,7 +10,7 @@
 }
 
 .infoCard--img {
-    width: 50%;
+    width: 35%;
     object-fit: cover;
 }
 
