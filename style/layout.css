@@ -10,8 +10,17 @@
     overflow: hidden;
 }
 
+.l-section--text {
+    font-size: 30px;
+    text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
     .l-section {
         padding: 50px;
+    }
+
+    .l-section--text {
+        font-size: 20px;
     }
 }
