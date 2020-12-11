@@ -1,24 +1,51 @@
 .muralThumbnail {
     display: block;
-    overflow: hidden;
+    position: relative;
     transition: opacity 0.5s ease;
 }
 
 .muralThumbnail--img {
+    position: relative;
     width: 100%;
 }
 
+.muralThumbnail--img::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.muralThumbnail--img > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.muralThumbnail--caption {
+    padding: 20px;
+}
+
 .muralThumbnail--location {
-    font-size: 13px;
+    font-size: 16px;
     color: var(--gray);
-    padding: 8px 8px 0 15px;
+    margin-bottom: 6px;
 }
 
 .muralThumbnail--name {
     font-size: 24px;
-    padding: 3px 8px 8px 15px;
 }
 
 .muralThumbnail:hover {
     opacity: 0.5;
+}
+
+.gridBox .muralThumbnail {
+    margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+    .muralThumbnail--img {
+        width: 75vw;
+    }
 }

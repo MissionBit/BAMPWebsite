@@ -1,6 +1,7 @@
 .pageHeader {
     display: block;
     padding: 0 40px;
+    margin-bottom: -125px;
 }
 
 .pageHeader--img {
