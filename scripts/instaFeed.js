@@ -16,7 +16,7 @@ function renderFeed(response, target) {
             let videoElement = document.createElement("video")
             let sourceElement = document.createElement("source")
             videoElement.classList.add("instagramFeed--post")
-            videoElement.controls = "Play";
+            videoElement.controls = "Play"
             sourceElement.src = mediaObj.video_url
             videoElement.appendChild(sourceElement)
             target.appendChild(videoElement)
