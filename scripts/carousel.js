@@ -7,7 +7,7 @@ function setup(carousel) {
     updateItems(items, dots)
     nextBtn.addEventListener('click', next)
     prevBtn.addEventListener('click', prev)
-    const interval = 10
+    const interval = 20
     setInterval(itemLoop, interval * 1000, items, dots)
 }
 
