@@ -22,6 +22,16 @@ for (const closeBtn of closeBtns) {
     closeBtn.addEventListener('click', hideMuralModalContainer)
 }
 
+const containers = document.querySelectorAll('.muralModalContainer')
+for (const container of containers) {
+    container.addEventListener('click', event => {
+        if (!event.target.classList.contains('muralModalContainer')) {
+          return
+        }
+        hideMuralModal(event)
+    })
+}
+
 document.body.addEventListener('keyup', function(e) {
     if (e.key == "Escape") {
         const modal = document.querySelector('.muralModalContainer-is-shown')
