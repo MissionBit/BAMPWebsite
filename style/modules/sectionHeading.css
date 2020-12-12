@@ -18,4 +18,8 @@
     .sectionHeading {
         font-size: 36px;
     }
+
+    .sectionHeading-spaced {
+        margin-bottom: 40px;
+    }
 }

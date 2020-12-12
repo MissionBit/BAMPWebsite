@@ -14,7 +14,7 @@
 
 @media only screen and (max-width: 600px) {
     .l-section {
-        padding: 50px;
+        padding: 50px 50px 80px;
     }
 
     .l-section--text {
