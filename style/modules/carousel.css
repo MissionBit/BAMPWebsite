@@ -38,12 +38,12 @@
 .carousel--dots > * {
     display: inline-block;
     cursor: pointer;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background: #afaeae;
     transition: 150ms;
-    margin: 20px 10px 20px 0;
+    margin: 15px 3px;
 }
 
 .carousel--items {
