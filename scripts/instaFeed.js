@@ -44,3 +44,11 @@ async function fetchAndRenderFeed(accountName, target) {
 
     renderFeed(response, target)
 }
+
+// hide behind a button for now, so we don't make a bunch of unnecessary requsts
+// TODO: remove this when it becomes appropriate
+document.querySelector(".js-showInstaFeed").addEventListener("click", event => {
+    fetchAndRenderFeed("bayareamuralpro", document.querySelector(".instagramFeed"))
+    event.target.disabled = true
+    event.target.style.display = "none"
+})
