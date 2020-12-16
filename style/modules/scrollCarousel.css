@@ -8,14 +8,16 @@
     display: flex;
     animation-direction: alternate;
     animation-name: moveSlideshow;
-    animation-duration: 60s;
+    animation-duration: 120s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
-.scrollCarousel--contents > * {
+.scrollCarousel--contents img {
     margin: 0 10px;
-    height: 120px;
+    height: 150px;
+    width: 250px;
+    object-fit: contain;
 }
 
 @keyframes moveSlideshow {
@@ -24,6 +26,6 @@
     }
 
     100% {
-        transform: translateX(-60%);
+        transform: translateX(-90%);
     }
 }
