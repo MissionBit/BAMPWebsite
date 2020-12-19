@@ -8,7 +8,7 @@
     display: flex;
     animation-direction: alternate;
     animation-name: moveSlideshow;
-    animation-duration: 120s;
+    animation-duration: 150s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
