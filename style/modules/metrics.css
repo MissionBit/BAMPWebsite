@@ -27,7 +27,7 @@
 
 .metrics--text {
     margin: 0;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 @media only screen and (max-width: 700px) {

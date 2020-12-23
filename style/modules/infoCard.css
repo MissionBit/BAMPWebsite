@@ -1,8 +1,5 @@
 .infoCard {
-    min-width: 500px;
-    max-width: 1050px;
     display: flex;
-    margin-left: 45px;
 }
 
 .infoCard + .infoCard {
@@ -29,6 +26,7 @@
 }
 
 .infoCard--text {
+    font-size: 20px;
     line-height: 150%;
     margin: 0;
     padding-bottom: 1.5em;
@@ -62,13 +60,13 @@
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1500px) {
     .infoCard--caption {
         padding: 20px;
     }
 
     .infoCard--text {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .infoCard--btn > .btnLink {

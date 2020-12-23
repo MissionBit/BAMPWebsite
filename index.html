@@ -1,8 +1,307 @@
 <!doctype html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <title>BAMP</title>
         <link rel="stylesheet" href="style/index.css">
+        <script src="scripts/index.js" type="module" defer></script>
     </head>
+
     <body>
+        <header class="header">
+            <a class="header--linkLogo" href=/index.html">
+                <img class="header--logo" src="images/logo-mini-color.svg">
+            </a>
+            <a class="header--link" href="#">Artwork</a>
+            <a class="header--link" href="/about_us.html">About Us</a>
+            <a class="header--link" href="#">Programs</a>
+            <a class="header--link" href="#">Events</a>
+            <a class="header--link" href="/services.html">Services</a>
+            <a class="header--link" href="#">Shop</a>
+            <a class="header--link" href="/get_involved.html">Get Involved</a>
+            <a class="header--link header--link-tight" href="#"><span class="btnLink btnLink-small">Get Updates</span></a>
+            <a class="header--link header--link-tight" href="#"><span class="btnLink btnLink-red btnLink-small">Donate</span></a>
+            <button id="hamburger" class="header--hamburger">☰</button>
+        </header>
+
+        <div id="navModal" class="navModal">
+            <button id="closeNavModal" class="navModal--close">×</button>
+            <ul class="navModal--linkList">
+                <li><a class="navModal--link" href="#">Home</a></li>
+                <li><a class="navModal--link" href="#">Artwork</a></li>
+                <li><a class="navModal--link" href="#">About Us</a></li>
+                <li><a class="navModal--link" href="#">Programs</a></li>
+                <li><a class="navModal--link" href="#">Events</a></li>
+                <li><a class="navModal--link" href="#">Services</a></li>
+                <li><a class="navModal--link" href="#">Shop</a></li>
+                <li><a class="navModal--link" href="#">Get Involved</a></li>
+                <li><a class="btnLink btnLink-large">Get Updates</a></li>
+                <li><a class="btnLink btnLink-red btnLink-large">Donate</a></li>
+            </ul>
+        </div>
+
+        <section class="carousel">
+            <div class="carousel--items">
+                <div class="carousel--item">
+                    <div class="homepageHeader">
+                        <img class="homepageHeader--img" src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/202984001">
+                        <img class="homepageHeader--svg" src="../images/speech-bubble.svg">
+                    </div>
+                </div>
+                <div class="carousel--item">
+                    <div class="homepageHeader">
+                        <img class="homepageHeader--img" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*">
+                        <img class="homepageHeader--svg" src="../images/speech-bubble.svg">
+                    </div>
+                </div>
+                <div class="carousel--slider carousel--prev">&#10094;</div>
+                <div class="carousel--slider carousel--next">&#10095;</div>
+            </div>
+        </section>
+
+        <section class="l-section">
+            <h1 class="sectionHeading sectionHeading-centered sectionHeading-spaced">Bay Area Mural Program</h1>
+            <p class="l-section--text">BAMP is a nonprofit organization of local artists dedicated to facilitating and creating public art.  Our vision is to turn bare, blighted walls into artistic gateways into the community's surrounding environment. </p>
+        </section>
+
+        <section class="l-section">
+            <div class="gridBox gridBox-col4 gridBox-center">
+                <div class="metrics">
+                    <div class="metrics--photo">
+                        <img src="https://cdn2.lamag.com/wp-content/uploads/sites/6/2020/01/kobe-mural-mr-brainwash-chris-delmas-afp-getty.jpg">
+                    </div>
+                    <p class="metrics--stats">3,000+</p>
+                    <p class="metrics--text">murals painted</p>
+                </div>
+                <div class="metrics">
+                    <div class="metrics--photo">
+                        <img src="https://www.dailybreeze.com/wp-content/uploads/2020/07/TDB-L-AES-MURAL-0720-04-1.jpg">
+                    </div>
+                    <p class="metrics--stats">700+</p>
+                    <p class="metrics--text">screenprints</p>
+                </div>
+                <div class="metrics">
+                    <div class="metrics--photo">
+                        <img src="https://d16kd6gzalkogb.cloudfront.net/magazine_images/TelmoMiel-James-Bullough.jpg">
+                    </div>
+                    <p class="metrics--stats">300+</p>
+                    <p class="metrics--text">workshops</p>
+                </div>
+                     <div class="metrics">
+                    <div class="metrics--photo">
+                        <img src="https://onmilwaukee.com/images/articles/ea/east-tosa-murals-complete/east-tosa-murals-complete_fullsize_story1.jpg">
+                    </div>
+                    <p class="metrics--stats">20000+</p>
+                    <p class="metrics--text">gallons of paint</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="l-section">
+            <h2 class="sectionHeading sectionHeading-centered sectionHeading-spaced">Featured: Plywood Murals</h2>
+            <div class="box box-red">
+                <div class="infoCard">
+                    <img class="infoCard--img" src="https://img1.looper.com/img/gallery/things-about-thanos-that-didnt-make-it-into-the-mcu/intro-1590779038.jpg">
+                    <div class="infoCard--caption">
+                        <p class="infoCard--text">In the wake of George Floyds death, the BAMP and other art organizations have taken to Downtown Oakland, Chinatown to paint plywood boards on storefronts.  The boarded up storefronts serve as great canvases to express the need for social change. BAMP hopes that the social justice artwork can be a way to inform, heal, and remind the community of the ongoing current events.</p>
+                        <div class="infoCard--btn">
+                            <a class="btnLink">Events</a>
+                            <a class="btnLink btnLink-large">Events</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="l-section">
+            <div class="gridBox gridBox-col2 gridBox-center">
+                <div class="testimonial">
+                    <div class="testimonial--pic">
+                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg">
+                    </div>
+                    <div class="testimonial--content">
+                        <span class="testimonial--name">Fairbanks Farms</span>
+                        <p class="testimonial--quote">“We've had the members of B.A.M.P. up several times for different mural projects. Every member of the team has shown up with a very positive energy, and a strong desire to create with one and other as well as us. They've been a pleasure to work with, and we'd absolutely recommend the team to anyone seeking out their services.”</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial--pic">
+                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg">
+                    </div>
+                    <div class="testimonial--content">
+                        <span class="testimonial--name">Belinda Bain</span>
+                        <p class="testimonial--quote">“I haven’t yet (!) worked with BAMP but can’t help but leave a review of their culture defining and shaping work having followed their rise from conception. Knowing one of their muralists for almost 30yrs I’ve been able to see their destiny take fruition. To make us ask the hard questions, to bring back consideration and compassion in the community and above all to introduce new cultural concepts through art activism. Five stars doesn’t cut it.”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="l-section l-section--text">
+            <button class="btnLink js-showInstaFeed">Show Feed</button>
+            <div class="instagramFeed gridBox gridBox-col4 gridBox-center"></div>
+        </section>
+
+        <section class="l-section">
+            <h2 class="sectionHeading sectionHeading-centered sectionHeading-spaced">Our Supporters</h2>
+            <div class="scrollCarousel">
+                <div class="scrollCarousel--contents">
+                    <a href="http://aaacc.org/">
+                        <img src="images/supporters/aaacc.png">
+                    </a>
+                    <a href="https://www.ousd.org/Page/495">
+                        <img src="images/supporters/aama.png">
+                    </a>
+                    <a href="https://www.ahc-oakland.org/">
+                        <img src="images/supporters/ahc.png">
+                    </a>
+                    <a href="https://alenamuseum.com/">
+                        <img src="images/supporters/alena.png">
+                    </a>
+                    <a href="https://www.artplaceamerica.org/">
+                        <img src="images/supporters/artplace.png">
+                    </a>
+                    <a href="https://www.mlb.com/athletics">
+                        <img src="images/supporters/athletics.gif">
+                    </a>
+                    <a href="https://www.sfparksalliance.org/our-parks/parks/rosa-parks-senior-center">
+                        <img src="images/supporters/bayviewss.png">
+                    </a>
+                    <a href="https://www.bluedreamoakland.com/">
+                        <img src="images/supporters/blue_dream.png">
+                    </a>
+                    <a href="http://chromaonline.com/landing">
+                        <img src="images/supporters/chroma.png">
+                    </a>
+                    <a href="http://citizenfilm.org/">
+                        <img src="images/supporters/citizen_film.png">
+                    </a>
+                    <a href="https://designdrawbuild.com/">
+                        <img src="images/supporters/design.png">
+                    </a>
+                    <a href="https://ebaldc.org/">
+                        <img src="images/supporters/ebaldc.png">
+                    </a>
+                    <a href="http://eoydc.org/">
+                        <img src="images/supporters/eoydc.png">
+                    </a>
+                    <a href="https://www.exhaleandpaint.com/">
+                        <img src="images/supporters/exhale.png">
+                    </a>
+                    <a href="https://flaxart.com/oakland-store/">
+                        <img src="images/supporters/flax.png">
+                    </a>
+                    <a href="https://sfgfta.org/">
+                        <img src="images/supporters/grants.png">
+                    </a>
+                    <a href="https://www.officiallionofjudah.com/single-post/2020/03/27/Life-Yard-360-KingstonJamaica">
+                        <img src="images/supporters/lifeyard.png">
+                    </a>
+                    <a href="https://www.obama.org/mbka/">
+                        <img src="images/supporters/mbk.png">
+                    </a>
+                    <a href="https://momagic.org/about/">
+                        <img src="images/supporters/mo_magic.png">
+                    </a>
+                    <a href="https://openarchcollab.org/">
+                        <img src="images/supporters/oac.png">
+                    </a>
+                    <a href="http://bamfest.org/home">
+                        <img src="images/supporters/oak_mural_fest.png">
+                    </a>
+                    <a href="https://www.oaklandca.gov/">
+                        <img src="images/supporters/oakland.png">
+                    </a>
+                    <a href="http://oakstop.com/">
+                        <img src="images/supporters/oakstop.png">
+                    </a>
+                    <a href="https://www.tpl.org/">
+                        <img src="images/supporters/public_land.png">
+                    </a>
+                    <a href="https://www.7thwest.com/">
+                        <img src="images/supporters/seventh_west.png">
+                    </a>
+                    <a href="https://sfrecpark.org/">
+                        <img src="images/supporters/sf_parks.png">
+                    </a>
+                    <a href="https://sfmayor.org/">
+                        <img src="images/supporters/sf.png">
+                    </a>
+                    <a href="https://www.sfartscommission.org/">
+                        <img src="images/supporters/sfac.png">
+                    </a>
+                    <a href="https://www.sparcoakland.com/">
+                        <img src="images/supporters/sparc.png">
+                    </a>
+                    <a href="https://www.instagram.com/studio1405_">
+                        <img src="images/supporters/studio_1405.png">
+                    </a>
+                    <a href=#>
+                        <img src="images/supporters/upward_bound.png">
+                    </a>
+                    <a href="https://www.vallejoarts.org/">
+                        <img src="images/supporters/vcaf.png">
+                    </a>
+                    <a href="https://www.visitoakland.com/">
+                        <img src="images/supporters/visit.png">
+                    </a>
+                    <a href="https://www.wholefoodsmarket.com/">
+                        <img src="images/supporters/whole_foods.png">
+                    </a>
+                    <a href=#>
+                        <img src="images/supporters/writing_4_life.png">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer">
+            <div class="footer--panel">
+                <div class="footer--bizCard">
+                    <div class="footer--mobileBizCard">
+                        <img src="../images/logo-gold-border.svg">
+                        <div class="footer--mobileButton">
+                            <a class="btnLink" href="#">Contact</a><br><br>
+                            <a class="btnLink btnLink-red" href="#">Donate</a>
+                        </div>
+                    </div>
+                    <p>BAY AREA MURAL PROGRAM</p>
+                    <p class="footer--address"><b>Headquarters: </b><br>3463 San Pablo Ave., <br>Oakland, CA 94608  <br>(510) 965-5315</p>
+                </div>
+            </div>
+            <hr>
+            <div class="footer--panel footer--panel-middle">
+                <div class="footer--navColumn">
+                    <a class="footer--navLink" href="#">Artwork</a>
+                    <a class="footer--navLink" href="#">Events</a>
+                    <a class="footer--navLink" href="#">About Us</a>
+                    <a class="btnLink" href="#">Contact</a>
+                </div>
+                <div class="footer--navColumn">
+                    <a class="footer--navLink" href="#">Services</a>
+                    <a class="footer--navLink" href="#">Programs</a>
+                    <a class="footer--navLink" href="#">Get Involved</a>
+                    <a class="btnLink btnLink-red" href="#">Donate</a>
+                </div>
+            </div>
+            <hr>
+            <div class="footer--panel footer--panel-right">
+                <form class="emailForm">
+                    <p class="emailForm--title">Get updates with BAMP's newsletter</p>
+                    <input type="email" class="emailForm--inputBox" placeholder="Your email address" name="email" required>
+                    <input type="submit" class="btnLink" value="Sign Up!">
+                </form>
+            </div>
+        </div>
+
+        <div class="subFooter">
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/mail.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/instagram.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/twitter.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/facebook.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/youtube.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/linkedin.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/yelp.svg"></a>
+            <p class="subFooter--copyright">© 2020 BAY AREA MURAL PROGRAM</p>
+        </div>
+
     </body>
 </html>

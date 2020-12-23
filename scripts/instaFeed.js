@@ -53,7 +53,7 @@ async function fetchAndRenderFeed(accountName, target, length) {
         return
     }
 
-    renderFeed(response, target, legnth)
+    renderFeed(response, target, length)
 }
 
 // hide behind a button for now, so we don't make a bunch of unnecessary requsts
