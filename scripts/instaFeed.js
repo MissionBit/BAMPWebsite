@@ -12,7 +12,7 @@ function renderFeed(response, target, length) {
             let divElement = document.createElement("div")
             divElement.classList.add("fixedRatio")
             let imgElement = document.createElement("img")
-            divElement.src = mediaObj.display_url
+            imgElement.src = mediaObj.display_url
             imgElement.classList.add("fixedRatio--contents")
             divElement.appendChild(imgElement)
             post.appendChild(divElement)
