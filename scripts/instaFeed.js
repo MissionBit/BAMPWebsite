@@ -1,11 +1,11 @@
 /**
  * Renders Instagram feed JSON response in the given DOM target.
  */
-function renderFeed(response, target) {
+function renderFeed(response, target, length) {
     target.innerHTML = ""
-    let media = response.graphql.user.edge_owner_to_timeline_media.edges
-    for (const value in media) {
-        const mediaObj = media[value].node
+    const media = response.graphql.user.edge_owner_to_timeline_media.edges
+    for (let i = 0; i < length && i < media.length; i++) {
+        const mediaObj = media[i].node
         if (mediaObj.__typename == "GraphImage") {
             let imgElement = document.createElement("img")
             imgElement.classList.add("instagramFeed--post")
@@ -23,7 +23,7 @@ function renderFeed(response, target) {
 
         } else if (mediaObj.__typename == "GraphSidecar") {
             let imgElement = document.createElement("img")
-            imgElement.className = "instagramFeed--post carousel--item"
+            imgElement.className = "instagramFeed--post"
             imgElement.src = mediaObj.display_url
             target.appendChild(imgElement)
         }
@@ -33,7 +33,7 @@ function renderFeed(response, target) {
 /**
  * Fetches IG account feed JSON and renders (if valid response) into the given target.
  */
-async function fetchAndRenderFeed(accountName, target) {
+async function fetchAndRenderFeed(accountName, target, length) {
     const response =
       await fetch(`https://www.instagram.com/${accountName}/?__a=1`).then(x => x.json())
 
@@ -42,13 +42,13 @@ async function fetchAndRenderFeed(accountName, target) {
         return
     }
 
-    renderFeed(response, target)
+    renderFeed(response, target, length)
 }
 
 // hide behind a button for now, so we don't make a bunch of unnecessary requsts
 // TODO: remove this when it becomes appropriate
 document.querySelector(".js-showInstaFeed").addEventListener("click", event => {
-    fetchAndRenderFeed("bayareamuralpro", document.querySelector(".instagramFeed"))
+    fetchAndRenderFeed("bayareamuralpro", document.querySelector(".instagramFeed"), 8)
     event.target.disabled = true
     event.target.style.display = "none"
 })
