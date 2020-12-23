@@ -7,14 +7,15 @@ function renderFeed(response, target, length) {
     let post = document.createElement("div")
     post.className = "gridBox gridBox-col4 gridBox-center"
     for (let i = 0; i < length && i < media.length; i++) {
-        const mediaObj = media[value].node
+        const mediaObj = media[i].node
         if (mediaObj.__typename == "GraphImage") {
             let divElement = document.createElement("div")
             divElement.classList.add("fixedRatio")
             let imgElement = document.createElement("img")
-            imgElement.classList.add("fixedRatio--contents")
             divElement.src = mediaObj.display_url
-            post.appendChild(imgElement)
+            imgElement.classList.add("fixedRatio--contents")
+            divElement.appendChild(imgElement)
+            post.appendChild(divElement)
 
         } else if (mediaObj.__typename == "GraphVideo") {
             let divElement = document.createElement("div")
@@ -26,7 +27,7 @@ function renderFeed(response, target, length) {
             videoElement.appendChild(sourceElement)
             videoElement.classList.add("fixedRatio--contents")
             divElement.appendChild(videoElement)
-            post.appendChild(videoElement)
+            post.appendChild(divElement)
 
         } else if (mediaObj.__typename == "GraphSidecar") {
             let divElement = document.createElement("div")
@@ -35,7 +36,7 @@ function renderFeed(response, target, length) {
             imgElement.src = mediaObj.display_url
             imgElement.classList.add("fixedRatio--contents")
             divElement.appendChild(imgElement)
-            post.appendChild(imgElement)
+            post.appendChild(divElement)
         }
     }
     target.append(post)
