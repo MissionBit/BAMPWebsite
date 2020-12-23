@@ -1,39 +1,50 @@
 /**
  * Renders Instagram feed JSON response in the given DOM target.
  */
-function renderFeed(response, target) {
+function renderFeed(response, target, length) {
     target.innerHTML = ""
-    let media = response.graphql.user.edge_owner_to_timeline_media.edges
-    for (const value in media) {
+    const media = response.graphql.user.edge_owner_to_timeline_media.edges
+    let post = document.createElement("div")
+    post.className = "gridBox gridBox-col4 gridBox-center"
+    for (let i = 0; i < length && i < media.length; i++) {
         const mediaObj = media[value].node
         if (mediaObj.__typename == "GraphImage") {
+            let divElement = document.createElement("div")
+            divElement.classList.add("fixedRatio")
             let imgElement = document.createElement("img")
-            imgElement.classList.add("instagramFeed--post")
-            imgElement.src = mediaObj.display_url
-            target.appendChild(imgElement)
+            imgElement.classList.add("fixedRatio--contents")
+            divElement.src = mediaObj.display_url
+            post.appendChild(imgElement)
 
         } else if (mediaObj.__typename == "GraphVideo") {
+            let divElement = document.createElement("div")
+            divElement.classList.add("fixedRatio")
             let videoElement = document.createElement("video")
             let sourceElement = document.createElement("source")
-            videoElement.classList.add("instagramFeed--post")
             videoElement.controls = "Play"
             sourceElement.src = mediaObj.video_url
             videoElement.appendChild(sourceElement)
-            target.appendChild(videoElement)
+            videoElement.classList.add("fixedRatio--contents")
+            divElement.appendChild(videoElement)
+            post.appendChild(videoElement)
 
         } else if (mediaObj.__typename == "GraphSidecar") {
+            let divElement = document.createElement("div")
+            divElement.classList.add("fixedRatio")
             let imgElement = document.createElement("img")
-            imgElement.className = "instagramFeed--post carousel--item"
             imgElement.src = mediaObj.display_url
-            target.appendChild(imgElement)
+            imgElement.classList.add("fixedRatio--contents")
+            divElement.appendChild(imgElement)
+            post.appendChild(imgElement)
         }
     }
+    target.append(post)
 }
 
 /**
  * Fetches IG account feed JSON and renders (if valid response) into the given target.
  */
-async function fetchAndRenderFeed(accountName, target) {
+async function fetchAndRenderFeed(accountName, target, length) {
     const response =
       await fetch(`https://www.instagram.com/${accountName}/?__a=1`).then(x => x.json())
 
@@ -42,13 +53,13 @@ async function fetchAndRenderFeed(accountName, target) {
         return
     }
 
-    renderFeed(response, target)
+    renderFeed(response, target, legnth)
 }
 
 // hide behind a button for now, so we don't make a bunch of unnecessary requsts
 // TODO: remove this when it becomes appropriate
 document.querySelector(".js-showInstaFeed").addEventListener("click", event => {
-    fetchAndRenderFeed("bayareamuralpro", document.querySelector(".instagramFeed"))
+    fetchAndRenderFeed("bayareamuralpro", document.querySelector(".instagramFeed"), 8)
     event.target.disabled = true
     event.target.style.display = "none"
 })
