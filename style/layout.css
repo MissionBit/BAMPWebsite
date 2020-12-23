@@ -6,6 +6,10 @@
     padding: 60px;
 }
 
+.l-center {
+    text-align: center;
+}
+
 .l-noScroll {
     overflow: hidden;
 }
