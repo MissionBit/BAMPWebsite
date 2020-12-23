@@ -9,6 +9,10 @@
     display: block;
 }
 
+.fixedRatio-60::after {
+    padding-bottom: 45%;
+}
+
 .fixedRatio--contents {
     position: absolute;
     left: 0;
