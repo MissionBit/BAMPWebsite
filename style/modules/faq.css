@@ -45,7 +45,7 @@
     float: right;
     font-size: 32px;
     line-height: 20px;
-    transition: 0.2s ease;
+    transition: 0.3s ease;
     user-select: none;
 }
 
@@ -55,4 +55,24 @@
 
 .faq--checkbox {
     display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .faq--question {
+        font-size: 15px;
+    }
+
+    .faq--answers {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .faq--question {
+        font-size: 22px;
+    }
+
+    .faq--answers {
+        font-size: 17px;
+    }
 }
