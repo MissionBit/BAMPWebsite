@@ -4,30 +4,42 @@
 function renderFeed(response, target, length) {
     target.innerHTML = ""
     const media = response.graphql.user.edge_owner_to_timeline_media.edges
+    let post = document.createElement("div")
+    post.className = "gridBox gridBox-col4 gridBox-center"
     for (let i = 0; i < length && i < media.length; i++) {
         const mediaObj = media[i].node
         if (mediaObj.__typename == "GraphImage") {
+            let divElement = document.createElement("div")
+            divElement.classList.add("fixedRatio")
             let imgElement = document.createElement("img")
-            imgElement.classList.add("instagramFeed--post")
             imgElement.src = mediaObj.display_url
-            target.appendChild(imgElement)
+            imgElement.classList.add("fixedRatio--contents")
+            divElement.appendChild(imgElement)
+            post.appendChild(divElement)
 
         } else if (mediaObj.__typename == "GraphVideo") {
+            let divElement = document.createElement("div")
+            divElement.classList.add("fixedRatio")
             let videoElement = document.createElement("video")
             let sourceElement = document.createElement("source")
-            videoElement.classList.add("instagramFeed--post")
             videoElement.controls = "Play"
             sourceElement.src = mediaObj.video_url
             videoElement.appendChild(sourceElement)
-            target.appendChild(videoElement)
+            videoElement.classList.add("fixedRatio--contents")
+            divElement.appendChild(videoElement)
+            post.appendChild(divElement)
 
         } else if (mediaObj.__typename == "GraphSidecar") {
+            let divElement = document.createElement("div")
+            divElement.classList.add("fixedRatio")
             let imgElement = document.createElement("img")
-            imgElement.className = "instagramFeed--post"
             imgElement.src = mediaObj.display_url
-            target.appendChild(imgElement)
+            imgElement.classList.add("fixedRatio--contents")
+            divElement.appendChild(imgElement)
+            post.appendChild(divElement)
         }
     }
+    target.append(post)
 }
 
 /**
