@@ -59,15 +59,15 @@
 
 @media only screen and (max-width: 600px) {
     .faq--question {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .faq--answers {
-        font-size: 11px;
+        font-size: 14px;
     }
 
     .faq--plus {
-        line-height: 15px;
+        line-height: 16px;
     }
 }
 
