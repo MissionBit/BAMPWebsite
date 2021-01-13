@@ -7,7 +7,7 @@ function setup(carousel, autoplay) {
     updateItems(items, dots)
     nextBtn.addEventListener('click', next)
     prevBtn.addEventListener('click', prev)
-    if (autoplay == true){
+    if (autoplay){
         const interval = 20
         setInterval(itemLoop, interval * 1000, items, dots)
     }
