@@ -4,8 +4,9 @@
     color: var(--dark-blue);
     font-size: 48px;
 }
+
 .sectionHeading-spaced {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .sectionHeading-centered {
@@ -20,5 +21,9 @@
 @media only screen and (max-width: 600px) {
     .sectionHeading {
         font-size: 36px;
+    }
+
+    .sectionHeading-spaced {
+        margin-bottom: 40px;
     }
 }

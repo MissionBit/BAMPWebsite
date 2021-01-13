@@ -1,0 +1,17 @@
+.homepageHeader {
+    position: relative;
+}
+
+.homepageHeader--img {
+    width: 100%;
+    height: 45vw;
+    object-fit: cover;
+}
+
+.homepageHeader--svg {
+    display: block;
+    position: absolute;
+    width: 40%;
+    top: 55%;
+    right: 0;
+}

@@ -1,0 +1,46 @@
+.metrics {
+    text-align: center;
+}
+
+.metrics--photo {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.metrics--photo > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.metrics--stats {
+    margin: 20px 0 0;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 700;
+    color: var(--dark-blue);
+    font-size: 48px;
+}
+
+.metrics--text {
+    margin: 0;
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 700px) {
+    .metrics--photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .metrics--text {
+        font-size: 17px;
+    }
+
+    .metrics--stats {
+        font-size: 36px;
+    }
+}

@@ -9,16 +9,16 @@
 
     <body>
         <div class="header">
-            <a class="header--linkLogo" href="#">
+            <a class="header--linkLogo" href="/index.html">
                 <img class="header--logo" src="images/logo-mini-color.svg">
             </a>
             <a class="header--link" href="#">Artwork</a>
-            <a class="header--link" href="#">About Us</a>
+            <a class="header--link" href="/about_us.html">About Us</a>
             <a class="header--link" href="#">Programs</a>
             <a class="header--link" href="#">Events</a>
-            <a class="header--link" href="#">Services</a>
+            <a class="header--link" href="/services.html">Services</a>
             <a class="header--link" href="#">Shop</a>
-            <a class="header--link" href="#">Get Involved</a>
+            <a class="header--link" href="/get_involved.html">Get Involved</a>
             <a class="header--link header--link-tight" href="#"><span class="btnLink btnLink-small">Get Updates</span></a>
             <a class="header--link header--link-tight" href="#"><span class="btnLink btnLink-red btnLink-small">Donate</span></a>
             <button id="hamburger" class="header--hamburger">☰</button>
@@ -27,14 +27,14 @@
         <div id="navModal" class="navModal">
             <button id="closeNavModal" class="navModal--close">×</button>
             <ul class="navModal--linkList">
-                <li><a class="navModal--link" href="#">Home</a></li>
-                <li><a class="navModal--link" href="#">Artwork</a></li>
-                <li><a class="navModal--link" href="#">About Us</a></li>
-                <li><a class="navModal--link" href="#">Programs</a></li>
-                <li><a class="navModal--link" href="#">Events</a></li>
-                <li><a class="navModal--link" href="#">Services</a></li>
+                <li><a class="navModal--link" href="/index.html">Home</a></li>
+                <li><a class="navModal--link" href="/artwork.html">Artwork</a></li>
+                <li><a class="navModal--link" href="/about_us.html">About Us</a></li>
+                <li><a class="navModal--link" href="/programs.html">Programs</a></li>
+                <li><a class="navModal--link" href="/events.html">Events</a></li>
+                <li><a class="navModal--link" href="/services.html">Services</a></li>
                 <li><a class="navModal--link" href="#">Shop</a></li>
-                <li><a class="navModal--link" href="#">Get Involved</a></li>
+                <li><a class="navModal--link" href="/get_involved.html">Get Involved</a></li>
                 <li><a class="btnLink btnLink-large">Get Updates</a></li>
                 <li><a class="btnLink btnLink-red btnLink-large">Donate</a></li>
             </ul>
@@ -50,7 +50,7 @@
 
         <section class="l-section">
             <div class="infoCard box box-red">
-                <img class="infoCard--img" src="/images/pictures/drawing-class-1.jpg">
+                <img class="infoCard--img" src="/images/services/drawing-class-1.jpg">
                 <div class="infoCard--caption">
                     <p class="infoCard--title">Classes</p>
                     <p class="infoCard--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
@@ -61,7 +61,7 @@
                 </div>
             </div>
             <div class="infoCard box box-blue">
-                <img class="infoCard--img" src="/images/pictures/screenprint-class.jpg">
+                <img class="infoCard--img" src="/images/services/screenprint-class.jpg">
                 <div class="infoCard--caption">
                     <p class="infoCard--title">Screen Printing</p>
                     <p class="infoCard--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
@@ -87,23 +87,29 @@
         <div class="footer">
             <div class="footer--panel">
                 <div class="footer--bizCard">
-                    <img src="../images/logo-gold-border.svg">
+                    <div class="footer--mobileBizCard">
+                        <a href="/index.html"><img src="../images/logo-gold-border.svg"></a>
+                        <div class="footer--mobileButton">
+                            <a class="btnLink" href="mailto: bampteamad@gmail.com">Contact</a><br><br>
+                            <a class="btnLink btnLink-red" href="#">Donate</a>
+                        </div>
+                    </div>
                     <p>BAY AREA MURAL PROGRAM</p>
-                    <p><b>Headquarters</b><br>3463 San Pablo Ave.<br>Oakland, CA 94608<br>(510) 965-5315</p>
+                    <p class="footer--address"><b>Headquarters: </b><br>3463 San Pablo Ave., <br>Oakland, CA 94608  <br>(510) 965-5315</p>
                 </div>
             </div>
             <hr>
             <div class="footer--panel footer--panel-middle">
                 <div class="footer--navColumn">
-                    <a class="footer--navLink" href="#">Artwork</a>
-                    <a class="footer--navLink" href="#">Events</a>
-                    <a class="footer--navLink" href="#">About Us</a>
-                    <a class="btnLink" href="#">Contact</a>
+                    <a class="footer--navLink" href="/artwork.html">Artwork</a>
+                    <a class="footer--navLink" href="/events.html">Events</a>
+                    <a class="footer--navLink" href="/about_us.html">About Us</a>
+                    <a class="btnLink" href="mailto: bampteamad@gmail.com">Contact</a>
                 </div>
                 <div class="footer--navColumn">
-                    <a class="footer--navLink" href="#">Services</a>
-                    <a class="footer--navLink" href="#">Programs</a>
-                    <a class="footer--navLink" href="#">Get Involved</a>
+                    <a class="footer--navLink" href="/services.html">Services</a>
+                    <a class="footer--navLink" href="/programs.html">Programs</a>
+                    <a class="footer--navLink" href="/get_involved.html">Get Involved</a>
                     <a class="btnLink btnLink-red" href="#">Donate</a>
                 </div>
             </div>
@@ -118,15 +124,14 @@
         </div>
 
         <div class="subFooter">
-            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/mail.svg"></a>
-            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/instagram.svg"></a>
-            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/twitter.svg"></a>
-            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/facebook.svg"></a>
-            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/youtube.svg"></a>
-            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/linkedin.svg"></a>
-            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/yelp.svg"></a>
+            <a class="subFooter--socials" href="mailto: bampteamad@gmail.com"><img class="subFooter--svg" src="/images/icons/footer/mail.svg"></a>
+            <a class="subFooter--socials" href="https://www.instagram.com/bayareamuralpro/"><img class="subFooter--svg" src="/images/icons/footer/instagram.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="/images/icons/footer/twitter.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="/images/icons/footer/facebook.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="/images/icons/footer/youtube.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="/images/icons/footer/linkedin.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="/images/icons/footer/yelp.svg"></a>
             <p class="subFooter--copyright">© 2020 BAY AREA MURAL PROGRAM</p>
         </div>
-
     </body>
 </html>
