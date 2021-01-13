@@ -1,4 +1,4 @@
-function setup(carousel) {
+function setup(carousel, autoplay) {
     const items = carousel.querySelector(".carousel--items")
     items.dataset.index = 0
     let nextBtn = carousel.querySelector(".carousel--next")
@@ -7,8 +7,10 @@ function setup(carousel) {
     updateItems(items, dots)
     nextBtn.addEventListener('click', next)
     prevBtn.addEventListener('click', prev)
-    const interval = 20
-    setInterval(itemLoop, interval * 1000, items, dots)
+    if (autoplay){
+        const interval = 20
+        setInterval(itemLoop, interval * 1000, items, dots)
+    }
 }
 
 function updateItems(items, dots) {
