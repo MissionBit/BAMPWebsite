@@ -1,0 +1,26 @@
+.muralGallery {
+    display: none;
+}
+
+.muralGallery-is-shown {
+    display: block;
+}
+
+.muralGallery--text {
+    text-align: center;
+}
+
+.muralGallery--slider {
+    top: -400px;
+    font-size: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transform: rotate(-90deg);
+    color: var(--dark-gray);
+}
+
+.muralGallery--show:hover,
+.muralGallery--slider:hover {
+    color: var(--dark-blue);
+}
