@@ -1,8 +1,6 @@
 .artworkThumbnail {
     display: block;
     overflow: hidden;
-    transition: opacity 0.5s ease;
-    
 }
 
 .artworkThumbnail--img {
@@ -20,8 +18,4 @@
 .artworkThumbnail--name {
     font-size: 18px;
     padding: 15px 15px 25px 25px;
-}
-
-.artworkThumbnail:hover {
-    opacity: 0.5;
 }
