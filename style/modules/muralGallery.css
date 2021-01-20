@@ -1,28 +1,17 @@
-.muralGallery {
-    /* display: none; */
-}
-
-/* .muralGallery-is-shown {
-    display: flex;
-} */
-
 .muralGallery-is-hidden {
     display: none;
 }
 
-/* .muralGallery--text {
-    text-align: center;
-} */
-
 .muralGallery--slider {
-    /* top: -400px; */
     font-size: 100px;
     transform: rotate(-90deg);
     color: var(--dark-gray);
 }
 
 .muralGallery--show {
+    padding-top: 40px;
     text-align: center;
+    line-height: 100%;
 }
 
 .muralGallery--text {
