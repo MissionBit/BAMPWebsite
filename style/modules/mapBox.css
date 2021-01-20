@@ -1,13 +1,12 @@
-.artworkThumbnail {
+.mapBox {
     display: block;
-    overflow: hidden;
 }
 
-.artworkThumbnail--img {
+.mapBox--img {
     width: 100%;
 }
 
-.artworkThumbnail--location {
+.mapBox--location {
     font-family: "Libre Franklin", sans-serif;
     font-weight: 700;
     color: var(--dark-blue);
@@ -15,7 +14,7 @@
     padding: 25px;
 }
 
-.artworkThumbnail--name {
+.mapBox--name {
     font-size: 18px;
     padding: 15px 15px 25px 25px;
 }
