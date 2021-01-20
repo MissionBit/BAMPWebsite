@@ -1,9 +1,13 @@
 .muralGallery {
-    display: none;
+    /* display: none; */
 }
 
-.muralGallery-is-shown {
-    display: block;
+/* .muralGallery-is-shown {
+    display: flex;
+} */
+
+.muralGallery-is-hidden {
+    display: none;
 }
 
 /* .muralGallery--text {
@@ -17,7 +21,16 @@
     color: var(--dark-gray);
 }
 
-/* .muralGallery--show:hover,
+.muralGallery--show {
+    text-align: center;
+}
+
+.muralGallery--text {
+    margin: 0;
+    font-size: 20px;
+}
+
+.muralGallery--show:hover,
 .muralGallery--slider:hover {
     color: var(--dark-blue);
-} */
+}
