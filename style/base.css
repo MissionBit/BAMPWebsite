@@ -16,6 +16,11 @@ p {
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
+li {
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding-bottom: 13px;
+}
+
 button,
 input[type="submit"] {
     border: none;

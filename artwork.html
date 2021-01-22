@@ -1,0 +1,439 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Artwork | BAMP</title>
+        <link rel="stylesheet" href="style/index.css">
+        <script src="scripts/index.js" type="module" defer></script>
+    </head>
+
+    <body>
+        <div class="header">
+            <a class="header--linkLogo" href="#">
+                <img class="header--logo" src="images/logo-mini-color.svg">
+            </a>
+            <a class="header--link" href="artwork.html">Artwork</a>
+            <a class="header--link" href="about_us.html">About Us</a>
+            <a class="header--link" href="programs.html">Programs</a>
+            <a class="header--link" href="Events.html">Events</a>
+            <a class="header--link" href="services.html">Services</a>
+            <a class="header--link" href="#">Shop</a>
+            <a class="header--link" href="get_involved.html">Get Involved</a>
+            <a class="header--link header--link-tight" href="#"><span class="btnLink btnLink-small">Get Updates</span></a>
+            <a class="header--link header--link-tight" href="https://donorbox.org/bay-area-mural-donations"><span class="btnLink btnLink-red btnLink-small">Donate</span></a>
+            <button id="hamburger" class="header--hamburger">☰</button>
+        </div>
+
+        <div id="navModal" class="navModal">
+            <button id="closeNavModal" class="navModal--close">×</button>
+            <ul class="navModal--linkList">
+                <li><a class="navModal--link" href="index.html">Home</a></li>
+                <li><a class="navModal--link" href="artwork.html">Artwork</a></li>
+                <li><a class="navModal--link" href="about_us.html">About Us</a></li>
+                <li><a class="navModal--link" href="programs.html">Programs</a></li>
+                <li><a class="navModal--link" href="Events.html">Events</a></li>
+                <li><a class="navModal--link" href="services.html">Services</a></li>
+                <li><a class="navModal--link" href="#">Shop</a></li>
+                <li><a class="navModal--link" href="get_involved.html">Get Involved</a></li>
+                <li><a class="btnLink btnLink-large">Get Updates</a></li>
+                <li><a class="btnLink btnLink-red btnLink-large">Donate</a></li>
+            </ul>
+        </div>
+
+        <section class="l-section">
+            <div class="gridBox gridBox-col2">
+                <div>
+                    <h1 class="sectionHeading ">Artwork</h1>
+                    <p>As muralists, we seek to...</p>
+                    <ul>
+                        <li>Use art to promote community engagement and development</li>
+                        <li>Help communities express themselves and find/explore the power of the visual voice</li>
+                        <li>Help share the unique story of each community</li>
+                        <li>Develop neighborhood  beautification projects and reclaim public spaces</li>
+                        <li>Teach a high quality process of fine-art making in the creation of a community mural</li>
+                    </ul>
+                    </div>
+                <div>
+                    <div class="box box-yellow">
+                        <div class="mapBox--img"><iframe src="https://www.google.com/maps/d/embed?mid=1YPg9qBdOFU1nlOm3w-o7S4aSDs1JT_Kw" width="640" height="480"></iframe>
+                        </div>
+                        <div class="mapBox--location">BAMP Mural Map</div>
+                        <div class="mapBox--name">The Bay Area Mural Program has painted murals from Vallejo to San Leandro. Look for the closest BAMP Mural on your next commute through the Bay Area.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="l-section">
+            <div class="gridBox gridBox-col3 gridBox-center">
+                <button class="muralThumbnail box box-red" data-mural-name="Downtown Oakland">
+                    <div class="muralThumbnail--img"><img src="images/artwork/blm.jpg"></div>
+                    <div class="muralThumbnail--caption">
+                        <div class="muralThumbnail--location">Downtown Oakland</div>
+                        <div class="muralThumbnail--name">BLM</div>
+                    </div>
+                </button>
+                <button class="muralThumbnail box box-blue" data-mural-name="Downtown SF">
+                    <div class="muralThumbnail--img"><img src="images/artwork/blm-sf.jpg"></div>
+                    <div class="muralThumbnail--caption">
+                        <div class="muralThumbnail--location">African American Art and Culture Complex, SF</div>
+                        <div class="muralThumbnail--name">BLM</div>
+                    </div>
+                </button>
+                <button class="muralThumbnail box box-yellow" data-mural-name="Nipsey">
+                    <div class="muralThumbnail--img"><img src="images/artwork/nipsey.jpg"></div>
+                    <div class="muralThumbnail--caption">
+                        <div class="muralThumbnail--location">Grand Express Market, Oakland</div>
+                        <div class="muralThumbnail--name">Nipsey</div>
+                    </div>
+                </button>
+                <button class="muralThumbnail box box-yellow" data-mural-name="Nao">
+                    <div class="muralThumbnail--img"><img src="images/artwork/naomais.PNG"></div>
+                    <div class="muralThumbnail--caption">
+                        <div class="muralThumbnail--location">Design, Draw, Build - 2866 Webster St. Oakland</div>
+                        <div class="muralThumbnail--name">Nao Mais</div>
+                    </div>
+                </button>
+                <button class="muralThumbnail box box-red" data-mural-name="Lodestar">
+                    <div class="muralThumbnail--img"><img src="images/artwork/Lodestar.JPG"></div>
+                    <div class="muralThumbnail--caption">
+                        <div class="muralThumbnail--location">Lodestar Public School</div>
+                        <div class="muralThumbnail--name">Lodestar</div>
+                    </div>
+                </button>
+                <button class="muralThumbnail box box-blue" data-mural-name="AuthOak">
+                    <div class="muralThumbnail--img"><img src="images/artwork/AuthOak.PNG"></div>
+                    <div class="muralThumbnail--caption">
+                        <div class="muralThumbnail--location">Whole Foods Market 230 Bay Pl Oakland, CA</div>
+                        <div class="muralThumbnail--name">Authentically Oakland</div>
+                    </div>
+                </button>
+                <button class="muralThumbnail box box-blue" data-mural-name="GTV">
+                    <div class="muralThumbnail--img"><img src="images/artwork/GTV.PNG"></div>
+                    <div class="muralThumbnail--caption">
+                        <div class="muralThumbnail--location">301 Georgia St. Vallejo, CA</div>
+                        <div class="muralThumbnail--name">Gateway to Vallejo</div>
+                    </div>
+                </button>
+                <button class="muralThumbnail box box-red" data-mural-name="KCM">
+                    <div class="muralThumbnail--img"><img src="images/artwork/Kapor Center.JPG"></div>
+                    <div class="muralThumbnail--caption">
+                        <div class="muralThumbnail--location">2148 Broadway Oakland</div>
+                        <div class="muralThumbnail--name">Kapor Center Mural</div>
+                    </div>
+                </button>
+                <button class="muralThumbnail box box-red" data-mural-name="DDF">
+                    <div class="muralThumbnail--img"><img src="images/artwork/digdeepfarmacy.jpeg"></div>
+                    <div class="muralThumbnail--caption">
+                        <div class="muralThumbnail--location">Dig Deep Farm</div>
+                        <div class="muralThumbnail--name">Oakland Farming</div>
+                    </div>
+                </button>
+            </div>
+        </section>
+        <section class="l-section">
+            <div class="gridBox gridBox-col2">
+                <div>
+                    <iframe width="560" height="315"
+                      src="https://www.youtube.com/embed/OaKg3WeMKrI" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="textRight">
+                    <h1 class="sectionHeading sectionHeading-right">Want a Mural?</h1>
+                    <p>
+                      Bay Area Mural Program is committed to exceeding your public art needs.
+                      <br>We have designers and muralist that specialize in bringing your ideas to life.
+                      <br>Questions, comments or special requests? <br>We’d love to hear from you, so don’t
+                      hesitate to reach out today.
+                    </p>
+                    <a class="btnLink">Click Here</a>
+                </div>
+            </div>
+        </section>
+        <section class="l-section">
+            <h1 class="sectionHeading sectionHeading-centered sectionHeading-spaced">Frequently Asked Questions</h1>
+            <div class="faqContainer">
+                <div class="faq">
+                    <input id="q1" type="checkbox" class="faq--checkbox">
+                    <label for="q1" class="faq--question">
+                        Is a mural expensive?
+                        <div class="faq--plus">+</div>
+                    </label>
+                    <div class="faq--answers">
+                    </div>
+                </div>
+                <div class="faq">
+                    <input id="q2" type="checkbox" class="faq--checkbox">
+                    <label for="q2" class="faq--question">
+                        How can I support my local artist?
+                        <div class="faq--plus">+</div>
+                    </label>
+                    <div class="faq--answers">42</div>
+                </div>
+                <div class="faq">
+                    <input id="q3" type="checkbox" class="faq--checkbox">
+                    <label for="q3" class="faq--question">
+                        How can I work with my city to install a mural in my community?
+                        <div class="faq--plus">+</div>
+                    </label>
+                    <div class="faq--answers">42</div>
+                </div>
+                <div class="faq">
+                    <input id="q4" type="checkbox" class="faq--checkbox">
+                    <label for="q4" class="faq--question">
+                        What type of murals does BAMP work on?
+                        <div class="faq--plus">+</div>
+                    </label>
+                    <div class="faq--answers">42</div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="footer">
+            <div class="footer--panel">
+                <div class="footer--bizCard">
+                    <img src="../images/logo-gold-border.svg">
+                    <p>BAY AREA MURAL PROGRAM</p>
+                    <p><b>Headquarters</b><br>3463 San Pablo Ave.<br>Oakland, CA 94608<br>(510) 965-5315</p>
+                </div>
+            </div>
+            <hr>
+            <div class="footer--panel footer--panel-middle">
+                <div class="footer--navColumn">
+                    <a class="footer--navLink" href="artwork.html">Artwork</a>
+                    <a class="footer--navLink" href="Events.html">Events</a>
+                    <a class="footer--navLink" href="about_us.html">About Us</a>
+                    <a class="btnLink" href="#">Contact</a>
+                </div>
+                <div class="footer--navColumn">
+                    <a class="footer--navLink" href="services.html">Services</a>
+                    <a class="footer--navLink" href="programs.html">Programs</a>
+                    <a class="footer--navLink" href="get_involved.html">Get Involved</a>
+                    <a class="btnLink btnLink-red" href="https://donorbox.org/bay-area-mural-donations">Donate</a>
+                </div>
+            </div>
+            <hr>
+            <div class="footer--panel footer--panel-right">
+                <form class="emailForm">
+                    <p class="emailForm--title">Get updates with BAMP's newsletter</p>
+                    <input type="email" class="emailForm--inputBox" placeholder="Your email address" name="email" required>
+                    <input type="submit" class="btnLink" value="Sign Up!">
+                </form>
+            </div>
+        </div>
+
+        <div class="subFooter">
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/mail.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/instagram.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/twitter.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/facebook.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/youtube.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/linkedin.svg"></a>
+            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="../images/footer/yelp.svg"></a>
+            <p class="subFooter--copyright">© 2020 BAY AREA MURAL PROGRAM</p>
+        </div>
+        <section>
+            <div class="muralModalContainer" data-mural-name="Downtown Oakland">
+                <div class="muralModal">
+                    <img class="muralModal--img" src="images/artwork/blm.jpg">
+                    <div class="muralModal--caption">
+                        <h2 class="muralModal--name">BLM</h2>
+                        <button class="muralModal--close" aria-label="Close">×</button>
+                        <p class="muralModal--text"></p>
+                        <p>
+                            <img class="muralModal--icon" src="../images/palette.svg">
+                            <span class="muralModal--bold">Lead Artist</span><span class="muralModal--text">: Rachel</span>
+                        </p>
+                        <p>
+                            <img class="muralModal--icon" src="../images/map-marker.svg">
+                            <span class="muralModal--bold">Location</span><span class="muralModal--text">: 15th St. Oakland</span>
+                        </p>
+                        <div class="muralModal--end">
+                            <img class="muralModal--icon" src="../images/calendar.svg">
+                            <span class="muralModal--bold">Date</span><span class="muralModal--text">: July, 2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="muralModalContainer" data-mural-name="Downtown SF">
+                <div class="muralModal">
+                    <img class="muralModal--img" src="images/artwork/blm-sf.jpg">
+                    <div class="muralModal--caption">
+                        <h2 class="muralModal--name">BLM</h2>
+                        <button class="muralModal--close" aria-label="Close">×</button>
+                        <p class="muralModal--text"></p>
+                        <p>
+                            <img class="muralModal--icon" src="../images/palette.svg">
+                            <span class="muralModal--bold">Lead Artist</span><span class="muralModal--text">: Rachel</span>
+                        </p>
+                        <p>
+                            <img class="muralModal--icon" src="../images/map-marker.svg">
+                            <span class="muralModal--bold">Location</span><span class="muralModal--text">: African American Art and Culture Complex - 762 Fulton St. SF</span>
+                        </p>
+                        <div class="muralModal--end">
+                            <img class="muralModal--icon" src="../images/calendar.svg">
+                            <span class="muralModal--bold">Date</span><span class="muralModal--text">: July, 2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="muralModalContainer" data-mural-name="Nipsey">
+                <div class="muralModal">
+                    <img class="muralModal--img" src="images/artwork/nipsey.jpg">
+                    <div class="muralModal--caption">
+                        <h2 class="muralModal--name">Nipsey</h2>
+                        <button class="muralModal--close" aria-label="Close">×</button>
+                        <p class="muralModal--text"></p>
+                        <p>
+                            <img class="muralModal--icon" src="../images/palette.svg">
+                            <span class="muralModal--bold">Lead Artist</span><span class="muralModal--text">: Tim</span>
+                        </p>
+                        <p>
+                            <img class="muralModal--icon" src="../images/map-marker.svg">
+                            <span class="muralModal--bold">Location</span><span class="muralModal--text">: Grand Express Market, Oakland</span>
+                        </p>
+                        <div class="muralModal--end">
+                            <img class="muralModal--icon" src="../images/calendar.svg">
+                            <span class="muralModal--bold">Date</span><span class="muralModal--text">: July, 2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="muralModalContainer" data-mural-name="Nao">
+                <div class="muralModal">
+                    <img class="muralModal--img" src="images/artwork/naomais.PNG">
+                    <div class="muralModal--caption">
+                        <h2 class="muralModal--name">Nao Mais</h2>
+                        <button class="muralModal--close" aria-label="Close">×</button>
+                        <p class="muralModal--text"></p>
+                        <p>
+                            <img class="muralModal--icon" src="../images/palette.svg">
+                            <span class="muralModal--bold">Lead Artist</span><span class="muralModal--text">: Rachel, Pamela</span>
+                        </p>
+                        <p>
+                            <img class="muralModal--icon" src="../images/map-marker.svg">
+                            <span class="muralModal--bold">Location</span><span class="muralModal--text">: Design, Draw, Build - 2866 Webster St. Oakland</span>
+                        </p>
+                        <div class="muralModal--end">
+                            <img class="muralModal--icon" src="../images/calendar.svg">
+                            <span class="muralModal--bold">Date</span><span class="muralModal--text">: July, 2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="muralModalContainer" data-mural-name="Lodestar">
+                <div class="muralModal">
+                    <img class="muralModal--img" src="images/artwork/Lodestar.JPG">
+                    <div class="muralModal--caption">
+                        <h2 class="muralModal--name">Lodestar</h2>
+                        <button class="muralModal--close" aria-label="Close">×</button>
+                        <p class="muralModal--text"></p>
+                        <p>
+                            <img class="muralModal--icon" src="../images/palette.svg">
+                            <span class="muralModal--bold">Lead Artist</span><span class="muralModal--text">: Rachel </span>
+                        </p>
+                        <p>
+                            <img class="muralModal--icon" src="../images/map-marker.svg">
+                            <span class="muralModal--bold">Location</span><span class="muralModal--text">: Lodestar Public School - 701 105th Ave. Oakland</span>
+                        </p>
+                        <div class="muralModal--end">
+                            <img class="muralModal--icon" src="../images/calendar.svg">
+                            <span class="muralModal--bold">Date</span><span class="muralModal--text">: April, 2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="muralModalContainer" data-mural-name="AuthOak">
+                <div class="muralModal">
+                    <img class="muralModal--img" src="images/artwork/AuthOak.PNG">
+                    <div class="muralModal--caption">
+                        <h2 class="muralModal--name">Authentically Oakland</h2>
+                        <button class="muralModal--close" aria-label="Close">×</button>
+                        <p class="muralModal--text"></p>
+                        <p>
+                            <img class="muralModal--icon" src="../images/palette.svg">
+                            <span class="muralModal--bold">Lead Artist</span><span class="muralModal--text">: Andre</span>
+                        </p>
+                        <p>
+                            <img class="muralModal--icon" src="../images/map-marker.svg">
+                            <span class="muralModal--bold">Location</span><span class="muralModal--text">: Whole Foods Market 230 Bay Pl Oakland, CA</span>
+                        </p>
+                        <div class="muralModal--end">
+                            <img class="muralModal--icon" src="../images/calendar.svg">
+                            <span class="muralModal--bold">Date</span><span class="muralModal--text">:December, 2018</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="muralModalContainer" data-mural-name="GTV">
+                <div class="muralModal">
+                    <img class="muralModal--img" src="images/artwork/GTV.PNG">
+                    <div class="muralModal--caption">
+                        <h2 class="muralModal--name">Gateway to Vallejo</h2>
+                        <button class="muralModal--close" aria-label="Close">×</button>
+                        <p class="muralModal--text">Awarded grant.</p>
+                        <p>
+                            <img class="muralModal--icon" src="../images/palette.svg">
+                            <span class="muralModal--bold">Lead Artist</span><span class="muralModal--text">: Andre</span>
+                        </p>
+                        <p>
+                            <img class="muralModal--icon" src="../images/map-marker.svg">
+                            <span class="muralModal--bold">Location</span><span class="muralModal--text">: 301 Georgia St. Vallejo, CA</span>
+                        </p>
+                        <div class="muralModal--end">
+                            <img class="muralModal--icon" src="../images/calendar.svg">
+                            <span class="muralModal--bold">Date</span><span class="muralModal--text">:December, 2015</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="muralModalContainer" data-mural-name="KCM">
+                <div class="muralModal">
+                    <img class="muralModal--img" src="images/artwork/Kapor Center.JPG">
+                    <div class="muralModal--caption">
+                        <h2 class="muralModal--name">Gateway to Vallejo</h2>
+                        <button class="muralModal--close" aria-label="Close">×</button>
+                        <p class="muralModal--text"></p>
+                        <p>
+                            <img class="muralModal--icon" src="../images/palette.svg">
+                            <span class="muralModal--bold">Lead Artist</span><span class="muralModal--text">: Rachel </span>
+                        </p>
+                        <p>
+                            <img class="muralModal--icon" src="../images/map-marker.svg">
+                            <span class="muralModal--bold">Location</span><span class="muralModal--text">: 2148 Broadway Oakland</span>
+                        </p>
+                        <div class="muralModal--end">
+                            <img class="muralModal--icon" src="../images/calendar.svg">
+                            <span class="muralModal--bold">Date</span><span class="muralModal--text">:August, 2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="muralModalContainer" data-mural-name="DDF">
+                <div class="muralModal">
+                    <img class="muralModal--img" src="images/artwork/digdeepfarmacy.jpeg">
+                    <div class="muralModal--caption">
+                        <h2 class="muralModal--name">Oakland Farming</h2>
+                        <button class="muralModal--close" aria-label="Close">×</button>
+                        <p class="muralModal--text"></p>
+                        <p>
+                            <img class="muralModal--icon" src="../images/palette.svg">
+                            <span class="muralModal--bold">Lead Artist</span><span class="muralModal--text">: Bobby</span>
+                        </p>
+                        <p>
+                            <img class="muralModal--icon" src="../images/map-marker.svg">
+                            <span class="muralModal--bold">Location</span><span class="muralModal--text">: Dig Deep Farm - 2700 Fairmont Dr. San Leandro </span>
+                        </p>
+                        <div class="muralModal--end">
+                            <img class="muralModal--icon" src="../images/calendar.svg">
+                            <span class="muralModal--bold">Date</span><span class="muralModal--text">:October, 2019</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

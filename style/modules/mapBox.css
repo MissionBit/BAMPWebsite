@@ -1,0 +1,20 @@
+.mapBox {
+    display: block;
+}
+
+.mapBox--img {
+    width: 100%;
+}
+
+.mapBox--location {
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 700;
+    color: var(--dark-blue);
+    font-size: 35px;
+    padding: 25px;
+}
+
+.mapBox--name {
+    font-size: 18px;
+    padding: 15px 15px 25px 25px;
+}
