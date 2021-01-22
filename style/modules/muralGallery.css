@@ -3,13 +3,12 @@
 }
 
 .muralGallery--slider {
-    font-size: 100px;
+    font-size: 80px;
     transform: rotate(-90deg);
     color: var(--dark-gray);
 }
 
 .muralGallery--show {
-    padding-top: 40px;
     text-align: center;
     line-height: 100%;
 }
