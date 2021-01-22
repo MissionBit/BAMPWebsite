@@ -1,5 +1,8 @@
 .l-section {
     padding: 60px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .l-center {
