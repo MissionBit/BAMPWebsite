@@ -19,4 +19,7 @@ function hideMuralGallery(event) {
 }
 
 const showMore = document.getElementById('muralGallerySlider')
-showMore.addEventListener('click', showMuralGallery, {"once": true})
+
+if (showMore) {
+    showMore.addEventListener('click', showMuralGallery, {"once": true})
+}
