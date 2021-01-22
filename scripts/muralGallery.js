@@ -8,18 +8,6 @@ function showMuralGallery(event) {
     document.getElementById("muralGalleryText").innerHTML = changeMuralGalleryText
 }
 
-// function showMuralGalleryText (event) {
-//     const muralGalleryText = document.getElementById('muralGalleryText')
-//     event.target.innerHTML = "Hide"
-//     showMore.addEventListener('click', hideMuralGalleryText, {"once": true})
-// }
-
-// function hideMuralGalleryText () {
-//     const muralGalleryText = document.getElementById('muralGalleryText')
-//     event.target.innerHTML = "Show More"
-//     showMore.addEventListener('click', showMuralGalleryText, {"once": true})
-// }
-
 function hideMuralGallery(event) {
     const muralGallery = document.getElementById('muralGallery')
     muralGallery.classList.add('muralGallery-is-hidden')
@@ -32,6 +20,3 @@ function hideMuralGallery(event) {
 
 const showMore = document.getElementById('muralGallerySlider')
 showMore.addEventListener('click', showMuralGallery, {"once": true})
-
-// const showMoreText = document.getElementsByClassName(".muralGallery--text")
-// muralGalleryText.addEventListener('click', showMuralGalleryText, {"once": true})
