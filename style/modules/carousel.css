@@ -38,7 +38,7 @@
     user-select: none;
 }
 
-.carousel--dots > * {
+.carousel--dot {
     display: inline-block;
     cursor: pointer;
     width: 15px;
