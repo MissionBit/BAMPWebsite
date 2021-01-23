@@ -6,6 +6,7 @@
     font-size: 80px;
     transform: rotate(-90deg);
     color: var(--dark-gray);
+    outline: none;
 }
 
 .muralGallery--show {
