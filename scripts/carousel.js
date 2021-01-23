@@ -82,8 +82,8 @@ function prev() {
     updateItems(items, dots)
 }
 
-const carousels = document.querySelectorAll(".carousel")
+// const carousels = document.querySelectorAll(".carousel")
 
-for (const carousel of carousels) {
-    setup(carousel)
-}
+// for (const carousel of carousels) {
+//     setup(carousel)
+// }

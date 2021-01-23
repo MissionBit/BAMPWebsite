@@ -5,6 +5,11 @@
     margin-right: auto;
 }
 
+.l-section--text {
+    text-align: center;
+    font-size: 30px;
+}
+
 .l-center {
     text-align: center;
 }
@@ -16,5 +21,9 @@
 @media only screen and (max-width: 600px) {
     .l-section {
         padding: 40px;
+    }
+
+    .l-section--text {
+        font-size: 18px;
     }
 }
