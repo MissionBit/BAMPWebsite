@@ -35,4 +35,8 @@
     .gridBox-col4 > * {
         flex-basis: 39%;
     }
+
+    .gridBox--hidden-on-mobile {
+        display: none;
+    }
 }
