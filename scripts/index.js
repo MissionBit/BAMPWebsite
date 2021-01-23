@@ -1,4 +1,5 @@
 import './vendor/siema.min.js'
+import './vendor/siemaWithDots.js'
 import './header.js'
 import './mural.js'
 import './carousel.js'

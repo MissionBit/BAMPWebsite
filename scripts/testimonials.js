@@ -1,62 +1,36 @@
-const mySiema = new Siema({
-  selector: '.carousel--items',
-  duration: 200,
-  easing: 'ease-out',
-  perPage: 1,
-  startIndex: 0,
-  draggable: true,
-  multipleDrag: true,
-  threshold: 20,
-  loop: false,
-  rtl: false,
-  onInit: () => {},
-  onChange: () => {},
-})
+function setUpCarousel(root) {
+    const siema = new SiemaWithDots({
+        selector: root.querySelector('.carousel--items'),
+        duration: 200,
+        easing: 'ease-out',
+        perPage: 1,
+        startIndex: 0,
+        draggable: true,
+        multipleDrag: true,
+        threshold: 20,
+        loop: true,
+        onInit: function() {
+            this.addDots()
+            this.updateDots()
+        },
+        onChange: function() {
+            this.updateDots()
+        },
+    })
 
-document.querySelector('.carousel--prev').addEventListener('click', () => mySiema.prev());
-document.querySelector('.carousel--next').addEventListener('click', () => mySiema.next());
+    const prevBtn = root.querySelector('.carousel--prev')
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => siema.prev())
+    }
 
-function setupDots(carousel, itemsCount) {
-  if (itemsCount > 8) {
-      return
-  }
-  let dots = document.createElement("DIV")
-  dots.className = "carousel--dots"
-  carousel.appendChild(dots)
-  for (let i = 0; i < itemsCount; i++) {
-      const dot = document.createElement("DIV")
-      dots.appendChild(dot)
-      dot.dataset.indexDot = i
-      dot.addEventListener("click", (event) => {
-        event.target.classList.add("carousel--dot-is-active")
-        mySiema.goTo(i)
-        const dots = document.querySelectorAll(".carousel--dots")
-        for (const dot of dots) {
-          dot.classList.remove("carousel--dot-is-active")
-        }
-      })
-  }
-  return dots
+    const nextBtn = root.querySelector('.carousel--next')
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => siema.next())
+    }
 }
 
-function updateItems(items, dots) {
-  let index = parseInt(items.dataset.index, 10)
-  items = items.querySelectorAll(".carousel--item")
-  for (let i = 0; i < items.length; i++) {
-      if (i != index) {
-          items[i].classList.add("carousel--item-is-hidden")
-          if (dots) {
-              dots.children[i].classList.remove("carousel--dot-is-active")
-          }
-      } else {
-          items[i].classList.remove("carousel--item-is-hidden")
-          if (dots) {
-              dots.children[i].classList.add("carousel--dot-is-active")
-          }
-      }
-  }
-}
+const carousels = document.querySelectorAll('.carousel')
 
-const carousel = document.querySelector(".carousel")
-const items = carousel.querySelector(".carousel--items")
-let dots = setupDots(carousel, items.querySelectorAll(".carousel--item").length)
+for (const c of carousels) {
+    setUpCarousel(c)
+}
