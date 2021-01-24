@@ -93,6 +93,13 @@
     display: none;
 }
 
+/* next slider gets eaten by the speech bubble on homepage */
+@media only screen and (max-width: 800px) {
+    .carousel--slider {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .carousel--hidden-on-desktop {
         display: block;
