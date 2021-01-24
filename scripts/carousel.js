@@ -4,7 +4,6 @@ function setUpCarousel(root) {
         duration: 200,
         easing: 'ease-out',
         perPage: 1,
-        startIndex: 0,
         draggable: true,
         multipleDrag: true,
         threshold: 20,
