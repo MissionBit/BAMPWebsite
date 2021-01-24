@@ -110,6 +110,10 @@
         padding-top: 15px;
     }
 
+    .footer--mobileBizCard img {
+        width: 100%;
+    }
+
     .footer--panel {
         margin: 20px 8px;
     }
