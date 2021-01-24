@@ -11,8 +11,8 @@
 .homepageHeader--svg {
     display: block;
     position: absolute;
-    width: 40%;
-    top: 55%;
+    width: 35%;
+    top: 30vw;
     right: 0;
     z-index: 5;
 }
