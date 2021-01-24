@@ -31,6 +31,12 @@
     flex-basis: 22%;
 }
 
+@media only screen and (max-width: 900px) {
+    .gridBox-col2-collapse > * {
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+
 @media only screen and (max-width: 600px) {
     .gridBox-col4 > * {
         flex-basis: 39%;

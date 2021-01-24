@@ -35,6 +35,13 @@
     width: 25px;
 }
 
+@media only screen and (min-width: 1000px) {
+    .teamMember--photo {
+        height: 220px;
+        width: 220px;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     .teamMember {
         padding: 0 15px;
@@ -42,13 +49,13 @@
 
     .teamMember--name {
         padding: 4px;
-        font-size: 17px;
+        font-size: 18px;
         color: var(--dark-gray);
     }
 
     .teamMember--role {
         padding-bottom: 4px;
-        font-size: 10px;
+        font-size: 13px;
         color: var(--gray);
     }
 
@@ -68,12 +75,5 @@
 
     .teamMember--icon {
         display: none;
-    }
-}
-
-@media only screen and (min-width: 1000px) {
-    .teamMember--photo {
-        height: 220px;
-        width: 220px;
     }
 }

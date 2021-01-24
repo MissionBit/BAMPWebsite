@@ -46,7 +46,7 @@ h3 {
     min-width: 0;
 }
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     .l-sidebar {
         display: none;
     }
@@ -156,7 +156,7 @@ section .sbHeading {
     background-color: #2e2;
 }
 
-@media (max-width: 620px) {
+@media only screen and (max-width: 620px) {
     .sbPage {
         border-radius: 16px;
         border-width: 32px 6px 6px 6px;
