@@ -27,6 +27,16 @@
     margin-bottom: 0;
 }
 
+@media only screen and (max-width: 900px) {
+    .pageHeader .sectionHeading {
+        font-size: 40px;
+    }
+
+    .pageHeader--text {
+        font-size: 22px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .pageHeader {
         padding: 0 5px;
