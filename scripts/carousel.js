@@ -8,7 +8,7 @@ function unhideItems(root) {
 function setUpCarousel(root) {
     const siema = new SiemaWithDots({
         selector: root.querySelector('.carousel--items'),
-        duration: 200,
+        duration: 300,
         easing: 'ease-out',
         perPage: 1,
         draggable: true,
@@ -23,6 +23,8 @@ function setUpCarousel(root) {
         onChange: function() {
             this.updateDots()
         },
+        autoplay: root.classList.contains('carousel-autoplay'),
+        autoplayDuration: 8000,
     })
 
     const prevBtn = root.querySelector('.carousel--prev')
