@@ -38,6 +38,10 @@
     color: var(--gray);
 }
 
+.carousel--prev {
+    left: 0;
+}
+
 .carousel--next {
     right: 0;
 }
