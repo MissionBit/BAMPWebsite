@@ -8,20 +8,38 @@
     cursor: pointer;
     text-align: center;
     border-radius: 50%;
-    width: 20px;
     top: 50%;
-    padding: 16px;
     transform: translateY(-50%);
     margin: 0 10px;
     user-select: none;
     transition: 150ms;
     color: var(--white);
+    font-size: 26px;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    outline: none;
 }
 
 .carousel--slider:hover {
     opacity: 0.8;
     background: var(--silver);
     color: var(--dark-gray);
+}
+
+.carousel--slider-dark {
+    color: var(--dark-gray);
+    font-size: 60px;
+    width: 60px;
+}
+
+.carousel--slider-dark:hover {
+    background: inherit;
+    color: var(--gray);
+}
+
+.carousel--prev {
+    left: 0;
 }
 
 .carousel--next {
@@ -35,7 +53,7 @@
     user-select: none;
 }
 
-.carousel--dots > * {
+.carousel--dot {
     display: inline-block;
     cursor: pointer;
     width: 15px;

@@ -35,12 +35,12 @@
 }
 
 .testimonial--quote {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 150%;
     font-style: italic;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .testimonial {
         margin-top: 30px;
     }
@@ -63,5 +63,10 @@
 
     .testimonial--quote {
         font-size: 16px;
+    }
+
+    .testimonial--slider {
+        font-size: 40px;
+        width: 40px;
     }
 }
