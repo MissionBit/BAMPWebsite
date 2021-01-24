@@ -3,6 +3,21 @@
     width: 100%;
 }
 
+.carousel--items {
+    position: relative;
+}
+
+.carousel--item {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    transition: 150ms;
+}
+
+.carousel--item-is-hidden {
+    display: none;
+}
+
 .carousel--slider {
     position: absolute;
     cursor: pointer;
@@ -65,22 +80,6 @@
     margin: 15px 3px;
 }
 
-.carousel--items {
-    position: relative;
-}
-
-.carousel--item {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-    transition: 150ms;
-}
-
-.carousel--item-is-hidden {
-    position: fixed;
-    opacity: 0;
-}
-
 .carousel--dots > *:hover {
     background: var(--dark-gray);
 }
@@ -93,7 +92,7 @@
     display: none;
 }
 
-/* next slider gets eaten by the speech bubble on homepage */
+/* hide "next" slider before it can get eaten by the speech bubble */
 @media only screen and (max-width: 800px) {
     .carousel--slider {
         display: none;

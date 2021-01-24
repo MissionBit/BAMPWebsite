@@ -15,4 +15,5 @@
     top: 30vw;
     right: 0;
     z-index: 5;
+    user-select: none;
 }

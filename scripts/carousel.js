@@ -1,3 +1,10 @@
+function unhideItems(root) {
+    const items = root.querySelectorAll('.carousel--item-is-hidden')
+    for (const item of items) {
+        item.classList.remove('carousel--item-is-hidden')
+    }
+}
+
 function setUpCarousel(root) {
     const siema = new SiemaWithDots({
         selector: root.querySelector('.carousel--items'),
@@ -11,6 +18,7 @@ function setUpCarousel(root) {
         onInit: function() {
             this.addDots()
             this.updateDots()
+            unhideItems(root)
         },
         onChange: function() {
             this.updateDots()
