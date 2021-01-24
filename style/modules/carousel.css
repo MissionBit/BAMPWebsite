@@ -27,6 +27,17 @@
     color: var(--dark-gray);
 }
 
+.carousel--slider-dark {
+    color: var(--dark-gray);
+    font-size: 60px;
+    width: 60px;
+}
+
+.carousel--slider-dark:hover {
+    background: inherit;
+    color: var(--gray);
+}
+
 .carousel--next {
     right: 0;
 }

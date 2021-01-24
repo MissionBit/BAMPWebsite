@@ -40,21 +40,6 @@
     font-style: italic;
 }
 
-.testimonial--slider {
-    position: absolute;
-    cursor: pointer;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0 10px;
-    user-select: none;
-    transition: 150ms;
-    color: var(--dark-gray);
-    font-size: 60px;
-    width: 60px;
-    outline: none;
-}
-
 @media only screen and (max-width: 700px) {
     .testimonial {
         margin-top: 30px;
