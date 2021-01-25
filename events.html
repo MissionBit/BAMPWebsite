@@ -1,13 +1,15 @@
+<!doctype html>
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Events | BAMP</title>
         <link rel="stylesheet" href="style/index.css">
         <script src="scripts/index.js" type="module" defer></script>
     </head>
 
     <body>
-        <div class="header">
+        <header class="header">
             <a class="header--linkLogo" href="index.html">
                 <img class="header--logo" src="images/logo-mini-color.svg">
             </a>
@@ -18,10 +20,10 @@
             <a class="header--link" href="services.html">Services</a>
             <a class="header--link" href="#">Shop</a>
             <a class="header--link" href="get_involved.html">Get Involved</a>
-            <a class="header--link header--link-tight" href="#emailForm"><span class="btnLink btnLink-small">Get Updates</span></a>
+            <button class="header--link header--link-tight"><span class="btnLink btnLink-small getUpdates">Get Updates</span></button>
             <a class="header--link header--link-tight" href="https://donorbox.org/bay-area-mural-donations"><span class="btnLink btnLink-red btnLink-small">Donate</span></a>
             <button id="hamburger" class="header--hamburger">☰</button>
-        </div>
+        </header>
 
         <div id="navModal" class="navModal">
             <button id="closeNavModal" class="navModal--close">×</button>
@@ -34,7 +36,7 @@
                 <li><a class="navModal--link" href="services.html">Services</a></li>
                 <li><a class="navModal--link" href="#">Shop</a></li>
                 <li><a class="navModal--link" href="get_involved.html">Get Involved</a></li>
-                <li><a class="btnLink btnLink-large" href="#emailForm">Get Updates</a></li>
+                <li><button class="btnLink btnLink-large getUpdates">Get Updates</button></li>
                 <li><a class="btnLink btnLink-red btnLink-large" href="https://donorbox.org/bay-area-mural-donations">Donate</a></li>
             </ul>
         </div>
@@ -46,7 +48,12 @@
                 <div class="infoCard">
                     <div class="infoCard--caption">
                         <p class="infoCard--title">Classes</p>
-                        <p class="infoCard--text">Due to concerns over the outbreak of coronavirus (COVID-19) we have decided to postpone in person events and classes. Sign up for our email list to stay up to date with BAMP.</p>
+                        <p class="infoCard--text">Due to concerns over the outbreak of coronavirus (COVID-19) we have decided to postpone out in-person events and classes. Sign up for our email list to stay up to date with BAMP.</p>
+
+                        <div class="infoCard--btn">
+                            <a class="btnLink getUpdates">Get Updates</a>
+                            <a class="btnLink btnLink-large getUpdates">Get Updates</a>
+                        </div>
                     </div>
                 </div>
             </div>
