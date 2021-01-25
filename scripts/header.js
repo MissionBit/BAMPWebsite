@@ -15,7 +15,6 @@ hamburgerBtn.addEventListener('click', showNavModal)
 const closeNavModalBtn = document.getElementById('closeNavModal')
 closeNavModalBtn.addEventListener('click', hideNavModal)
 
-const navList = document.querySelector('.navModal--linkList')
 const closeAll = document.querySelectorAll('.navModal--linkList > *')
 for (const link of closeAll) {
     link.addEventListener('click', hideNavModal)
