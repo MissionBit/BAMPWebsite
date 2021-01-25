@@ -44,7 +44,6 @@
 
 @media only screen and (max-width: 600px) {
     .infoCard {
-        min-width: 350px;
         flex-direction: column;
     }
 
@@ -65,13 +64,13 @@
     }
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1400px) {
     .infoCard--caption {
         padding: 20px;
     }
 
     .infoCard--text {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .infoCard--btn > .btnLink {

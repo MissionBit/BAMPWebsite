@@ -5,6 +5,27 @@
 // addDots - to create a markup for dots
 // updateDots - to update classes on dots on change callback
 class SiemaWithDots extends Siema {
+  constructor(options) {
+      options.autoplayDuration = options.autoplayDuration || 10000
+      super(options)
+
+  }
+
+  slideToCurrent(enableTransition) {
+      super.slideToCurrent(enableTransition)
+      if (this.config.autoplay) {
+          this.delayedNext()
+      }
+  }
+
+  delayedNext() {
+      if (this.intervalId) {
+          clearInterval(this.intervalId)
+      }
+
+      this.intervalId = setInterval(() => this.next(), this.config.autoplayDuration, { once: true })
+  }
+
   addDots() {
     // create a contnier for all dots
     // add a class 'dots' for styling reason

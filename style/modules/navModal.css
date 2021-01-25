@@ -24,7 +24,7 @@
 
 .navModal--link {
     text-decoration: none;
-    line-height: 200%;
+    line-height: 180%;
     font-size: 30px;
     color: var(--dark-gray);
     font-weight: bold;
@@ -39,7 +39,7 @@
 }
 
 .navModal .btnLink {
-    margin-top: 30px;
+    margin-top: 16px;
 }
 
 @media only screen and (max-width: 500px) {
