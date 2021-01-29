@@ -27,12 +27,13 @@
 }
 
 .l-section--splitText {
-    padding-right: 70px;
+    flex-grow: 1;
+    padding-right: 10%;
 }
 
-/* .l-section--splitDiv {
-
-} */
+.l-section--splitDiv {
+    flex-grow: 2;
+}
 
 @media only screen and (max-width: 600px) {
     .l-section {
