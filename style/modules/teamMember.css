@@ -66,9 +66,6 @@
         border-radius: 50%;
     }
 
-    .teamMember--icon {
-        display: none;
-    }
 }
 
 @media only screen and (min-width: 1000px) {
