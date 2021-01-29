@@ -19,8 +19,20 @@
 }
 
 .l-section--list {
-    line-height: 250%;
+    line-height: 200%;
 }
+
+.l-section--split {
+    display: flex;
+}
+
+.l-section--splitText {
+    padding-right: 70px;
+}
+
+/* .l-section--splitDiv {
+
+} */
 
 @media only screen and (max-width: 600px) {
     .l-section {
@@ -33,5 +45,9 @@
 
     .l-section--list {
         line-height: 150%;
+    }
+
+    .l-section--split {
+        flex-direction: column;
     }
 }

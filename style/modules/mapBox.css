@@ -1,5 +1,6 @@
 .mapBox {
     display: block;
+    height: 50vw;
 }
 
 .mapBox--img {
