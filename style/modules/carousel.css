@@ -104,7 +104,7 @@
         display: block;
     }
 
-    .carousel--images {
+    .carousel--item-cover {
         margin-left: auto;
         margin-right: auto;
         width: 75%;
