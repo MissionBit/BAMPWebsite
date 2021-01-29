@@ -1,6 +1,7 @@
 .muralModal {
     display: flex;
     max-width: 1500px;
+    height: 40vw;
 }
 
 .muralModalContainer {
@@ -61,12 +62,12 @@
 
 .muralModal--img {
     width: 70%;
-    object-fit: cover;
 }
 
 .muralModal--img > img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .muralModal--icon {
@@ -87,6 +88,7 @@
     .muralModal {
         flex-direction: column;
         font-size: 17px;
+        height: auto;
     }
 
     .muralModalContainer {
