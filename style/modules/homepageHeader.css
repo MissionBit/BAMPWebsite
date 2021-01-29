@@ -17,3 +17,9 @@
     z-index: 5;
     user-select: none;
 }
+
+@media only screen and (max-width: 600px) {
+    .homepageHeader--img {
+        height: 120vw;
+    }
+}
