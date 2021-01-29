@@ -26,10 +26,6 @@
     display: flex;
 }
 
-.l-section--splitCenter {
-    align-items: center;
-}
-
 .l-section--splitLeft {
     padding-right: 10%;
 }
