@@ -1,6 +1,5 @@
 .event {
     display: block;
-    min-width: 450px;
     padding-bottom: 10px;
 }
 
@@ -53,7 +52,7 @@
 @media only screen and (max-width: 600px) {
     .event {
         display: block;
-        min-width: 400px;
+        min-width: 240px;
     }
 
     .event--img {
@@ -67,7 +66,7 @@
     }
 
     .event--text {
-        font-size: 13px;
+        font-size: 10px;
         padding: 0 30px;
     }
 
