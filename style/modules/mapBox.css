@@ -4,7 +4,6 @@
 
 .mapBox--img {
     width: 100%;
-    min-width: 300px;
 }
 
 .mapBox--location {
@@ -12,10 +11,25 @@
     font-weight: 700;
     color: var(--dark-blue);
     font-size: 35px;
-    padding: 25px;
+    padding: 25px 25px 0;
 }
 
-.mapBox--name {
-    font-size: 18px;
+.mapBox--text {
+    font-size: 20px;
     padding: 15px 15px 25px 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    .mapBox--img > iframe {
+        height: 60vw;
+    }
+
+    .mapBox--location {
+        font-size: 28px;
+    }
+
+    .mapBox--text {
+        font-size: 15px;
+        padding: 15px 15px 25px 25px;
+    }
 }
