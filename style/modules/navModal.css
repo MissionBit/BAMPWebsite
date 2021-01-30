@@ -48,3 +48,9 @@
         min-width: unset;
     }
 }
+
+@media only screen and (max-width: 320px) {
+    .navModal--link {
+        line-height: 130%;
+    }
+}
