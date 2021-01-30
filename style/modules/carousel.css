@@ -103,12 +103,4 @@
     .carousel--hidden-on-desktop {
         display: block;
     }
-
-    .carousel--item-cover {
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-        height: 45vw;
-        object-fit: cover;
-    }
 }

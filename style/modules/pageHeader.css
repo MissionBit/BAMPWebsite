@@ -40,7 +40,6 @@
 @media only screen and (max-width: 600px) {
     .pageHeader {
         padding: 0 5px;
-        margin-bottom: -50px;
     }
 
     .pageHeader > .box {

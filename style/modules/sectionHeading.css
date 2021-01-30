@@ -18,10 +18,6 @@
     text-align: right;
 }
 
-.sectionHeading-sub {
-    font-size: 40px;
-}
-
 @media only screen and (max-width: 600px) {
     .sectionHeading {
         font-size: 36px;
@@ -29,9 +25,5 @@
 
     .sectionHeading-spaced {
         margin-bottom: 40px;
-    }
-
-    .sectionHeading-sub {
-        font-size: 25px;
     }
 }
