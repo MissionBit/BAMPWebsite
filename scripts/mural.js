@@ -28,7 +28,7 @@ for (const container of containers) {
         if (!event.target.classList.contains('muralModalContainer')) {
           return
         }
-        hideMuralModal(event)
+        hideMuralModalContainer(event)
     })
 }
 
