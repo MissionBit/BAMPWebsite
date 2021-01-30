@@ -1,5 +1,4 @@
 .program {
-    min-width: 500px;
     display: flex;
     flex-direction: row;
 }
@@ -53,16 +52,15 @@
 
 @media only screen and (max-width: 600px) {
     .program {
-        padding-top: 20px;
-        min-width: 350px;
+        min-width: 200px;
         flex-direction: column-reverse;
     }
 
     .program--img {
         box-sizing: border-box;
         width: 100%;
-        object-fit: cover;
         flex-grow: 1;
+        height: 250px;
     }
 
     .program--caption {
@@ -75,11 +73,16 @@
     }
 
     .program--text {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .program--details {
-        font-size: 13px;
+        font-size: 10px;
+    }
+
+    .program--price {
+        font-size: 18px;
+        font-style: italic;
     }
 
     .program--btn2 {
@@ -88,9 +91,5 @@
 
     .program--btn1 {
         display: none;
-    }
-
-    .program--price {
-        font-size: 18px;
     }
 }
