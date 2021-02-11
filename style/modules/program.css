@@ -7,6 +7,7 @@
     padding: 20px;
     width: 30%;
     object-fit: cover;
+    height: 25vw;
 }
 
 .program--caption {
@@ -50,7 +51,12 @@
     margin-bottom: 50px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
+    .program--img {
+        height: 40vw;
+    }
+}
+@media only screen and (max-width: 750px) {
     .program {
         min-width: 200px;
         flex-direction: column-reverse;

@@ -45,8 +45,7 @@
 
     .missionStatement--logo {
         width: 130px;
-        transform: translateY(-70px);
+        transform: translate(-50%, -70%);
         left: 50%;
-        margin-left: -80px;
     }
 }

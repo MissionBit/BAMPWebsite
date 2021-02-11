@@ -22,4 +22,10 @@
     .homepageHeader--img {
         height: 120vw;
     }
+
+    .homepageHeader--svg {
+        top: 80vw;
+        width: 75%;
+        left: 30%;
+    }
 }
