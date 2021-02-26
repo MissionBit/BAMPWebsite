@@ -2,8 +2,12 @@
     display: none;
 }
 
-.u-text--medium {
+.u-text-medium {
     font-size: 20px;
+}
+
+.u-text-2xHeight {
+    line-height: 200%;
 }
 
 .u-padBottom {
@@ -19,7 +23,11 @@
         display: block;
     }
 
-    .u-text--medium {
+    .u-text-medium {
         font-size: 15px;
+    }
+
+    .u-text-2xHeight {
+        line-height: 150%;
     }
 }
