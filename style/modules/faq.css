@@ -18,7 +18,7 @@
     font-size: 20px;
 }
 
-.faq--answers {
+.faq--answer {
     font-size: 15px;
     display: block;
     max-height: 0;
@@ -29,7 +29,7 @@
     opacity: 0;
 }
 
-.faq-is-open .faq--answers {
+.faq-is-open .faq--answer {
     max-height: 300px;
     padding: 14px;
     opacity: 1;
@@ -53,7 +53,7 @@
         font-size: 16px;
     }
 
-    .faq--answers {
+    .faq--answer {
         font-size: 14px;
     }
 
@@ -67,7 +67,7 @@
         font-size: 22px;
     }
 
-    .faq--answers {
+    .faq--answer {
         font-size: 17px;
     }
 
