@@ -13,11 +13,26 @@
     border-bottom-width: 2px;
 }
 
+.faq--questionBox {
+    display: flex;
+    align-items: flex-start;
+}
+
 .faq--question {
     color: var(--dark-blue);
     display: block;
     width: 100%;
     font-size: 20px;
+    flex-grow: 1;
+}
+
+.faq--plus {
+    flex-grow: 0;
+    padding-left: 8px;
+    font-size: 32px;
+    line-height: 20px;
+    transition: 0.3s ease;
+    user-select: none;
 }
 
 .faq--answer {
@@ -36,14 +51,6 @@
     padding: 14px;
     opacity: 1;
     visibility: visible;
-}
-
-.faq--plus {
-    float: right;
-    font-size: 32px;
-    line-height: 20px;
-    transition: 0.3s ease;
-    user-select: none;
 }
 
 .faq-is-open .faq--plus {
