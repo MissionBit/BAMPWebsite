@@ -4,6 +4,9 @@
     border-style: solid;
     border-width: 2px 2px 0 2px;
     padding: 0.75em;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
 }
 
 .faq:last-of-type {
@@ -14,7 +17,6 @@
     color: var(--dark-blue);
     display: block;
     width: 100%;
-    cursor: pointer;
     font-size: 20px;
 }
 
