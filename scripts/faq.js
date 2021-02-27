@@ -7,7 +7,7 @@ function toggleFaq(event) {
     event.preventDefault()
 }
 
-const faqs = document.querySelectorAll('.faq')
+const faqs = document.querySelectorAll('.faq--questionBox')
 for (const faq of faqs) {
     faq.addEventListener('click', toggleFaq)
 }
