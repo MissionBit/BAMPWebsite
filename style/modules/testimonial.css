@@ -6,7 +6,7 @@
 }
 
 #testimonials .testimonial {
-    margin: 100px 20px 20px;
+    margin: 100px 20px 10px;
 }
 
 .testimonial--pic {
@@ -45,7 +45,7 @@
 }
 
 .testimonial--quote-long {
-    font-size: 19px;
+    font-size: 18px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -54,7 +54,7 @@
     }
 
     #testimonials .testimonial {
-        margin: 30px 10px 10px;
+        margin: 30px 10px 6px;
     }
 
     .testimonial--pic {
@@ -78,7 +78,7 @@
     }
 
     .testimonial--quote-long {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .testimonial--slider {
