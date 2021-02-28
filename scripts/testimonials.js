@@ -1,12 +1,10 @@
-function cloneForMobile(elem, parent) {
+function cloneForMobile(elem) {
     const clone = elem.cloneNode(true)
     clone.classList.remove('u-onlyDesktop')
     clone.classList.remove('carousel-double')
     clone.classList.add('u-onlyMobile')
-    parent.appendChild(clone)
+    elem.parentElement.appendChild(clone)
 }
 
-const testimonials = document.querySelector('#testimonials')
-const carousel = testimonials.querySelector('.carousel')
-
-cloneForMobile(carousel, testimonials)
+const carousel = document.querySelector('#testimonials .carousel')
+cloneForMobile(carousel)
