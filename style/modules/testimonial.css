@@ -5,6 +5,10 @@
     border: 1px solid var(--dark-gray);
 }
 
+#testimonials .testimonial {
+    margin: 100px 20px 20px;
+}
+
 .testimonial--pic {
     position: absolute;
     width: 200px;
@@ -47,6 +51,10 @@
 @media only screen and (max-width: 700px) {
     .testimonial {
         margin-top: 30px;
+    }
+
+    #testimonials .testimonial {
+        margin: 30px 10px 10px;
     }
 
     .testimonial--pic {
