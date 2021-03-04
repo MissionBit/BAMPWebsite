@@ -5,12 +5,12 @@ function unhideItems(root) {
     }
 }
 
-function setUpCarousel(root) {
+function setUpCarousel(root, perPage = 1) {
     const siema = new SiemaWithDots({
+        perPage,
         selector: root.querySelector('.carousel--items'),
         duration: 300,
         easing: 'ease-out',
-        perPage: 1,
         draggable: true,
         multipleDrag: true,
         threshold: 20,
@@ -38,8 +38,12 @@ function setUpCarousel(root) {
     }
 }
 
-const carousels = document.querySelectorAll('.carousel')
-
-for (const c of carousels) {
+const singleCarousels = document.querySelectorAll('.carousel:not(.carousel-double)')
+for (const c of singleCarousels) {
     setUpCarousel(c)
+}
+
+const doubleCarousels = document.querySelectorAll('.carousel-double')
+for (const c of doubleCarousels) {
+    setUpCarousel(c, 2)
 }
