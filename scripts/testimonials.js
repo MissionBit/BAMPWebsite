@@ -6,5 +6,8 @@ function cloneForMobile(elem) {
     elem.parentElement.appendChild(clone)
 }
 
-const carousel = document.querySelector('#testimonials .carousel')
-cloneForMobile(carousel)
+const tcs = document.querySelectorAll('#testimonials .carousel')
+
+for (const tc of tcs) {
+    cloneForMobile(tc)
+}
