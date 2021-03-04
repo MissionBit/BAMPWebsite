@@ -1,0 +1,10 @@
+.wantMural {
+    font-size: 20px;
+    text-align: right;
+    text-justify: justify;
+}
+
+.wantMural > p {
+    padding-bottom: 20px;
+    line-height: 150%;
+}

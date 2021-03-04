@@ -2,11 +2,15 @@
     display: none;
 }
 
-.u-text--medium {
+.u-text-medium {
     font-size: 20px;
 }
 
-.u-text--paddingBottom {
+.u-text-2xHeight {
+    line-height: 200%;
+}
+
+.u-padBottom {
     padding-bottom: 30px;
 }
 
@@ -19,7 +23,11 @@
         display: block;
     }
 
-    .u-text--medium {
+    .u-text-medium {
         font-size: 15px;
+    }
+
+    .u-text-2xHeight {
+        line-height: 150%;
     }
 }
