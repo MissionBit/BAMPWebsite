@@ -7,6 +7,11 @@
     position: relative;
 }
 
+#testimonials .u-onlyDesktop .carousel--items {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
 .carousel--item {
     display: block;
     width: 100%;
@@ -96,6 +101,11 @@
 @media only screen and (max-width: 800px) {
     .carousel--slider {
         display: none;
+    }
+
+    #testimonials .u-onlyDesktop .carousel--items {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
