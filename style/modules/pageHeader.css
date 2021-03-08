@@ -27,6 +27,10 @@
     margin-bottom: 0;
 }
 
+.pageHeader--text-smaller {
+    font-size: 26px;
+}
+
 @media only screen and (max-width: 900px) {
     .pageHeader .sectionHeading {
         font-size: 40px;
