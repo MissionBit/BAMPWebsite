@@ -1,10 +1,11 @@
 .program {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .program--img {
-    padding: 20px;
+    padding: 15px;
     width: 30%;
     object-fit: cover;
     height: 25vw;
@@ -23,7 +24,8 @@
 .program--text {
     color: var(--dark-gray);
     align-self: flex-start;
-    line-height: 125%;
+    line-height: 133%;
+    font-size: 18px;
 }
 
 .program--details {
@@ -79,11 +81,11 @@
     }
 
     .program--text {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .program--details {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .program--price {
