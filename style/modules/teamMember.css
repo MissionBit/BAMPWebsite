@@ -44,7 +44,7 @@
 
 @media only screen and (max-width: 700px) {
     .teamMember {
-        padding: 0px;
+        padding: 0;
     }
 
     .teamMember--name {
@@ -55,7 +55,7 @@
 
     .teamMember--role {
         padding-bottom: 4px;
-        font-size: 13px;
+        font-size: 14px;
         color: var(--gray);
     }
 
@@ -74,6 +74,6 @@
     }
 
     .teamMember--icon {
-        display: none;
+        width: 18px;
     }
 }
