@@ -42,7 +42,7 @@
 .muralModal--caption {
     padding: 16px 32px;
     background: var(--white);
-    min-width: 24em;
+    min-width: 28em;
 }
 
 .muralModal--end {
@@ -58,6 +58,7 @@
 .muralModal--text {
     font-size: 20px;
     color: var(--gray);
+    line-height: 150%;
 }
 
 .muralModal--img {
@@ -71,8 +72,10 @@
 }
 
 .muralModal--icon {
+    position: relative;
+    top: 3px;
     width: 22px;
-    margin-right: 4px;
+    margin-right: 2px;
 }
 
 .muralModal--close {
