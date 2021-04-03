@@ -41,21 +41,3 @@ textarea:focus {
     box-shadow: 0 0 5px var(--focus-ring-bad);
     border-color: var(--focus-ring-bad);
 }
-
-@media only screen and (max-width: 600px) {
-    .emailForm {
-        max-width: unset;
-    }
-
-    .emailForm--inputBox {
-        width: 65%;
-    }
-
-    .emailForm > .btnLink {
-        width: 30%;
-        font-size: 16px !important;
-        padding: 18px !important;
-        margin-left: 2%;
-        -webkit-appearance: none;
-    }
-}
