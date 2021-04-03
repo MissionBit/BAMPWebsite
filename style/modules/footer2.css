@@ -6,11 +6,6 @@
 
 /* ---------------------------------------- DEBUG ---------------------------------------- */
 
-.footer--panel > div {
-    border: 2px solid white;
-    min-height: 300px;
-}
-
 .scrollCarousel,
 .homepageHeader,
 .sectionHeading,
