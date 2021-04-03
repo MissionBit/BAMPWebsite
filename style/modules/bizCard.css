@@ -16,6 +16,10 @@
     color: var(--dark-blue);
 }
 
+.bizCard--address {
+    line-height: 150%;
+}
+
 .bizCard--501c3 {
     color: var(--gray);
     font-size: 90%;
