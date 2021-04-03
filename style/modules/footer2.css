@@ -1,0 +1,77 @@
+/*
+ * - put nav links last?
+ * - padding inside panels
+ * - hide vertical bars
+*/
+
+/* ---------------------------------------- DEBUG ---------------------------------------- */
+
+.footer--panel > div {
+    border: 2px solid white;
+    min-height: 300px;
+}
+
+.scrollCarousel,
+.homepageHeader,
+.sectionHeading,
+#testimonials {
+    display: none !important;
+}
+
+/* ---------------------------------------- END DEBUG ---------------------------------------- */
+
+.footer {
+    display: flex;
+    background: var(--silver);
+}
+
+.footer--rule {
+    border: 0;
+    margin: 20px 0;
+    border-right: 1px solid var(--gray);
+}
+
+.footer--panel {
+    flex-basis: 33.33%;
+    margin: 0;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .footer--rule:nth-of-type(2),
+    .footer--rule:nth-of-type(3) {
+        display: none;
+    }
+
+    .footer--panel:nth-of-type(1),
+    .footer--panel:nth-of-type(2) {
+        flex-basis: calc(50% - 1px);
+    }
+
+    .footer--panel:nth-of-type(3) {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer--rule {
+        display: unset !important;
+        border-right: unset;
+        border-top: 1px solid var(--gray);
+        margin: 0;
+        width: 80%;
+    }
+
+    .footer--panel {
+        width: 100%;
+    }
+}

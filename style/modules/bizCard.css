@@ -1,0 +1,50 @@
+.bizCard {
+    max-width: 260px;
+    margin: auto;
+    text-align: center;
+}
+
+.bizCard p {
+    word-wrap: break-word;
+}
+
+.bizCard--logo {
+    width: 100%;
+}
+
+.bizCard--title {
+    font-family: "Libre Franklin", sans-serif;
+    color: var(--dark-blue);
+}
+
+.bizCard--501c3 {
+    color: var(--gray);
+    font-size: 90%;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 1000px) {
+    .bizCard--logo {
+        max-width: 250px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .bizCard {
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .bizCard--logoContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    .bizCard--logoContainer > *:nth-child(1) {
+        flex-basis: 60%;
+    }
+
+    .bizCard--logoContainer > *:nth-child(2) {
+        flex-basis: 40%;
+    }
+}
