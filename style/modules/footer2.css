@@ -1,20 +1,3 @@
-/*
- * - put nav links last?
- * - padding inside panels
- * - hide vertical bars
-*/
-
-/* ---------------------------------------- DEBUG ---------------------------------------- */
-
-.scrollCarousel,
-.homepageHeader,
-.sectionHeading,
-#testimonials {
-    display: none !important;
-}
-
-/* ---------------------------------------- END DEBUG ---------------------------------------- */
-
 .footer {
     display: flex;
     background: var(--silver);
