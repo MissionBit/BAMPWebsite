@@ -48,3 +48,28 @@
         flex-basis: 40%;
     }
 }
+
+@media only screen and (max-width: 450px) {
+    .bizCard--logo {
+        margin-bottom: 20px;
+    }
+
+    .bizCard--logoContainer {
+        flex-direction: column;
+    }
+
+    .bizCard--logoContainer > *:nth-child(1),
+    .bizCard--logoContainer > *:nth-child(2) {
+        flex-basis: 100%;
+    }
+
+    .bizCard .u-onlyMobile-wide br {
+        display: none;
+    }
+
+    .bizCard .btnLink {
+        display: inline-block;
+        font-size: 5vw;
+        margin-bottom: 4px;
+    }
+}
