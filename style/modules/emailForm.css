@@ -1,12 +1,11 @@
 .emailForm {
     display: inline-block;
-    width: 100%;
-    max-width: 330px;
+    max-width: 360px;
     text-align: center;
 }
 
 .emailForm--title {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 0;
     color: var(--dark-gray);
 }
@@ -30,6 +29,7 @@
 .emailForm--inputBox::placeholder {
     font-style: italic;
     color: var(--gray);
+    opacity: 0.5;
 }
 
 .emailForm--inputBox:focus,
