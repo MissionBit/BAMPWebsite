@@ -2,10 +2,6 @@
     display: none;
 }
 
-.u-onlyMobile-wide {
-    display: none;
-}
-
 .u-text-medium {
     font-size: 20px;
 }
@@ -20,16 +16,6 @@
 
 .u-nowrap {
     white-space: nowrap;
-}
-
-@media only screen and (max-width: 700px) {
-    .u-onlyMobile-wide {
-        display: block;
-    }
-
-    .u-onlyDesktop-wide {
-        display: none;
-    }
 }
 
 @media only screen and (max-width: 600px) {

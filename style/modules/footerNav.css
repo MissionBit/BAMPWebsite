@@ -26,7 +26,18 @@
     text-align: center;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
+    .footerNav--link {
+        margin-left: 0.5em;
+        font-size: 17px;
+    }
+
+    .footerNav .btnLink {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
     .footerNav {
         text-align: center;
     }

@@ -22,13 +22,13 @@
     font-style: italic;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
     .bizCard--logo {
         max-width: 250px;
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     .bizCard {
         max-width: 80%;
         text-align: center;
