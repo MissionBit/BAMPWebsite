@@ -32,6 +32,12 @@
     padding: 40px;
 }
 
+.footer .bizCard,
+.footer .footerNav,
+.footer .emailForm {
+    margin: auto;
+}
+
 @media only screen and (max-width: 1000px) {
     .footer {
         flex-wrap: wrap;
