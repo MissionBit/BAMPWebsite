@@ -26,6 +26,10 @@
     .u-onlyMobile-wide {
         display: block;
     }
+
+    .u-onlyDesktop-wide {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 600px) {
