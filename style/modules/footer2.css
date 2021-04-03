@@ -22,14 +22,14 @@
 
 .footer--rule {
     border: 0;
-    margin: 20px 0;
-    border-right: 1px solid var(--gray);
+    margin: 40px 0;
+    border-right: 1px solid var(--light-gray);
 }
 
 .footer--panel {
     flex-basis: 33.33%;
     margin: 0;
-    padding: 20px;
+    padding: 40px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -61,7 +61,7 @@
     .footer--rule {
         display: unset !important;
         border-right: unset;
-        border-top: 1px solid var(--gray);
+        border-top: 1px solid var(--light-gray);
         margin: 0;
         width: 80%;
     }
