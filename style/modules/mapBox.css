@@ -1,11 +1,3 @@
-.mapBox {
-    display: block;
-}
-
-.mapBox--img {
-    width: 100%;
-}
-
 .mapBox--location {
     font-family: "Libre Franklin", sans-serif;
     font-weight: 700;
