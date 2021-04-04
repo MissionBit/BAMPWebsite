@@ -21,3 +21,11 @@
     height: 100%;
     object-fit: cover;
 }
+
+/* stupid hack for programs iframe. don't know why it's necessary */
+
+@media only screen and (max-width: 600px) {
+    #programsVideo {
+        width: calc(100vw - 30px) !important;
+    }
+}
