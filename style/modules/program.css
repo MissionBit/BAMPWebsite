@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: row;
 
-    /* note: align-items must be something other than stretch (the default) for safari,
-     * or else the image needs a fixed height set, or it will force the flexbox to grow taller. */
+    /* note: align-items must be something other than stretch (the default) for safari, or
+     * the image needs a fixed height set. otherwise it can force the flexbox to grow taller. */
     align-items: center;
 }
 
