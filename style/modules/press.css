@@ -6,6 +6,7 @@
     max-width: 1600px;
     color: var(--gray);
     transition: opacity 0.3s, transform 0.3s;
+    align-items: flex-start; /* safari fix: prevent image from increasing flexbox height */
 }
 
 .press + .press {
@@ -20,7 +21,7 @@
 .press--img {
     width: 35%;
     object-fit: cover;
-    height: 30vw;
+    height: 100%;
 }
 
 .press--container {
