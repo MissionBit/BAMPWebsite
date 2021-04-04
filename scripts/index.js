@@ -9,3 +9,5 @@ import './emailForm.js'
 import './faq.js'
 import './testimonials.js'
 import './carousel.js'
+
+import './preload.js'
