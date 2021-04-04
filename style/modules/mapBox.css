@@ -16,6 +16,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .mapBox--map {
+        height: 500px;
+    }
+
     .mapBox--heading {
         font-size: 28px;
     }
