@@ -1,3 +1,7 @@
+.mapBox--map {
+    height: 600px;
+}
+
 .mapBox--heading {
     font-family: "Libre Franklin", sans-serif;
     font-weight: 700;
@@ -12,11 +16,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .mapBox--img > iframe {
-        height: 60vw;
-    }
-
-    .mapBox--location {
+    .mapBox--heading {
         font-size: 28px;
     }
 
