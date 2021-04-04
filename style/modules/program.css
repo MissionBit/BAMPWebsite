@@ -1,6 +1,9 @@
 .program {
     display: flex;
     flex-direction: row;
+
+    /* note: align-items must be something other than stretch (the default) for safari,
+     * or else the image needs a fixed height set, or it will force the flexbox to grow taller. */
     align-items: center;
 }
 
@@ -8,7 +11,7 @@
     padding: 15px;
     width: 30%;
     object-fit: cover;
-    height: 25vw;
+    height: 100%;
 }
 
 .program--caption {
