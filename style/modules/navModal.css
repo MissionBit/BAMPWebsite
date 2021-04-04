@@ -1,5 +1,5 @@
 .navModal {
-    padding: 30px;
+    padding: 20px 30px;
     background-color: white;
     position: fixed;
     height: 100%;
@@ -38,7 +38,7 @@
     position: fixed;
     font-size: 60px;
     right: 12px;
-    top: 0;
+    top: -2px;
 }
 
 .navModal .btnLink {
