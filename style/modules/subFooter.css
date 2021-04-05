@@ -18,6 +18,7 @@
 }
 
 .subFooter--copyright {
+    text-transform: uppercase;
     text-align: right;
     flex-grow: 2;
     color: var(--light-gray);
@@ -36,6 +37,6 @@
     }
 
     .subFooter--copyright {
-        font-size: 9px;
+        font-size: 12px;
     }
 }

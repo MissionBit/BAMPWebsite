@@ -1,0 +1,78 @@
+.bizCard {
+    max-width: 260px;
+    text-align: center;
+}
+
+.bizCard p {
+    word-wrap: break-word;
+}
+
+.bizCard--logo {
+    width: 100%;
+}
+
+.bizCard--title {
+    font-family: "Libre Franklin", sans-serif;
+    color: var(--dark-blue);
+}
+
+.bizCard--address {
+    line-height: 150%;
+}
+
+.bizCard--501c3 {
+    color: var(--gray);
+    font-size: 90%;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 900px) {
+    .bizCard--logo {
+        max-width: 250px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bizCard {
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .bizCard--logoContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    .bizCard--logoContainer > *:nth-child(1) {
+        flex-basis: 60%;
+    }
+
+    .bizCard--logoContainer > *:nth-child(2) {
+        flex-basis: 40%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .bizCard--logo {
+        margin-bottom: 20px;
+    }
+
+    .bizCard--logoContainer {
+        flex-direction: column;
+    }
+
+    .bizCard--logoContainer > *:nth-child(1),
+    .bizCard--logoContainer > *:nth-child(2) {
+        flex-basis: 100%;
+    }
+
+    .bizCard .u-onlyMobile-wide br {
+        display: none;
+    }
+
+    .bizCard .btnLink {
+        display: inline-block;
+        font-size: 5vw;
+        margin-bottom: 4px;
+    }
+}

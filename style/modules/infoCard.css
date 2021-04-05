@@ -9,7 +9,10 @@
 .infoCard--img {
     width: 35%;
     object-fit: cover;
-    height: 30vw;
+
+    /* necessary for safari */
+    min-height: 30vw;
+    height: 100%;
 }
 
 .infoCard--caption {

@@ -1,12 +1,10 @@
 .emailForm {
-    display: inline-block;
-    width: 100%;
-    max-width: 330px;
+    max-width: 400px;
     text-align: center;
 }
 
 .emailForm--title {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 0;
     color: var(--dark-gray);
 }
@@ -30,6 +28,7 @@
 .emailForm--inputBox::placeholder {
     font-style: italic;
     color: var(--gray);
+    opacity: 0.5;
 }
 
 .emailForm--inputBox:focus,
@@ -41,22 +40,4 @@ textarea:focus {
 .emailForm--inputBox:invalid:focus:not(:placeholder-shown) {
     box-shadow: 0 0 5px var(--focus-ring-bad);
     border-color: var(--focus-ring-bad);
-}
-
-@media only screen and (max-width: 600px) {
-    .emailForm {
-        max-width: unset;
-    }
-
-    .emailForm--inputBox {
-        width: 65%;
-    }
-
-    .emailForm > .btnLink {
-        width: 30%;
-        font-size: 16px !important;
-        padding: 18px !important;
-        margin-left: 2%;
-        -webkit-appearance: none;
-    }
 }

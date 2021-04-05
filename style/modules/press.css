@@ -20,6 +20,10 @@
 .press--img {
     width: 35%;
     object-fit: cover;
+
+    /* necessary for safari */
+    min-height: 30vw;
+    height: 100%;
 }
 
 .press--container {
