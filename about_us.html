@@ -292,40 +292,54 @@
 
         <div class="footer">
             <div class="footer--panel">
-                <div class="footer--bizCard">
-                    <div class="footer--mobileBizCard">
-                        <a href="index.html"><img src="images/logo-gold-border.svg"></a>
-                        <div class="footer--mobileButton">
+                <div class="bizCard">
+                    <div class="bizCard--logoContainer">
+                        <a href="index.html">
+                            <img class="bizCard--logo" src="images/logo-gold-border.svg">
+                        </a>
+                        <div class="u-onlyMobile">
                             <a class="btnLink" href="mailto: bampteamad@gmail.com">Contact</a><br><br>
                             <a class="btnLink btnLink-red" href="https://donorbox.org/bay-area-mural-donations">Donate</a>
                         </div>
                     </div>
-                    <p>BAY AREA MURAL PROGRAM</p>
-                    <p class="footer--address"><b>Headquarters: </b><br>3463 San Pablo Ave. <br>Oakland, CA 94608  <br>(510) 965-5315</p>
-                    <p>501(c)(3) Non-Profit Organization</p>
+                    <p class="bizCard--title">BAY AREA MURAL PROGRAM</p>
+                    <p class="bizCard--address u-onlyDesktop">
+                        3463 San Pablo Ave. <br>
+                        Oakland, CA 94608 <br>
+                        (510) 965-5315
+                    </p>
+                    <p class="bizCard--address u-onlyMobile">
+                        3463 San Pablo Ave., Oakland, CA 94608 <br>
+                        (510) 965-5315
+                    </p>
+                    <p class="bizCard--501c3">A 501(c)(3) Non-Profit Organization</p>
                 </div>
             </div>
-            <hr>
-            <div class="footer--panel footer--panel-middle">
-                <div class="footer--navColumn">
-                    <a class="footer--navLink" href="artwork.html">Artwork</a>
-                    <a class="footer--navLink" href="events.html">Events</a>
-                    <a class="footer--navLink" href="about_us.html">About Us</a>
-                    <a class="btnLink" href="mailto: bampteamad@gmail.com">Contact</a>
-                </div>
-                <div class="footer--navColumn">
-                    <a class="footer--navLink" href="services.html">Services</a>
-                    <a class="footer--navLink" href="programs.html">Programs</a>
-                    <a class="footer--navLink" href="get_involved.html">Get Involved</a>
-                    <a class="btnLink btnLink-red" href="https://donorbox.org/bay-area-mural-donations">Donate</a>
-                </div>
+            <hr class="footer--rule">
+            <div class="footer--panel">
+                <nav class="footerNav">
+                    <div class="footerNav--column">
+                        <a class="footerNav--link" href="artwork.html">Artwork</a>
+                        <a class="footerNav--link" href="about_us.html">About Us</a>
+                        <a class="footerNav--link" href="events.html">Events</a>
+                        <a class="footerNav--link" href="#">Shop</a>
+                        <span class="u-onlyDesktop"><a class="btnLink" href="mailto: bampteamad@gmail.com">Contact</a></span>
+                    </div>
+                    <div class="footerNav--column">
+                        <a class="footerNav--link" href="services.html">Services</a>
+                        <a class="footerNav--link" href="get_involved.html">Get Involved</a>
+                        <a class="footerNav--link" href="programs.html">Programs</a>
+                        <a class="footerNav--link">&nbsp;</a> <!-- spacer -->
+                        <span class="u-onlyDesktop"><a class="btnLink btnLink-red" href="https://donorbox.org/bay-area-mural-donations">Donate</a></span>
+                    </div>
+                </nav>
             </div>
-            <hr>
-            <div class="footer--panel footer--panel-right">
+            <hr class="footer--rule">
+            <div class="footer--panel">
                 <form id="emailForm" class="emailForm">
-                    <p class="emailForm--title">Get updates with BAMP's newsletter</p>
+                    <p class="emailForm--title">Get updates with our newsletter!</p>
                     <input type="email" class="emailForm--inputBox" placeholder="Your email address" name="email" required>
-                    <input type="submit" class="btnLink" value="Sign Up!">
+                    <input type="submit" class="btnLink" value="Sign Up">
                 </form>
             </div>
         </div>
@@ -333,12 +347,11 @@
         <div class="subFooter">
             <a class="subFooter--socials" href="mailto: bampteamad@gmail.com"><img class="subFooter--svg" src="images/icons/footer/mail.svg"></a>
             <a class="subFooter--socials" href="https://www.instagram.com/bayareamuralpro/"><img class="subFooter--svg" src="images/icons/footer/instagram.svg"></a>
-            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="images/icons/footer/twitter.svg"></a>
-            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="images/icons/footer/facebook.svg"></a>
-            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="images/icons/footer/youtube.svg"></a>
-            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="images/icons/footer/linkedin.svg"></a>
-            <a class="subFooter--socials" href="#"><img class="subFooter--svg" src="images/icons/footer/yelp.svg"></a>
-            <p class="subFooter--copyright">© 2021 BAY AREA MURAL PROGRAM</p>
+            <a class="subFooter--socials" href="https://www.facebook.com/TheBamp.org"><img class="subFooter--svg" src="images/icons/footer/facebook.svg"></a>
+            <a class="subFooter--socials" href="https://www.youtube.com/channel/UCJTS2t_Ud1ovJnftAyBqs-A"><img class="subFooter--svg" src="images/icons/footer/youtube.svg"></a>
+            <a class="subFooter--socials" href="https://www.linkedin.com/company/bayareamuralprogram/"><img class="subFooter--svg" src="images/icons/footer/linkedin.svg"></a>
+            <a class="subFooter--socials" href="https://www.yelp.com/biz/the-bay-area-mural-program-oakland"><img class="subFooter--svg" src="images/icons/footer/yelp.svg"></a>
+            <p class="subFooter--copyright">© 2021 Bay Area Mural Program</p>
         </div>
     </body>
 </html>
