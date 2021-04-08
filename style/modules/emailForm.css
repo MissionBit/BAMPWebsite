@@ -13,12 +13,12 @@
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
-    border: 2px solid var(--input-border);
+    border: 1px solid var(--input-border);
     border-radius: 5px;
     background: var(--input-bg);
     box-sizing: border-box;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     outline: none;
     transition: 150ms;
     box-shadow: none;
@@ -40,4 +40,8 @@ textarea:focus {
 .emailForm--inputBox:invalid:focus:not(:placeholder-shown) {
     box-shadow: 0 0 5px var(--focus-ring-bad);
     border-color: var(--focus-ring-bad);
+}
+
+.emailForm .btnLink {
+    font-size: 20px !important;
 }

@@ -339,9 +339,11 @@
             </div>
             <hr class="footer--rule">
             <div class="footer--panel">
-                <form id="emailForm" class="emailForm">
+                <form class="emailForm" method="POST" action="https://api.slapform.com/bampsite@mailpoof.com">
                     <p class="emailForm--title">Get updates with our newsletter!</p>
                     <input type="email" class="emailForm--inputBox" placeholder="Your email address" name="email" required>
+                    <input type="hidden" name="slap_captcha" value="false">
+                    <input type="hidden" name="slap_subject" value="newsletter sign-up form submission">
                     <input type="submit" class="btnLink" value="Sign Up">
                 </form>
             </div>
