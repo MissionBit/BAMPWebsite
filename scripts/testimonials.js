@@ -1,13 +1,9 @@
-function cloneForMobile(elem) {
-    const clone = elem.cloneNode(true)
-    clone.classList.remove('u-onlyDesktop')
-    clone.classList.remove('carousel-double')
-    clone.classList.add('u-onlyMobile')
-    elem.parentElement.appendChild(clone)
+function cloneCarousel(el) {
+    const clone = $(el).clone()
+        .removeClass('u-onlyDesktop')
+        .removeClass('carousel-double')
+        .addClass('u-onlyMobile')
+    $(el).after(clone)
 }
 
-const tcs = document.querySelectorAll('#testimonials .carousel')
-
-for (const tc of tcs) {
-    cloneForMobile(tc)
-}
+$('#testimonials .carousel').each((idx, el) => cloneCarousel(el))

@@ -1,3 +1,1 @@
-window.addEventListener("DOMContentLoaded", () => {
-    document.body.classList.remove("u-preload")
-})
+$(document).ready(() => $('body').removeClass("u-preload"))
