@@ -1,3 +1,7 @@
+.u-preload * {
+    transition: none !important;
+}
+
 .u-onlyMobile {
     display: none;
 }
