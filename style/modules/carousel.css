@@ -23,7 +23,7 @@
     display: none;
 }
 
-.carousel--slider {
+.carousel--arrow {
     position: absolute;
     cursor: pointer;
     text-align: center;
@@ -42,28 +42,28 @@
     z-index: 10;
 }
 
-.carousel--slider:hover {
+.carousel--arrow:hover {
     opacity: 0.8;
     background: var(--silver);
     color: var(--dark-gray);
 }
 
-.carousel--slider-dark {
+.carousel--arrow-dark {
     color: var(--dark-gray);
     font-size: 60px;
     width: 60px;
 }
 
-.carousel--slider-dark:hover {
+.carousel--arrow-dark:hover {
     background: inherit;
     color: var(--gray);
 }
 
-.carousel--prev {
+.carousel--arrow-prev {
     left: 0;
 }
 
-.carousel--next {
+.carousel--arrow-next {
     right: 0;
 }
 
@@ -95,7 +95,7 @@
 
 /* hide "next" slider before it can get eaten by the speech bubble */
 @media only screen and (max-width: 800px) {
-    .carousel--slider {
+    .carousel--arrow {
         display: none;
     }
 
