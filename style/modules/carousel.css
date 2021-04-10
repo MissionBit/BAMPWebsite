@@ -59,14 +59,15 @@
 }
 
 #testimonials .carousel--slider {
-    color: var(--dark-gray);
+    color: var(--gray);
     font-size: 60px;
     width: 60px;
 }
 
 #testimonials .carousel--slider:hover {
-    background: inherit;
-    color: var(--gray);
+    background: none;
+    color: var(--dark-blue);
+    opacity: 1;
 }
 
 /* ------------------------------------- */
