@@ -26,7 +26,7 @@
     align-items: baseline;
 }
 
-.event--dateTitle {
+.event--dateLabel {
     color: var(--dark-blue);
     font-family: "Libre Franklin", sans-serif;
     font-size: 20px;
@@ -70,7 +70,7 @@
         padding: 0 30px;
     }
 
-    .event--dateTitle {
+    .event--dateLabel {
         font-size: 14px;
         padding-left: 30px;
     }
