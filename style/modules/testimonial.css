@@ -1,7 +1,6 @@
 .testimonial {
     position: relative;
     margin-top: 100px;
-    max-width: 610px;
     border: 1px solid var(--dark-gray);
 }
 
