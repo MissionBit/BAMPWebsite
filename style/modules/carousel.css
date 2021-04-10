@@ -3,15 +3,6 @@
     width: 100%;
 }
 
-.carousel--items {
-    position: relative;
-}
-
-#testimonials .u-onlyDesktop .carousel--items {
-    margin-left: 60px;
-    margin-right: 60px;
-}
-
 .carousel--item {
     display: block;
     width: 100%;
@@ -48,17 +39,6 @@
     color: var(--dark-gray);
 }
 
-.carousel--slider-dark {
-    color: var(--dark-gray);
-    font-size: 60px;
-    width: 60px;
-}
-
-.carousel--slider-dark:hover {
-    background: inherit;
-    color: var(--gray);
-}
-
 .carousel--prev {
     left: 0;
 }
@@ -67,6 +47,27 @@
     right: 0;
 }
 
+/* -- testimonial overrides -- */
+#testimonials .carousel--prev {
+    left: -75px;
+}
+
+#testimonials .carousel--next {
+    right: -75px;
+}
+
+#testimonials .carousel--slider {
+    color: var(--dark-gray);
+    font-size: 60px;
+    width: 60px;
+}
+
+#testimonials .carousel--slider:hover {
+    background: inherit;
+    color: var(--gray);
+}
+/* ------------------------------------- */
+
 .carousel--dots {
     position: relative;
     width: 100%;
@@ -74,8 +75,11 @@
     user-select: none;
 }
 
-.carousel--dot {
-    display: inline-block;
+.carousel--dots li {
+    display: inline;
+}
+
+.carousel--dots button {
     cursor: pointer;
     width: 15px;
     height: 15px;
@@ -83,13 +87,15 @@
     background: #afaeae;
     transition: 150ms;
     margin: 15px 3px;
+    font-size: 0;
 }
 
-.carousel--dots > *:hover {
-    background: var(--dark-gray);
+.carousel--dots button:hover {
+    background: var(--dark-blue);
 }
 
-.carousel--dot-is-active {
+.carousel--dot-is-active,
+.carousel--dots .slick-active button {
     background: var(--dark-gray);
 }
 
@@ -98,13 +104,9 @@
     .carousel--slider {
         display: none;
     }
-
-    #testimonials .u-onlyDesktop .carousel--items {
-        margin-left: 0;
-        margin-right: 0;
-    }
 }
 
+/* TODO: used on programs. maybe used fixedRatio? */
 @media only screen and (max-width: 600px) {
     .carousel--item-cover {
         margin-left: auto;

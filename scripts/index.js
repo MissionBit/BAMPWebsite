@@ -38,18 +38,6 @@ $('.getUpdates').click(() => {
 
 
 /*
- * clone testimonials for mobile
- */
-$('#testimonials .carousel').each((idx, el) => {
-    const clone = $(el).clone()
-        .removeClass('u-onlyDesktop')
-        .removeClass('carousel-double')
-        .addClass('u-onlyMobile')
-    $(el).after(clone)
-})
-
-
-/*
  * show/hide mural modal
  */
 function showMuralModal(event) {
@@ -79,4 +67,17 @@ $('#muralGallerySlider').click(event => {
     } else {
         event.target.innerHTML = "&#10095;"
     }
+})
+
+
+/*
+ * start carousels
+ */
+$(document).ready(() => {
+    $('.carousel').slick({
+        dots: true,
+        dotsClass: 'carousel--dots',
+        prevArrow: '<button type="button" class="carousel--slider carousel--prev">&#10094;</button>',
+        nextArrow: '<button type="button" class="carousel--slider carousel--next">&#10095;</button>'
+    })
 })
