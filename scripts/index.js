@@ -73,7 +73,6 @@ $('#muralGallerySlider').click(event => {
 /*
  * start carousels
  */
-
 const slickDefaults = {
     dots: true,
     dotsClass: 'carousel--dots',
