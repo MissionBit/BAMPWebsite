@@ -80,6 +80,7 @@ const slickDefaults = {
     prevArrow: '<button type="button" class="carousel--arrow carousel--prev">&#10094;</button>',
     nextArrow: '<button type="button" class="carousel--arrow carousel--next">&#10095;</button>'
 }
+
 $(document).ready(() => {
     $('.carousel').slick(slickDefaults)
 })

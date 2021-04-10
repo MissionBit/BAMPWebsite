@@ -11,10 +11,6 @@
     transition: 150ms;
 }
 
-.carousel--item-is-hidden {
-    display: none;
-}
-
 .carousel--arrow {
     position: absolute;
     cursor: pointer;
