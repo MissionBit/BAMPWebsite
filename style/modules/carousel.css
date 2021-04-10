@@ -49,11 +49,11 @@
 
 /* -- testimonial overrides -- */
 #testimonials .carousel--prev {
-    left: -75px;
+    left: -60px;
 }
 
 #testimonials .carousel--next {
-    right: -75px;
+    right: -60px;
 }
 
 #testimonials .carousel--slider {

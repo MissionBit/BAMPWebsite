@@ -47,14 +47,6 @@
     font-size: 18px;
 }
 
-@media only screen and (min-width: 600px) {
-    /* make room to put the arrows on the outside */
-    #testimonials {
-        margin-left: 75px;
-        margin-right: 75px;
-    }
-}
-
 @media only screen and (max-width: 800px) {
     .testimonial {
         margin-top: 30px;
