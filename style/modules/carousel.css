@@ -39,11 +39,11 @@
     color: var(--dark-gray);
 }
 
-.carousel--prev {
+.carousel--arrow-prev {
     left: 0;
 }
 
-.carousel--next {
+.carousel--arrow-next {
     right: 0;
 }
 

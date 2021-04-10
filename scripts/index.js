@@ -77,8 +77,8 @@ $('#muralGallerySlider').click(event => {
 const slickDefaults = {
     dots: true,
     dotsClass: 'carousel--dots',
-    prevArrow: '<button type="button" class="carousel--arrow carousel--prev">&#10094;</button>',
-    nextArrow: '<button type="button" class="carousel--arrow carousel--next">&#10095;</button>'
+    prevArrow: '<button type="button" class="carousel--arrow carousel--arrow-prev">&#10094;</button>',
+    nextArrow: '<button type="button" class="carousel--arrow carousel--arrow-next">&#10095;</button>'
 }
 
 $(document).ready(() => {
