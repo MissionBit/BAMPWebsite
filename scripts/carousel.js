@@ -27,12 +27,12 @@ function setUpCarousel(root, perPage = 1) {
         autoplayDuration: 8000,
     })
 
-    const prevBtn = root.querySelector('.carousel--prev')
+    const prevBtn = root.querySelector('.carousel--arrow-prev')
     if (prevBtn) {
         prevBtn.addEventListener('click', () => siema.prev())
     }
 
-    const nextBtn = root.querySelector('.carousel--next')
+    const nextBtn = root.querySelector('.carousel--arrow-next')
     if (nextBtn) {
         nextBtn.addEventListener('click', () => siema.next())
     }
