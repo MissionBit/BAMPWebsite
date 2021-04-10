@@ -48,7 +48,8 @@
     right: 0;
 }
 
-/* -- testimonial overrides -- */
+/* ---- testimonial overrides ---- */
+
 #testimonials .carousel--prev {
     left: -60px;
 }
@@ -67,6 +68,7 @@
     background: inherit;
     color: var(--gray);
 }
+
 /* ------------------------------------- */
 
 .carousel--dots {
