@@ -3,7 +3,7 @@
 }
 
 .u-onlyMobile {
-    display: none !important;
+    display: none;
 }
 
 .u-text-medium {
@@ -28,7 +28,7 @@
     }
 
     .u-onlyMobile {
-        display: block !important;
+        display: block;
     }
 
     .u-text-medium {
