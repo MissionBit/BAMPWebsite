@@ -93,10 +93,6 @@
     background: var(--dark-gray);
 }
 
-.carousel--hidden-on-desktop {
-    display: none;
-}
-
 /* hide "next" slider before it can get eaten by the speech bubble */
 @media only screen and (max-width: 800px) {
     .carousel--slider {
@@ -110,10 +106,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .carousel--hidden-on-desktop {
-        display: block;
-    }
-
     .carousel--item-cover {
         margin-left: auto;
         margin-right: auto;
