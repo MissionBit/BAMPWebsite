@@ -73,21 +73,19 @@ $('#muralGallerySlider').click(event => {
 /*
  * start carousels
  */
+
+const slickDefaults = {
+    dots: true,
+    dotsClass: 'carousel--dots',
+    prevArrow: '<button type="button" class="carousel--slider carousel--prev">&#10094;</button>',
+    nextArrow: '<button type="button" class="carousel--slider carousel--next">&#10095;</button>'
+}
 $(document).ready(() => {
-    $('.carousel').slick({
-        dots: true,
-        dotsClass: 'carousel--dots',
-        prevArrow: '<button type="button" class="carousel--slider carousel--prev">&#10094;</button>',
-        nextArrow: '<button type="button" class="carousel--slider carousel--next">&#10095;</button>'
-    })
+    $('.carousel').slick(slickDefaults)
 })
 
 $(document).ready(() => {
-    $('.carousel-responsive').slick({
-        dots: true,
-        dotsClass: 'carousel--dots',
-        prevArrow: '<button type="button" class="carousel--slider carousel--prev">&#10094;</button>',
-        nextArrow: '<button type="button" class="carousel--slider carousel--next">&#10095;</button>',
+    $('.carousel-responsive').slick(Object.assign(slickDefaults, {
         responsive: [
             {
                 breakpoint: 999999,
@@ -111,5 +109,5 @@ $(document).ready(() => {
                 }
             }
         ]
-    })
+    }))
 })
