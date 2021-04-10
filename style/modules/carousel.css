@@ -47,30 +47,6 @@
     right: 0;
 }
 
-/* ---- testimonial overrides ---- */
-
-#testimonials .carousel--prev {
-    left: -60px;
-}
-
-#testimonials .carousel--next {
-    right: -60px;
-}
-
-#testimonials .carousel--arrow {
-    color: var(--gray);
-    font-size: 60px;
-    width: 60px;
-}
-
-#testimonials .carousel--arrow:hover {
-    background: none;
-    color: var(--dark-blue);
-    opacity: 1;
-}
-
-/* ------------------------------------- */
-
 .carousel--dots {
     margin: 0;
     position: relative;
