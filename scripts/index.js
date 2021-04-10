@@ -87,27 +87,12 @@ $(document).ready(() => {
 
 $(document).ready(() => {
     $('.carousel-responsive').slick(Object.assign(slickDefaults, {
+        slidesToShow: 2,
+        slidesToScroll: 2,
         responsive: [
             {
-                breakpoint: 999999,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4
-                }
-            },
-            {
-                breakpoint: 1800,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
                 breakpoint: 1000,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+                settings: {slidesToShow: 1, slidesToScroll: 1}
             }
         ]
     }))
