@@ -1,49 +1,35 @@
-function unhideItems(root) {
-    const items = root.querySelectorAll('.carousel--item-is-hidden')
-    for (const item of items) {
-        item.classList.remove('carousel--item-is-hidden')
-    }
+const merge = (l, r) => Object.assign({}, l, r)
+
+const slickDefaults = {
+    dots: true,
+    dotsClass: 'carousel--dots',
+    prevArrow: '<button type="button" class="carousel--arrow carousel--arrow-prev">&#10094;</button>',
+    nextArrow: '<button type="button" class="carousel--arrow carousel--arrow-next">&#10095;</button>'
 }
 
-function setUpCarousel(root, perPage = 1) {
-    const siema = new SiemaWithDots({
-        perPage,
-        selector: root.querySelector('.carousel--items'),
-        duration: 300,
-        easing: 'ease-out',
-        draggable: true,
-        multipleDrag: true,
-        threshold: 20,
-        loop: true,
-        onInit: function() {
-            this.addDots()
-            this.updateDots()
-            unhideItems(root)
-        },
-        onChange: function() {
-            this.updateDots()
-        },
-        autoplay: root.classList.contains('carousel-autoplay'),
-        autoplayDuration: 8000,
-    })
+$(document).ready(() => {
+    $('.js-carousel-standard').slick(slickDefaults)
 
-    const prevBtn = root.querySelector('.carousel--arrow-prev')
-    if (prevBtn) {
-        prevBtn.addEventListener('click', () => siema.prev())
-    }
+    $('.js-carousel-homepage').slick(merge(slickDefaults, {
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {fade: false}
+            }
+        ],
+        autoplay: true,
+        autoplaySpeed: 5000,
+        fade: true
+    }))
 
-    const nextBtn = root.querySelector('.carousel--arrow-next')
-    if (nextBtn) {
-        nextBtn.addEventListener('click', () => siema.next())
-    }
-}
-
-const singleCarousels = document.querySelectorAll('.carousel:not(.carousel-double)')
-for (const c of singleCarousels) {
-    setUpCarousel(c)
-}
-
-const doubleCarousels = document.querySelectorAll('.carousel-double')
-for (const c of doubleCarousels) {
-    setUpCarousel(c, 2)
-}
+    $('.js-carousel-testimonials').slick(merge(slickDefaults, {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {slidesToShow: 1, slidesToScroll: 1}
+            }
+        ]
+    }))
+})

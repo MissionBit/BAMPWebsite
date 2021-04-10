@@ -1,9 +1,6 @@
 import './vendor/jquery-3.6.0.slim.min.js'
-import './vendor/siema.min.js'
-import './vendor/siemaWithDots.js'
-
+import './vendor/slick.min.js'
 import './instaFeed.js'
-import './testimonials.js'
 import './carousel.js'
 
 /*

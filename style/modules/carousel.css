@@ -3,24 +3,18 @@
     width: 100%;
 }
 
-.carousel--items {
-    position: relative;
-}
-
-#testimonials .u-onlyDesktop .carousel--items {
-    margin-left: 60px;
-    margin-right: 60px;
+.carousel:not(.slick-initialized) > *:not(:first-child) {
+    display: none;
 }
 
 .carousel--item {
-    display: block;
     width: 100%;
     object-fit: cover;
     transition: 150ms;
 }
 
-.carousel--item-is-hidden {
-    display: none;
+.carousel--item-cover {
+    height: 45vw;
 }
 
 .carousel--arrow {
@@ -28,7 +22,7 @@
     cursor: pointer;
     text-align: center;
     border-radius: 50%;
-    top: 50%;
+    top: 45%; /* not 50 because it needs to take dots into account */
     transform: translateY(-50%);
     margin: 0 10px;
     user-select: none;
@@ -48,17 +42,6 @@
     color: var(--dark-gray);
 }
 
-.carousel--arrow-dark {
-    color: var(--dark-gray);
-    font-size: 60px;
-    width: 60px;
-}
-
-.carousel--arrow-dark:hover {
-    background: inherit;
-    color: var(--gray);
-}
-
 .carousel--arrow-prev {
     left: 0;
 }
@@ -68,49 +51,42 @@
 }
 
 .carousel--dots {
+    margin: 0;
+    padding: 0;
     position: relative;
     width: 100%;
     text-align: center;
     user-select: none;
 }
 
-.carousel--dot {
-    display: inline-block;
+.carousel--dots li {
+    display: inline;
+}
+
+.carousel--dots button {
     cursor: pointer;
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background: #afaeae;
     transition: 150ms;
     margin: 15px 3px;
+    font-size: 0;
+    outline: none;
 }
 
-.carousel--dots > *:hover {
-    background: var(--dark-gray);
+.carousel--dots button:hover {
+    background: var(--dark-blue);
 }
 
-.carousel--dot-is-active {
+.carousel--dot-is-active,
+.carousel--dots .slick-active button {
     background: var(--dark-gray);
 }
 
 /* hide "next" slider before it can get eaten by the speech bubble */
 @media only screen and (max-width: 800px) {
     .carousel--arrow {
-        display: none;
-    }
-
-    #testimonials .u-onlyDesktop .carousel--items {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .carousel--item-cover {
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-        height: 45vw;
-        object-fit: cover;
+        display: none !important;
     }
 }
