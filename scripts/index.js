@@ -1,4 +1,5 @@
 import './vendor/jquery-3.6.0.slim.min.js'
+import './vendor/slick.min.js'
 import './instaFeed.js'
 
 /*
