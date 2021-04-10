@@ -1,70 +1,46 @@
 /**
  * Renders Instagram feed JSON response in the given DOM target.
  */
-function renderFeed(response, target, length) {
-    target.innerHTML = ""
-    const media = response.graphql.user.edge_owner_to_timeline_media.edges
-    let post = document.createElement("div")
-    post.className = "gridBox gridBox-col4 gridBox-center"
+function renderFeed(media, target, length) {
+    const grid = $('<div>').addClass('gridBox gridBox-col4 gridBox-center')
+
     for (let i = 0; i < length && i < media.length; i++) {
-        const mediaObj = media[i].node
-        if (mediaObj.__typename == "GraphImage") {
-            let divElement = document.createElement("div")
-            divElement.classList.add("fixedRatio")
-            let imgElement = document.createElement("img")
-            imgElement.src = mediaObj.display_url
-            imgElement.classList.add("fixedRatio--contents")
-            divElement.appendChild(imgElement)
-            post.appendChild(divElement)
+        const node = media[i].node
+        const type = node.__typename
+        let post = $('<div>').addClass('fixedRatio')
+        let contents = null
 
-        } else if (mediaObj.__typename == "GraphVideo") {
-            let divElement = document.createElement("div")
-            divElement.classList.add("fixedRatio")
-            let videoElement = document.createElement("video")
-            let sourceElement = document.createElement("source")
-            videoElement.controls = "Play"
-            sourceElement.src = mediaObj.video_url
-            videoElement.appendChild(sourceElement)
-            videoElement.classList.add("fixedRatio--contents")
-            divElement.appendChild(videoElement)
-            post.appendChild(divElement)
-
-        } else if (mediaObj.__typename == "GraphSidecar") {
-            let divElement = document.createElement("div")
-            divElement.classList.add("fixedRatio")
-            let imgElement = document.createElement("img")
-            imgElement.src = mediaObj.display_url
-            imgElement.classList.add("fixedRatio--contents")
-            divElement.appendChild(imgElement)
-            post.appendChild(divElement)
+        if (type === 'GraphImage' || type === 'GraphSidecar') {
+            contents = $('<img>').attr('src', node.display_url)
+        } else if (type === 'GraphVideo') {
+            const source = $('<source>').attr('src', node.video_url)
+            contents = $('<video>').attr('controls', true).append(source)
+        } else {
+            continue
         }
+        post.append(contents.addClass('fixedRatio--contents'))
+        grid.append(post)
     }
-    target.append(post)
+    $(target).empty().append(grid)
 }
 
 /**
  * Fetches IG account feed JSON and renders (if valid response) into the given target.
  */
-async function fetchAndRenderFeed(accountName, target, length) {
-    const response =
-      await fetch(`https://www.instagram.com/${accountName}/?__a=1`).then(x => x.json())
-
-    if(!response || !response.graphql) {
+async function fetchAndRenderFeed(account, target, length) {
+    try {
+        const response = await fetch(`https://www.instagram.com/${account}/?__a=1`).then(x => x.json())
+        const media = response.graphql.user.edge_owner_to_timeline_media.edges
+        renderFeed(media, target, length)
+    } catch (error) {
         console.log(`Error: could not load IG profile for {accountName}.`)
-        return
+        console.log(error)
     }
-
-    renderFeed(response, target, length)
 }
 
-// hide behind a button for now, so we don't make a bunch of unnecessary requsts
-// TODO: remove this when it becomes appropriate
-const showBtn = document.querySelector(".js-showInstaFeed")
-
-if (showBtn) {
-    showBtn.addEventListener("click", event => {
-        fetchAndRenderFeed("bayareamuralpro", document.querySelector(".instagramFeed"), 8)
-        event.target.disabled = true
-        event.target.style.display = "none"
-    })
-}
+// hide behind a button during development (TODO: remove for production)
+$('.js-showInstaFeed').click(event => {
+    fetchAndRenderFeed('bayareamuralpro', $('.instagramFeed')[0], 8)
+    event.target.disabled = true
+    event.target.style.display = 'none'
+})
