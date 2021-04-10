@@ -11,6 +11,12 @@ $(document).ready(() => {
     $('.js-carousel-standard').slick(slickDefaults)
 
     $('.js-carousel-homepage').slick(merge(slickDefaults, {
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {fade: false}
+            }
+        ],
         autoplay: true,
         autoplaySpeed: 5000,
         fade: true
