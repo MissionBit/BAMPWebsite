@@ -3,7 +3,7 @@
 }
 
 .u-onlyMobile {
-    display: none;
+    display: none !important;
 }
 
 .u-text-medium {
@@ -24,11 +24,11 @@
 
 @media only screen and (max-width: 600px) {
     .u-onlyDesktop {
-        display: none;
+        display: none !important;
     }
 
     .u-onlyMobile {
-        display: block;
+        display: block !important;
     }
 
     .u-text-medium {
