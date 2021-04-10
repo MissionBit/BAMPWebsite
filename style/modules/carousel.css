@@ -5,10 +5,13 @@
 }
 
 .carousel--item {
-    display: block;
     width: 100%;
     object-fit: cover;
     transition: 150ms;
+}
+
+.carousel--item-cover {
+    height: 45vw;
 }
 
 .carousel--arrow {
@@ -103,16 +106,5 @@
 @media only screen and (max-width: 800px) {
     .carousel--arrow {
         display: none !important;
-    }
-}
-
-/* TODO: used on programs. maybe used fixedRatio? */
-@media only screen and (max-width: 600px) {
-    .carousel--item-cover {
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-        height: 45vw;
-        object-fit: cover;
     }
 }
