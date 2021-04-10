@@ -81,3 +81,35 @@ $(document).ready(() => {
         nextArrow: '<button type="button" class="carousel--slider carousel--next">&#10095;</button>'
     })
 })
+
+$(document).ready(() => {
+    $('.carousel-responsive').slick({
+        dots: true,
+        dotsClass: 'carousel--dots',
+        prevArrow: '<button type="button" class="carousel--slider carousel--prev">&#10094;</button>',
+        nextArrow: '<button type="button" class="carousel--slider carousel--next">&#10095;</button>',
+        responsive: [
+            {
+                breakpoint: 999999,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 1800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    })
+})

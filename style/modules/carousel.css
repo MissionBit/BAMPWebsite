@@ -1,4 +1,5 @@
-.carousel {
+.carousel,
+.carousel-responsive {
     position: relative;
     width: 100%;
 }
