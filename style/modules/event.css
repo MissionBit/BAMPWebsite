@@ -49,6 +49,21 @@
     display: none;
 }
 
+/* gridBox-col2-collapse collapses at 900px */
+@media only screen and (max-width: 1100px) and (min-width: 900px) {
+    .event--dateLabel {
+        font-size: 18px;
+    }
+
+    .event--date {
+        font-size: 14px;
+    }
+
+    .event .btnLink {
+        font-size: 16px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .event {
         display: block;
