@@ -1,3 +1,4 @@
+import './vendor/jquery-3.6.0.slim.min.js'
 import './vendor/siema.min.js'
 import './vendor/siemaWithDots.js'
 
