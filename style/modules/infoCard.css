@@ -9,12 +9,13 @@
 
 .infoCard--carousel {
     min-width: 0;
+    min-height: 0;
 }
 
 .infoCard--img {
-    min-width: 0;
     object-fit: cover;
     width: 100%;
+    height: 100%;
 }
 
 .infoCard--caption {
@@ -57,16 +58,10 @@
     }
 }
 
-@media only screen and (max-width: 1100px) {
-    .infoCard--img {
-        width: 35%;
-        height: 48vw;
-    }
-}
-
 @media only screen and (max-width: 800px) {
     .infoCard {
-        flex-direction: column;
+        grid-template-columns: 100%;
+        grid-template-rows: 33% 67%;
     }
 
     .infoCard--img {
