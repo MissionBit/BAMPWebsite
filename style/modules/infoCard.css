@@ -40,6 +40,21 @@
     margin-right: auto;
 }
 
+/* ultra-wide desktop */
+@media only screen and (min-width: 1400px) {
+    .infoCard--caption {
+        padding: 20px;
+    }
+
+    .infoCard--text {
+        font-size: 24px;
+    }
+
+    .infoCard .btnLink {
+        font-size: 30px;
+    }
+}
+
 @media only screen and (max-width: 1100px) {
     .infoCard--img {
         width: 35%;
@@ -66,19 +81,5 @@
 
     .infoCard .btnLink {
         margin-left: auto;
-    }
-}
-
-@media only screen and (min-width: 1400px) {
-    .infoCard--caption {
-        padding: 20px;
-    }
-
-    .infoCard--text {
-        font-size: 24px;
-    }
-
-    .infoCard .btnLink {
-        font-size: 30px;
     }
 }
