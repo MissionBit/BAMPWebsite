@@ -1,4 +1,5 @@
 .l-section {
+    position: relative; /* helps with swiper elements */
     padding: 60px;
     max-width: 1400px;
     margin-left: auto;

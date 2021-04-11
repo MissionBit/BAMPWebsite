@@ -84,3 +84,23 @@ new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     }
 })
+
+new Swiper('.swiper-container-testimonials', {
+    slidesPerView: 1,
+    spaceBetween: 200,
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 60,
+        }
+    },
+})
