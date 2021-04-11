@@ -73,7 +73,7 @@ $('#muralGallerySlider').click(event => {
 /*
  * initialize swiper carousels
  */
-const swiper = new Swiper('.swiper-container', {
+new Swiper('.swiper-container', {
     loop: true,
     pagination: {
         el: '.swiper-pagination',
