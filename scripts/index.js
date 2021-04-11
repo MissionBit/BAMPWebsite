@@ -1,4 +1,5 @@
 import './vendor/jquery-3.6.0.slim.min.js'
+import './vendor/swiper-bundle.min.js'
 import './instaFeed.js'
 
 /*
@@ -65,5 +66,21 @@ $('#muralGallerySlider').click(event => {
         event.target.innerHTML = "&#10094;"
     } else {
         event.target.innerHTML = "&#10095;"
+    }
+})
+
+
+/*
+ * initialize swiper carousels
+ */
+const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     }
 })
