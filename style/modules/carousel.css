@@ -3,10 +3,6 @@
     width: 100%;
 }
 
-.carousel:not(.slick-initialized) > *:not(:first-child) {
-    display: none;
-}
-
 .carousel--item {
     width: 100%;
     object-fit: cover;
@@ -79,8 +75,7 @@
     background: var(--dark-blue);
 }
 
-.carousel--dot-is-active,
-.carousel--dots .slick-active button {
+.carousel--dot-is-active {
     background: var(--dark-gray);
 }
 
