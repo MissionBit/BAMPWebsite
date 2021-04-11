@@ -43,10 +43,6 @@
     justify-content: space-between;
 }
 
-.program--btn2 {
-    display: none;
-}
-
 .program--price {
     font-size: 30px;
     font-style: italic;
@@ -84,11 +80,11 @@
     }
 
     .program--text {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .program--details {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .program--price {
@@ -96,11 +92,7 @@
         font-style: italic;
     }
 
-    .program--btn2 {
-        display: block;
-    }
-
-    .program--btn1 {
-        display: none;
+    .program .btnLink {
+        font-size: 18px;
     }
 }
