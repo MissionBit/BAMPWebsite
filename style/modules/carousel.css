@@ -1,7 +1,10 @@
-.carousel,
-.carousel-responsive {
+.carousel {
     position: relative;
     width: 100%;
+}
+
+.carousel:not(.slick-initialized) > *:not(:first-child) {
+    display: none;
 }
 
 .carousel--item {
@@ -39,40 +42,17 @@
     color: var(--dark-gray);
 }
 
-.carousel--prev {
+.carousel--arrow-prev {
     left: 0;
 }
 
-.carousel--next {
+.carousel--arrow-next {
     right: 0;
 }
 
-/* ---- testimonial overrides ---- */
-
-#testimonials .carousel--prev {
-    left: -60px;
-}
-
-#testimonials .carousel--next {
-    right: -60px;
-}
-
-#testimonials .carousel--arrow {
-    color: var(--gray);
-    font-size: 60px;
-    width: 60px;
-}
-
-#testimonials .carousel--arrow:hover {
-    background: none;
-    color: var(--dark-blue);
-    opacity: 1;
-}
-
-/* ------------------------------------- */
-
 .carousel--dots {
     margin: 0;
+    padding: 0;
     position: relative;
     width: 100%;
     text-align: center;

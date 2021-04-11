@@ -1,6 +1,7 @@
 import './vendor/jquery-3.6.0.slim.min.js'
 import './vendor/slick.min.js'
 import './instaFeed.js'
+import './carousel.js'
 
 /*
  * restore animations once dom has settled
@@ -67,48 +68,4 @@ $('#muralGallerySlider').click(event => {
     } else {
         event.target.innerHTML = "&#10095;"
     }
-})
-
-
-/*
- * start carousels
- */
-
-const slickDefaults = {
-    dots: true,
-    dotsClass: 'carousel--dots',
-    prevArrow: '<button type="button" class="carousel--arrow carousel--prev">&#10094;</button>',
-    nextArrow: '<button type="button" class="carousel--arrow carousel--next">&#10095;</button>'
-}
-
-$(document).ready(() => {
-    $('.carousel').slick(slickDefaults)
-})
-
-$(document).ready(() => {
-    $('.carousel-responsive').slick(Object.assign(slickDefaults, {
-        responsive: [
-            {
-                breakpoint: 999999,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4
-                }
-            },
-            {
-                breakpoint: 1800,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 1000,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    }))
 })
