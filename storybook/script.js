@@ -54,4 +54,10 @@ for (const demo of sortedDemos) {
     finishSection(demo)
 }
 
+/* faq click fix for storybook */
+$('body').delegate('.faq--questionBox', 'click', event => {
+    $(event.target).closest('.faq').toggleClass('faq-is-open')
+    event.preventDefault()
+})
+
 $('body').show()

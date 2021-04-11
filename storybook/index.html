@@ -6,11 +6,7 @@
         <link rel="stylesheet" href="../style/index.css">
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script
-            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ramda/0.25.0/ramda.min.js"></script>
+        <script src="../scripts/vendor/ramda.min.js"></script>
         <script src="../scripts/index.js" type="module" defer></script>
         <script src="script.js" defer></script>
     </head>
@@ -29,15 +25,11 @@
             </nav>
             <main class="l-main">
                 <section class="demo" data-module-name="carousel">
-                    <div class="carousel">
-                        <div class="carousel--items">
-                            <img class="carousel--item" src="https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg">
-                            <img class="carousel--item" src="https://media.istockphoto.com/photos/child-hands-formig-heart-shape-picture-id951945718?k=6&m=951945718&s=612x612&w=0&h=ih-N7RytxrTfhDyvyTQCA5q5xKoJToKSYgdsJ_mHrv0=">
-                            <img class="carousel--item" src="https://cdn.eso.org/images/thumb300y/eso1907a.jpg">
-                            <video class="carousel--item" controls=""><source src="http://media.w3.org/2010/05/sintel/trailer.mp4"></video>
-                        </div>
-                        <button class="carousel--slider carousel--prev">&#10094;</button>
-                        <button class="carousel--slider carousel--next">&#10095;</button>
+                    <div class="carousel js-carousel-standard">
+                        <img src="https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg">
+                        <img src="https://media.istockphoto.com/photos/child-hands-formig-heart-shape-picture-id951945718?k=6&m=951945718&s=612x612&w=0&h=ih-N7RytxrTfhDyvyTQCA5q5xKoJToKSYgdsJ_mHrv0=">
+                        <img src="https://cdn.eso.org/images/thumb300y/eso1907a.jpg">
+                        <video autoplay muted playsinline controls="true"><source src="http://media.w3.org/2010/05/sintel/trailer.mp4"></video>
                     </div>
                 </section>
 
@@ -141,13 +133,8 @@
                             <p class="event--text">Appearing for the first time in Oakland, the Battle Of The Canvas® originally produced in Philadelphia, continues to be a means to expose, support and celebrate local artistry in cities throughout the country. Simone Banks, co-founder of WAXXED and Andre Jones  have partnered to bring the live painting festival to Oakland, working hand in hand to provide access and visibility to some of the most talented artists the city has to offer. All artists will compete for a $500 Grand Prize, $350 in Gift Cards donated by Flax Art Store and city wide exposure.</p>
                             <div class="event--bottom">
                                 <p class="event--when">When:</p>
-                                <p class="event--date">Sept. 15th, 4:30p</p>
-                                <div class="event--btn">
-                                    <a class="btnLink">Learn More</a>
-                                </div>
-                                <div class="event--btn2">
-                                    <a class="btnLink btnLink-small">Learn More</a>
-                                </div>
+                                <p class="event--date">August 15th, 4 PM</p>
+                                <a class="btnLink">Learn More</a>
                             </div>
                         </div>
                         <div class="event box box-blue">
@@ -156,13 +143,8 @@
                             <p class="event--text">Appearing for the first time in Oakland, the Battle Of The Canvas® originally produced in Philadelphia, continues to be a means to expose, support and celebrate local artistry in cities throughout the country. Simone Banks, co-founder of WAXXED and Andre Jones  have partnered to bring the live painting festival to Oakland, working hand in hand to provide access and visibility to some of the most talented artists the city has to offer. All artists will compete for a $500 Grand Prize, $350 in Gift Cards donated by Flax Art Store and city wide exposure.</p>
                             <div class="event--bottom">
                                 <p class="event--when">When:</p>
-                                <p class="event--date">Sept. 15th, 4:30p</p>
-                                <div class="event--btn">
-                                    <a class="btnLink">Learn More</a>
-                                </div>
-                                <div class="event--btn2">
-                                    <a class="btnLink btnLink-small">Learn More</a>
-                                </div>
+                                <p class="event--date">August 15th, 4 PM</p>
+                                <a class="btnLink">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -252,33 +234,7 @@
                             <div class="infoCard--caption">
                                 <p class="infoCard--title">Classes</p>
                                 <p class="infoCard--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                                <div class="infoCard--btn">
-                                    <a class="btnLink">Apply</a>
-                                    <a class="btnLink btnLink-large">Apply</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="demo" data-module-name="infoCard and carousel">
-                    <div class="box box-yellow">
-                        <div class="infoCard">
-                            <div class="carousel">
-                                <div class="carousel--items">
-                                    <div class="carousel--item">
-                                            <img class="infoCardCarousel--img" src="../images/index/plywood-mural-1.jpeg">
-                                    </div>
-                                    <div class="carousel--item">
-                                            <img class="infoCardCarousel--img" src="../images/index/plywood-mural-2.jpeg">
-                                    </div>
-                                    <div class="carousel--slider carousel--prev">&#10094;</div>
-                                    <div class="carousel--slider carousel--next">&#10095;</div>
-                                </div>
-                            </div>
-                            <div class="infoCard--caption">
-                                <p class="infoCard--title">Classes</p>
-                                <p class="infoCard--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                <a class="btnLink">Apply</a>
                             </div>
                         </div>
                     </div>
@@ -361,12 +317,7 @@
                                 <p class="program--text">Creative paint class for all age children. This great event has something for everyone in the family as we have programs for children as well as parents. Parents can paint or network with other artistic adults while children paint unique subject matter on canvas and small walls.  We supply the 16″x20″ canvas, easel, paint, brushes, aprons, and step-by-step instructions from experienced artist. No experience necessary! Just bring yourself, positive vibes, have fun, be social and take home a masterpiece.</p>
                                 <p class="program--details">Friday, Feb 28 | 6-9pm | Location</p>
                                 <div class="program--bottom">
-                                    <div class="program--btn1">
-                                        <a class="btnLink">Sign Up</a>
-                                    </div>
-                                    <div class="program--btn2">
-                                        <a class="btnLink btnLink-small">Sign Up</a>
-                                    </div>
+                                    <a class="btnLink">Sign Up</a>
                                     <p class="program--price">$00.00</p>
                                 </div>
                             </div>

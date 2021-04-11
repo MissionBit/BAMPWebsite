@@ -1,0 +1,21 @@
+/* carousel arrow style overrides for the testimonials */
+
+#testimonials .carousel--arrow {
+    color: var(--gray);
+    font-size: 60px;
+    width: 60px;
+}
+
+#testimonials .carousel--arrow:hover {
+    background: none;
+    color: var(--dark-blue);
+    opacity: 1;
+}
+
+#testimonials .carousel--arrow-prev {
+    left: -60px;
+}
+
+#testimonials .carousel--arrow-next {
+    right: -60px;
+}

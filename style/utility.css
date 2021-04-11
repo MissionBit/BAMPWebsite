@@ -24,7 +24,7 @@
 
 @media only screen and (max-width: 600px) {
     .u-onlyDesktop {
-        display: none;
+        display: none !important;
     }
 
     .u-onlyMobile {
