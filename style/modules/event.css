@@ -8,17 +8,21 @@
     object-fit: cover;
 }
 
-.event--title {
+.event--title,
+.event--text,
+.event--bottom {
     padding: 0 40px;
+}
+
+.event--title {
     color: var(--dark-blue);
     font-family: "Libre Franklin", sans-serif;
     font-size: 25px;
 }
 
 .event--text {
-    font-size: 17px;
-    padding: 0 40px;
     color: var(--dark-gray);
+    font-size: 17px;
 }
 
 .event--bottom {
@@ -29,24 +33,13 @@
 .event--dateTitle {
     color: var(--dark-blue);
     font-family: "Libre Franklin", sans-serif;
-    font-size: 20px;
     flex-grow: 0.5;
-    padding-left: 40px;
 }
 
 .event--date {
+    color: var(--gray);
     font-size: 15px;
     flex-grow: 2;
-    color: var(--gray);
-}
-
-.event--btn {
-    flex-grow: 0.5;
-    padding-right: 20px;
-}
-
-.event--btn2 {
-    display: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -60,32 +53,29 @@
         object-fit: cover;
     }
 
+    .event--title,
+    .event--text,
+    .event--bottom {
+        padding: 0 20px;
+    }
+
     .event--title {
-        padding: 0 30px;
         font-size: 16px;
     }
 
     .event--text {
         font-size: 10px;
-        padding: 0 30px;
     }
 
     .event--dateTitle {
         font-size: 14px;
-        padding-left: 30px;
     }
 
     .event--date {
         font-size: 12px;
-        color: var(--gray);
     }
 
-    .event--btn {
-        display: none;
-    }
-
-    .event--btn2 {
-        display: block;
-        padding-right: 20px;
+    .event .btnLink {
+        font-size: 14px;
     }
 }
