@@ -30,16 +30,32 @@
     align-items: baseline;
 }
 
-.event--dateTitle {
+.event--when {
     color: var(--dark-blue);
     font-family: "Libre Franklin", sans-serif;
+    font-size: 20px;
     flex-grow: 0.5;
 }
 
 .event--date {
     color: var(--gray);
-    font-size: 15px;
+    font-size: 16px;
     flex-grow: 2;
+}
+
+/* gridBox-col2-collapse collapses at 900px */
+@media only screen and (max-width: 1100px) and (min-width: 900px) {
+    .event--when {
+        font-size: 17px;
+    }
+
+    .event--date {
+        font-size: 15px;
+    }
+
+    .event .btnLink {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -60,19 +76,19 @@
     }
 
     .event--title {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .event--text {
-        font-size: 10px;
-    }
-
-    .event--dateTitle {
         font-size: 14px;
     }
 
+    .event--when {
+        font-size: 17px;
+    }
+
     .event--date {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .event .btnLink {
