@@ -69,3 +69,16 @@ $('#muralGallerySlider').click(event => {
         event.target.innerHTML = "&#10095;"
     }
 })
+
+
+/*
+ * make mobile carousel copies of gridbox (programs & events)
+ */
+$('.js-photoGrid').each((idx, pg) => {
+    const pics = $(pg).find('img').clone().removeClass('fixedRatio--contents').addClass('carousel--item carousel--item-cover')
+    const section = $(pg).parent()
+    const wrapper = $('<div>').addClass('u-onlyMobile')
+    wrapper.append(pics)
+    section.append(wrapper)
+    wrapper.addClass('js-carousel-standard slick-slider slick-dotted')
+})
