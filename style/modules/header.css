@@ -8,6 +8,10 @@
     width: 100px;
 }
 
+.header--logo:hover {
+    opacity: 0.8;
+}
+
 .header--linkLogo {
     flex-grow: 16;
     margin-right: auto;
@@ -32,6 +36,14 @@
 
 .header--hamburger {
     display: none;
+    margin-right: 6px;
+}
+
+.header--hamburger:hover {
+    position: relative;
+    top: -1px;
+    left: -1px;
+    text-shadow: 1px 1px var(--red);
 }
 
 @media only screen and (max-width: 850px) {

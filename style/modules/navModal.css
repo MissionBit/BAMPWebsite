@@ -41,6 +41,10 @@
     top: -2px;
 }
 
+.navModal--close:hover {
+    text-shadow: 1px 1px var(--red);
+}
+
 .navModal .btnLink {
     margin-top: 16px;
 }
