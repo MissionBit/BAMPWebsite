@@ -5,7 +5,6 @@ input[type="submit"].btnLink {
     color: var(--white);
     padding: 5px 15px;
     border-radius: 100px;
-    opacity: 100%;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 24px;
     font-weight: 600;
