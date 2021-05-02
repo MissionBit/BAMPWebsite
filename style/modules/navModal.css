@@ -34,6 +34,10 @@
     font-weight: bold;
 }
 
+.navModal--link:hover {
+    color: var(--red);
+}
+
 .navModal--close {
     position: fixed;
     font-size: 60px;
@@ -42,7 +46,7 @@
 }
 
 .navModal--close:hover {
-    text-shadow: 1px 1px var(--red);
+    cursor: hover;
 }
 
 .navModal .btnLink {
