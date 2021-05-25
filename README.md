@@ -16,7 +16,7 @@ through free project-based courses.
 
 ### Web Design Team
 * Ernest [(@Ernesto2004)](https://github.com/Ernesto2004)
-* Trent [(@kingtrentiii)](https://github.com/kingtrentiii)
+* Trent [(@kingtrentiii)](https://github.com/tt3rd)
 * Tara [(@Tara-Tiong)](https://github.com/Tara-Tiong)
 
 #### Advisors
