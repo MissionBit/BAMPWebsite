@@ -15,7 +15,7 @@ through free project-based courses.
 # Contributors
 
 ### Web Design Team
-* Ernest [(@Ernesto2004)](https://github.com/Ernesto2004)
+* Ernest [(@esarajyan)](https://github.com/esarajyan)
 * Trent [(@kingtrentiii)](https://github.com/kingtrentiii)
 * Tara [(@Tara-Tiong)](https://github.com/Tara-Tiong)
 
